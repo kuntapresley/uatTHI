@@ -1,0 +1,26 @@
+Website Template, Format and Content:
+
+
+goal 1: create a template
+2: create the header with the following components:
+
+website titles,
+menus,
+search bar,
+social media*,
+
+
+
+
+Hint for this website project.
+
+1. all html element must have border for proper structuring.
+
+2. website must be large and not complex.
+
+3. simple backend process and frontend navigation.
+
+4. create a search engine to search key words in website.
+
+5. create a subscribe form to update users for newsletter update.
+
