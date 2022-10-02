@@ -80,9 +80,9 @@ displayScreen();
 
 //date update start
 
-    var updatedTime = document.querySelector('#date');
-    var newTime = new Date();
-    var newShortTime = newTime.getFullYear();
+    const updatedTime = document.querySelector('.date');
+    const newTime = new Date();
+    const newShortTime = newTime.getFullYear();
     updatedTime.innerHTML = newShortTime;
     
 //date update ends

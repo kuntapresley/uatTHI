@@ -130,9 +130,10 @@ text-align: justify;
 text-align: center;
 line-height: 0.9cm;
 border: 1px solid white;
-width: 71%;
-text-align: right;
+width: 90%;
+text-align: left;
 text-transform: capitalize;
+margin-left: 10%
 
 }
 
@@ -488,18 +489,18 @@ opacity: 1;
 }
 
 .c_articles_row {
-border:none solid 2px;
+border:pink solid 2px;
 height: auto;
 display: inline-block;
 margin-top: 2cm;
-width: 80%;
+min-width: 100%;
 }
 
 .c_articles_column {
 border: 2px solid none;
 background: #013372;
 width: 100%;
-height: 505px;
+height: 605px;
 margin-bottom: 1.5cm;
 display: none;
 }
@@ -603,6 +604,10 @@ footer {
 .c_footer {
   border: 2px solid none;
   background-color: black;
+  min-width: 100%;
+  border: 2px solid orange;
+  background-color: #013372 !important;
+  display: inline-block !important;
 }
 
 
@@ -611,8 +616,9 @@ footer {
   height:auto;
   background: black !important;
   margin-top: 5cm;
-  border: 2px solid none;
-  padding: 2%;
+  border: 2px solid red;
+  padding: 0%;
+  min-width: 100%;
 }
 
 /* The c_footer_paragraph_for_one */
@@ -767,6 +773,7 @@ width: 100%;
   display: flex;
   border: 3px none green;
   margin-left:0;
+  background-color:antiquewhite;
 }
 
 .c_subscribe_form_container {
@@ -797,13 +804,17 @@ width: 100%;
   float: left;
   margin-top: 1.1vh;
   border: none;
-  margin-left: 0.2em;
+  margin-left: 0.8em;
 
 }
 
+.c_subscribe_Daily_Newsletter_text {
+    font-size: 30px;
+}
+
 input[type=checkbox] {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 
@@ -819,9 +830,10 @@ input[type=checkbox] {
 
 .c_Subscribe_submit_button {
   width: 100%;
-  height: 1.15cm;
+  height: 1.30cm;
   cursor: pointer;
   border-radius: 5rem;
+  box-sizing: border-box;
 }
 
 input[type=text], input[type=submit] {
@@ -978,6 +990,12 @@ padding-top: -1%
   padding: 1%;
 }
 
+.c_footer_five_container_one_A {
+    border: 2px none red;
+    width: auto;
+    margin-left: 1.5%;
+}
+
 .c_footer_five_container_one_B {
   border: 3px none black;
   height: auto;
@@ -1009,6 +1027,14 @@ padding-top: -1%
     margin-top: 5%;
     padding: 1%;
     line-height: 1.5em;
+}
+
+.c_website_signature_socialMedia {
+    display: grid;
+    border: 2px none red;
+    width: auto;
+    padding: 0;
+    margin-left: 2%;
 }
 
 
