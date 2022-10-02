@@ -272,23 +272,14 @@ background-size: cover;
 /*border*/
 }
 
+
 .c_bg_image_content_container_A {
-border: 1px solid white;
-display: flex;
-margin-top: -5.5cm;
-width: 30%;
-margin-left: auto;
-margin-right: auto;
-}
-
-
-.c_bg_image_content_container_B {
 border: 1px solid red;
-margin-top: 5cm;
+margin-top: -80%;
 min-width: 100%;
-height: 10vh;
+height: 15vh;
 background:black;
-z-index: -1;
+z-index: 1;
 }
 
 .c_bg_image_content_A_B {
@@ -296,12 +287,12 @@ float: left;
 border: 2px solid white;
 left: 10%;
 position: absolute;
+background:black;
 }
 
 .c_bg_image_content_A_B_text {
 color: white;
-font-size: small;
-
+font-size: small;c_main_1
 }
 
 #c_slugger {
@@ -322,6 +313,7 @@ font-weight: 700;
 
 .c_bg_image_content_C_B {
 border: 2px solid white;
+background: black;
 padding: 0.2%;
 width: 75.8%;
 position: absolute;
@@ -335,21 +327,29 @@ height: auto
 border: 2px solid white;
 padding: 1%;
 height: 0.6cm;
-margin-top: 8.9%;
+margin-top: 4.5cm;
+margin-bottom: 1cm;
 }
 
-.c_main_1_main_title_A {
-border: 2px solid white;
-width: auto;
+.c_main_1_main_title_A h2 a {
+border: 2px none black;
+width: 6.4cm;
 position: absolute;
-left:10%;
+left:-1cm;
+color: black;
+font-size: 30px;
+text-align: center;
 }
 
-.c_main_1_main_title_B {
-border: 2px solid white;
-width: auto;
+.c_main_1_main_title_B h2 a {
+border: 2px none black;
+width: 4.4cm;
 position: absolute;
-right: 14%;
+right: -1.2cm;
+color: black;
+font-size: 24.5px;
+text-align: center;
+margin-top: 0.1cm;
 }
 
 .c_main_1_main_content_container {
@@ -363,17 +363,20 @@ flex-direction: column;
 
 .c_main_1_main_content_one {
 margin-left: 0%;
-margin-bottom: 10%;
+margin-bottom: 17%;
+min-width: 100%;
+padding: 1.5%;
 }
 
 .c_main_1_main_content_one_image a img {
-width: 10.2cm;
-border: 2px solid white
+min-width: 100%;
+border: 2px solid white;
+min-height: 100%;
 }
 
 .c_main_1_main_content_one_text, h2{
-color: white;
-font-size: larger;
+color: black;
+font-size: 30px;
 }
 /*Element Reference for creating shsortcut menu with animations and transition*/
 
@@ -415,21 +418,22 @@ transform: rotate(45deg) translate(-8px, -8px);
 /* The main */
 main {
   height: auto;
-  background: black;
+  background: white;
+  color: black;
 }
 
 /* The main 1 */
 .c_main_1 {
   height: auto;
-  background: black;
-  margin-top: 40%;
-  border: 6px solid red;
+  background: white;
+  margin-top: 28%;
+  border: 6px none red;
 }
 
 .c_main_1_main {
-border:2px solid gold;
+border:2px none gold;
 height: auto;
-padding: 5%;
+padding: 0%;
 }
 
 /* The main 2 */
@@ -1027,6 +1031,8 @@ padding-top: -1%
     margin-top: 5%;
     padding: 1%;
     line-height: 1.5em;
+    border: 2px none red;
+    min-width: 100%;
 }
 
 .c_website_signature_socialMedia {
