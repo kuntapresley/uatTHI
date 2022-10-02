@@ -147,6 +147,12 @@ margin-left: 10%
     margin-left: 2%;
 }
 
+.c_font_awesome_generic {
+    color: white;
+    width: 40px;
+    margin-left: 2.5%;
+}
+
 /* The header navigation bar */
 .c_header_navbar {
   position: static; /* Set the navbar to fixed position */
