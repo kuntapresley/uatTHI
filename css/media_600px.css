@@ -50,10 +50,12 @@
     /*display mobile view*/
     #c_mobile_view {
       display: block;
-      min-width: 80%;
+      min-width: 100%;
       margin: 0;
       padding: 0;
       position: relative;
+      overflow-x: hidden;
+      overflow-y: ;
     }
   
 
@@ -336,7 +338,7 @@ border: 2px none black;
 width: 6.4cm;
 position: absolute;
 left:-1cm;
-color: black;
+color: rgb(16, 20, 122);
 font-size: 30px;
 text-align: center;
 }
@@ -476,7 +478,7 @@ width: 100%;
 
 .c_search_2_input {
 width: 80%;
-height: 4.5vh;
+height: 6.5vh;
 }
 
 .c_search_2_button {
@@ -484,7 +486,7 @@ float: right;
 background: #013372;
 color: white;
 width: 20%; 
-height: 4.5vh;
+height: 6.5vh;
 border-radius: 5rem;
 }
 
@@ -493,7 +495,7 @@ opacity: 1;
 }
 
 .c_articles_row {
-border:pink solid 2px;
+border:pink none 2px;
 height: auto;
 display: inline-block;
 margin-top: 2cm;
@@ -501,8 +503,8 @@ min-width: 100%;
 }
 
 .c_articles_column {
-border: 2px solid red;
-background: #013372;
+border: 2px none red;
+background: white;
 width: 100%;
 height: 605px;
 margin-bottom: 1.5cm;
@@ -546,11 +548,12 @@ background: #04AA6D;
 
 .c_articles_column_category {
 border-radius: 5em;
-width: 8%;
-height: 0.2cm;
+width: auto;
+height: auto;
 background-color: brown;
-padding-top: 0.4%;
-padding-bottom: 0.8%;
+padding: 2% 3.5% 2% 3.5%;
+color: white;
+letter-spacing: 0.1rem;
 font-size: 12px;
 margin-left: 0.5cm;
 margin-top: 0.5cm;
@@ -560,7 +563,7 @@ text-align: center;
 
 .c_articles_column_image {
 width: 100%;
-height: 5.5cm;
+height: 5.6cm;
 }
 
 .c_articles_column_body {
@@ -569,11 +572,13 @@ padding: 6%;
 }
 
 .c_articles_column_body_title {
-text-align: left;
-padding: 2.5%;
-margin-bottom: 1.3%;
-word-spacing: 0.1cm;
-letter-spacing: 0.01em;
+    border: 2px none red;
+    margin-top: -8%;
+    text-align: left;
+    padding: 2.5%;
+    margin-bottom: 1.3%;
+    word-spacing: 0.1cm;
+    letter-spacing: 0.01em;
 }
 
 .c_articles_column_body_content {
@@ -584,20 +589,28 @@ font-size: 11px;
 }
 
 .c_articles_column_body_content_paragraph {
-font-size: small;
-color: #ddd;
+font-size: medium;
+color: black;
+border: 2px none rgb(218, 193, 9);
 line-height: 1.3em;
+height: 4.2cm ;
+padding: 2%;
+margin-top: -4.5%;
+overflow: auto;
 }
 
-.c_articles_column_body_readmore_content {
-padding: 2%;
+.c_articles_column_body_readmore_content .c_articles_column_body_href {
+padding: 2% 4% 2% 4%;
 font-weight: bolder;
 margin-top: 0.4cm;
+background: brown;
+border-radius: 2rem;
 }
 
 .c_articles_column_body_href {
 color: #ddd;
 font-weight: bolder;
+text-align: right;
 }
 
 /* The footer */
