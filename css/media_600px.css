@@ -327,7 +327,7 @@ height: auto
 border: 2px solid white;
 padding: 1%;
 height: 0.6cm;
-margin-top: 4.5cm;
+margin-top: 5.2cm;
 margin-bottom: 1cm;
 }
 
@@ -501,12 +501,14 @@ min-width: 100%;
 }
 
 .c_articles_column {
-border: 2px solid none;
+border: 2px solid red;
 background: #013372;
 width: 100%;
 height: 605px;
 margin-bottom: 1.5cm;
 display: none;
+margin-left: auto;
+margin-right: auto;
 }
 
 .c_articles_column:nth-child(1) {
@@ -725,8 +727,19 @@ text-decoration: line-through 2px salmon;
   padding: 0%;
 }
 
+.c_contact_map_text_container {
+    border-top: 5.5px solid white;
+    padding: 3.5%;
+    color: white;
+    letter-spacing: 0.1ch;
+    line-height: 2.5ch;
+    text-align: left;
+    font-size: 27px;
+    font-weight: 700;
+}
+
 .c_contact_map iframe {
-height: 75%;
+height: 100%;
 width: 100%;
 }
 
@@ -766,10 +779,19 @@ width: 100%;
 
 
 .c_subscribe_title_container {
-  padding: 20px;
+  padding: 2%;
+  border: #04AA6D 2px solid;
   background-color: #f1f1f1;
   margin-bottom: 0.2cm;
   margin-top: 0.2cm;
+  line-height: 2em;
+}
+
+.c_subscribe_title_inner_text {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(16, 20, 122);
+    padding: 1.8%;
 }
 
 .c_Subscribe_form {
@@ -777,7 +799,7 @@ width: 100%;
   display: flex;
   border: 3px none green;
   margin-left:0;
-  background-color:antiquewhite;
+  background-color:whitesmoke;
 }
 
 .c_subscribe_form_container {
@@ -814,11 +836,13 @@ width: 100%;
 
 .c_subscribe_Daily_Newsletter_text {
     font-size: 30px;
+    color: rgb(16, 20, 122)
 }
 
 input[type=checkbox] {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 
@@ -853,12 +877,11 @@ input[type=text], input[type=submit] {
   font-size: x-large;
   line-height: 2em;
   text-align: center;
-  color: black;
-  font-size: 25px;
-  border: 2px dashed black;
+  color: rgb(16, 20, 122);;
+  font-size: 30px;
+  border-top: 2px dashed rgb(16, 20, 122);;
   width: auto;
   text-align: start;
-  font-weight: 900;
 }
 
 input[type=submit] {
