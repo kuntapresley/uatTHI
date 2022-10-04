@@ -14,7 +14,7 @@
     <meta name="keywords" content="Timob Health International | Hepatitis Corner | Outreach">
     <meta name="description" content="Check out Timob Health International | Hepatitis Corner | Outreach here, health tips and healthy living. Infection prevention.">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="lp-version" content="v6.23.11">
 
@@ -25,10 +25,13 @@
     <link rel="stylesheet" href="css/font_css/fontawesome.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
     <!---favicon-->
     <link rel="icon" type="image/x-icon" href="pictures/testing picture/family-medical-healthy-life-cross-clinic-hands-care-logo-parent-kids-love-protect-symbol-icon-design-vector-white-background-149582795.jpg">
+
+
 
 
 </head>
@@ -131,26 +134,47 @@
 
     </div>
 
-    <div class="c_bg_image">
-        <img src="pictures/testing picture/iStock-500927117.jpg" class="c_bg_image"/>
+    
+
+    
+            <!-- Swiper -->
+    <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">        
+                <img src="pictures/testing picture/iStock-500927117.jpg" class="c_bg_image"/>
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="pictures/testing picture/maxresdefault.jpg" class="c_bg_image"/>
+            </div>
+
+          <div class="swiper-slide">
+            <img src="pictures/testing picture/frttt.jpg" class="c_bg_image"/>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="pictures/testing picture/Medical-Outreach-2_1.jpg" class="c_bg_image"/>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="pictures/testing picture/certifikat_Center_of_excellence-e1486564274651.jpg" class="c_bg_image"/>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="pictures/testing picture/mr_clanok.jpg" class="c_bg_image"/>
+          </div>
+          <div class="swiper-slide">PLACE ADVERT HERE<br></div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
 
             <div class="c_bg_image_content_container_A">
 
-                <div class="c_bg_image_content c_bg_image_content_A">
-                    <h1 style="color:red">Great</h1>
-                </div>
-
-                <div class="c_bg_image_content c_bg_image_content_B">
-                    <h1 style="color:blue">Great</h1>
-                </div>
-
-                <div class="c_bg_image_content c_bg_image_content_C">
-                    <h1 style="color:white">Great</h1>
-                </div>
-
-                <div class="c_bg_image_content c_bg_image_content_D">
-                    <h1 style="color:green">Great</h1>
-                </div>
 
             </div>
 
@@ -173,7 +197,7 @@
 
             </div>
                 
-    </div>
+  
  
 </header>
 
@@ -1467,6 +1491,10 @@
 
 <!---javascript links-->
 <script src="js/main.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- inner JS -->
 <script>
 
 
@@ -1482,6 +1510,18 @@
             navbar.classList.remove("sticky");
         }
         }
+
+
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
 </script>
     

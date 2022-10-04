@@ -236,22 +236,16 @@ header {
 
 .c_bg_image_content_container_A {
   border: 1px solid white;
-  display: flex;
-  margin-top: -5.5cm;
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
 .c_bg_image_content_container_B {
   border: 1px solid white;
   display: flex;
-  margin-top: 5cm;
+  margin-top: cm;
   width: 30%;
   margin-left: auto;
   margin-right: auto;
-  z-index: -1;
 }
 
 .c_bg_image_content_A_B {
@@ -386,7 +380,7 @@ main {
 .c_main_1 {
     height: 100%;
     background: black;
-    margin-top: -21.7vh;
+    margin-top: ;
 }
 
 .c_main_1_main {
@@ -1011,3 +1005,39 @@ input[type=text], input[type=submit] {
   }
 
 
+
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }

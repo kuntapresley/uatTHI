@@ -283,11 +283,7 @@ background-size: cover;
 
 .c_bg_image_content_container_A {
 border: 1px solid red;
-margin-top: -80%;
-min-width: 100%;
-height: 15vh;
-background:black;
-z-index: 1;
+margin-top: -9.4cm;
 }
 
 .c_bg_image_content_A_B {
@@ -300,7 +296,7 @@ background:black;
 
 .c_bg_image_content_A_B_text {
 color: white;
-font-size: small;c_main_1
+font-size: small;
 }
 
 #c_slugger {
