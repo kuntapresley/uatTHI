@@ -532,12 +532,12 @@ display: block;
 }
 
 .c_articles_load_button_container {
-border: 2px solid black;
+border: none;
 width: 100%;
 padding: 1%;
 margin-left: auto;
 margin-right: auto;
-position:relative;
+position: relative;
 }
 
 .c_articles_load_button {
@@ -545,8 +545,18 @@ margin-left: auto;
 margin-right: auto;
 width: 100%;
 cursor: pointer;
-padding: 1%;
+padding: 2%;
+color: white;
+background: brown;
+border-radius: 1rem;
+transition: all 1s ease-in-out;
 }
+
+.c_articles_load_button:hover {
+    color: white;
+    background: rgb(16, 20, 122);
+    transition: all 1s ease-in-out;
+    }
 
 .c_articles_column_header {
 background: #04AA6D;
@@ -599,7 +609,7 @@ font-size: medium;
 color: black;
 border: 2px none rgb(218, 193, 9);
 line-height: 1.3em;
-height: 4.2cm ;
+height: 3.2cm ;
 padding: 2%;
 margin-top: -4.5%;
 overflow: auto;
@@ -611,13 +621,27 @@ font-weight: bolder;
 margin-top: 0.4cm;
 background: brown;
 border-radius: 2rem;
+transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+
+.c_read_more_articles_icon {
+  color: white;
+  font-size: 20px;
+}
+
+.c_articles_column_body_readmore_content .c_articles_column_body_href:hover{
+    color: white;
+    background: rgb(16, 20, 122);
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
 
 .c_articles_column_body_href {
 color: #ddd;
 font-weight: bolder;
 text-align: right;
 }
+
+
 
 /* The footer */
 footer {
@@ -630,7 +654,7 @@ footer {
   border: 2px solid none;
   background-color: black;
   min-width: 100%;
-  border: 2px solid orange;
+  border: 2px solid none;
   background-color: #013372 !important;
   display: inline-block !important;
 }
@@ -641,7 +665,7 @@ footer {
   height:auto;
   background: black !important;
   margin-top: 5cm;
-  border: 2px solid red;
+  border: 2px solid none;
   padding: 0%;
   min-width: 100%;
 }
@@ -650,7 +674,8 @@ footer {
 .c_footer_paragraph_for_one {
   color: aliceblue;
   text-align: center;
-  padding: 1%;
+  font-size: 22.1px;
+  padding: 2%;
 }
 
 .c_footer_two {
@@ -763,16 +788,16 @@ width: 100%;
 }
 
 .c_footer_image_logo_container {
-  border: 2px solid green;
-  width: 20%;
+  border:none;
+  width: 30%;
   margin-top: 0.2cm;
   margin-left: auto;
   margin-right: auto;
-  height: 2.1cm;
+  height: 3.1cm;
 }
 
 .c_footer_content_text_container {
- border: 7px solid pink;
+ border:none;
  width: 100%;
  height: 1.2cm;
  line-height: 2.5ex;
@@ -789,8 +814,10 @@ width: 100%;
 }
 
 .c_footer_image_logo img{
-  width : 80px;
-  height: 80px;
+  min-width : 100%;
+  height: 3.1cm;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -799,7 +826,7 @@ width: 100%;
 
 .c_subscribe_title_container {
   padding: 2%;
-  border: #04AA6D 2px solid;
+  border: none 2px solid;
   background-color: #f1f1f1;
   margin-bottom: 0.2cm;
   margin-top: 0.2cm;
@@ -816,7 +843,7 @@ width: 100%;
 .c_Subscribe_form {
   background-color: rgb(16, 20, 122);
   display: flex;
-  border: 3px none green;
+  border: none;
   margin-left:0;
   background-color:whitesmoke;
 }
@@ -1083,6 +1110,12 @@ padding-top: -1%
     width: auto;
     padding: 0;
     margin-left: 2%;
+    margin-bottom: 0.7cm;
+}
+
+.c_social_media_link_section{
+    margin-bottom: 0.7cm;
+    margin-left: 2.2%;
 }
 
 
@@ -1105,12 +1138,17 @@ padding-top: -1%
 
 .c_footer_navbar_text {
   color: white;
-  font-size: 20px;
+  font-size: 22.75px;
 }
 
 .c_footer_navbar_text:hover {
   color: #013372;
   transition: all 2s ease;
+}
+
+.c_social_media_link_section .c_fa_social_icons {
+  font-size: 22.75px;
+  margin-right: 1%;
 }
 
 /* The c_footer one, two, three, four, five and paragraph important background color style/dessign */
