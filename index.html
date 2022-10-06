@@ -27,10 +27,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <!-- Link Swiper's CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+   
 
     <!---favicon-->
     <link rel="icon" type="image/x-icon" href="pictures/testing picture/family-medical-healthy-life-cross-clinic-hands-care-logo-parent-kids-love-protect-symbol-icon-design-vector-white-background-149582795.jpg">
 
+
+
+    <style>
+
+        
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 5px;
+  background-color: red;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+    </style>
 
 
 
@@ -105,14 +133,14 @@
         </div>
       
         <input type="checkbox" id="checkbox"/>
-        <!-- <label for="checkbox" class="c_checkbox">
-            <i class="checkbotton"></i>
-                <div style="background-color: green" class="c_menu_shortcut_icon_container" onclick="myFunction(this)">
-                    <div style="background-color: blue" class="c_bar1"></div>
-                    <div style="background-color: red" class="c_bar2"></div>
-                    <div style="background-color: purple" class="c_bar3"></div>
+        <label for="checkbox" class="c_checkbox">
+            <i class="fas fa-bars checkbotton"></i>
+                <div class="c_menu_shortcut_icon_container" onclick="myFunction(this)">
+                    <div class="c_bar1"></div>
+                    <div class="c_bar2"></div>
+                    <div class="c_bar3"></div>
                 </div>
-        </label>  -->
+        </label> 
 
         <div class="c_menu_options">
 
@@ -880,17 +908,17 @@
     
             <div class="c_menu_options">
     
-                <a class="c_menu_options_items" href="#home">Home</a>
-                <a class="c_menu_options_items" href="#news">About Us</a>
-                <a class="c_menu_options_items" href="#news">Blogs</a>
-                <a class="c_menu_options_items" href="#news">Who We Are</a>
-                <a class="c_menu_options_items" href="#contact">Contact</a>
-                <a class="c_menu_options_items" href="#contact">Book an appoinment</a>
+                <li class="c_menu_options__container_items c_menu_options_container_items_A"><a class="c_menu_options_items" href="#home">Home</a></li>
+                <li class="c_menu_options__container_items c_menu_options_container_items_B"><a class="c_menu_options_items" href="#news">About Us</a></li>
+                <li class="c_menu_options__container_items c_menu_options_container_items_C"><a class="c_menu_options_items" href="#news">Blogs</a></li>
+                <li class="c_menu_options__container_items c_menu_options_container_items_D"><a class="c_menu_options_items" href="#news">Who We Are</a></li>
+                <li class="c_menu_options__container_items c_menu_options_container_items_E"><a class="c_menu_options_items" href="#contact">Contact</a></li>
+                <li class="c_menu_options__container_items c_menu_options_container_items_F"><a class="c_menu_options_items" href="#contact">Book an appoinment</a></li>
     
                 <div class="c_search_container">
                     <form action="/action_page.php">
-                      <input type="text" placeholder="Search.." name="search">
-                      <button type="submit">Search<i class="fa fa-search"></i></button>
+                      <input type="text" placeholder="Search.." name="search" class="c_search_input">
+                      <button type="submit" class="c_search_submit_media_menu"><i class="fa fa-search c_fa_search"></i></button>
                     </form>
                   </div>
                 
@@ -1110,7 +1138,7 @@
                         </div>
     
                         <div class="c_articles_column_body_readmore_content">
-                            <a class="c_articles_column_body_href" href=""> Read</a><i class="fa-solid fa-arrow-right-from-arc c_read_more_articles_icon"><i class="fa-solid fa-arrow-right  c_read_more_articles_icon"></i></i> 
+                            <a class="c_articles_column_body_href" href="pages/page_1.html"> Read</a><i class="fa-solid fa-arrow-right-from-arc c_read_more_articles_icon"><i class="fa-solid fa-arrow-right  c_read_more_articles_icon"></i></i> 
                         </div>
     
                     </div>
@@ -1494,6 +1522,7 @@
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+
 <!-- inner JS -->
 <script>
 
@@ -1521,6 +1550,72 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+
+
+
+
+      let appendNumber = 600;
+    let prependNumber = 1;
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      virtual: {
+        slides: (function () {
+          const slides = [];
+          for (var i = 0; i < 600; i += 1) {
+            slides.push('Slide ' + (i + 1));
+          }
+          return slides;
+        })(),
+      },
+    });
+
+    document
+      .querySelector('.slide-1')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(0, 0);
+      });
+
+    document
+      .querySelector('.slide-250')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(249, 0);
+      });
+
+    document
+      .querySelector('.slide-500')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(499, 0);
+      });
+
+    document
+      .querySelector('.prepend-2-slides')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.virtual.prependSlide([
+          'Slide ' + --prependNumber,
+          'Slide ' + --prependNumber,
+        ]);
+      });
+
+    document
+      .querySelector('.append-slide')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.virtual.appendSlide('Slide ' + ++appendNumber);
       });
 
 </script>

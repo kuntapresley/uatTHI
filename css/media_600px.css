@@ -16,7 +16,122 @@
 
 /* The all items */
 
+@media (max-width:858px){
 
+  .checkbox{
+    float:right; 
+    margin-top:16px; 
+    display:block; 
+    cursor:pointer;
+  }
+
+.checkbotton{
+  display: block;
+}
+
+.c_menu_options{
+  position: fixed; 
+  min-width: 100%; 
+  min-height: 100vh; 
+  background:rgb(16, 20, 122); 
+  top:10.9vh; 
+  left:0%; 
+  text-align: center; 
+  transition: all .5s; 
+  display:none;
+  z-index: 1;
+}
+
+
+.w3-top .c_menu_options .c_menu_options__container_items{
+  display: block;
+}
+
+.c_menu_options .c_menu_options__container_items .c_menu_options_items {
+  padding: 1px  1x;
+  color: white;
+}
+
+.c_menu_options__container_items {
+  border: 2px solid none;
+  height: 1vh;
+  width:auto;
+  line-height: 3.8cm;
+  
+}
+
+.c_menu_options_items {
+  border: 2px solid none;
+  height: 10vh;
+  width: auto;
+  margin-bottom: 20px;
+  margin-left: 0.8cm;
+  font-size: 25.59px;
+}
+
+
+.c_menu_options_container_items_B {
+  margin-top: -1cm;
+  border:none;
+}
+
+.c_menu_options_container_items_C {
+  margin-top: -1.8cm;
+  border:none;
+}
+
+.c_menu_options_container_items_D {
+  margin-top: -2.6cm;
+  border:none;
+}
+
+.c_menu_options_container_items_E {
+  margin-top: -3.4cm;
+  border:none;
+}
+
+.c_menu_options_container_items_F {
+  margin-top: -4.2cm;
+  border:none;
+}
+
+.c_search_container {
+  border: 2px solid none;
+  min-height: auto;
+  min-width: auto;
+  margin-top: -3cm;
+}
+
+.c_search_container form {
+  border: 3px solid none;
+  min-width: 80%; 
+  margin-left: 6%;
+}
+
+.c_search_input {
+  width: 85%
+}
+
+.c_search_submit_media_menu {
+  height:auto;
+  width: 12%;
+  background: brown;
+  border-radius: 1rem;
+}
+
+.c_search_submit_media_menu .c_fa_search {
+  font-size: 30px;
+  color: white;
+  padding: 25%; 
+  margin-left: -6%;
+}
+
+#checkbox:checked ~ .c_menu_options{
+  left:100%;
+}
+
+
+}
 
 
 
