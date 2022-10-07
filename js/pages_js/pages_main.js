@@ -1,3 +1,69 @@
+//some document items changes when window scroll
+
+window.onscroll = function() {
+
+   
+   var cShareButtonContainer = document.querySelector(".c_share_button_container");
+
+   var cSocialIconsShareLinkA = document.querySelector(".c_facebook_share_link i");
+   var cSocialIconsShareLinkB = document.querySelector(".c_twitter_share_link i");
+   var cSocialIconsShareLinkC = document.querySelector(".c_linkedin_share_link i");
+   var cSocialIconsShareLinkD = document.querySelector(".c_whatsapp_share_link i");
+
+   cShareButtonContainer.style.height = "0.8cm";
+
+   cSocialIconsShareLinkA.style.fontSize = "22px";
+   cSocialIconsShareLinkB.style.fontSize = "22px";
+   cSocialIconsShareLinkC.style.fontSize = "22px";
+   cSocialIconsShareLinkD.style.fontSize = "22px";
+
+   console.log("Working");
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * 
  * 
