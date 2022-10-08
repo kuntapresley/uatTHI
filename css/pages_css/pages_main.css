@@ -128,11 +128,24 @@ main {
     text-align: left;
 }
 
-
-footer {
-    border: 2px solid black
+.c_contact_map {
+    border: 2.5px solid white;
+    height: 50vh;
+    padding: 2%;
 }
 
+.c_contact_map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+    border: 2px solid black;
+}
+
+.c_footer_one, .c_footer_two, .c_footer_three, .c_footer_five, .c_footer_paragraph {
+    background-color: #013372 !important;
+  }
 
 /*media queries */
 
@@ -222,17 +235,22 @@ footer {
         border: none;
         font-size: 15px;
         color: black;
-        text-align: center;
+        text-align: left;
+        border-top: 80px solid rgb(0, 98, 255);
+        /* border-top-left-radius: 100.0rem; */
     }
 
     .c_footer_one .c_footer_content_text_container p {
         font-size: 25px;
     }
+    
 
     .c_footer_two .c_footer_two_1, .c_footer_two_2, .c_footer_two_3, .c_footer_two_4 {
         text-align: left;
-        padding: 0.1% 12%;
+        padding: 0.1% 1%;
     }
+
+
 
     .c_footer_two .c_more_content {
         font-size: small;
@@ -261,6 +279,37 @@ footer {
         text-decoration: underline 7.5px #25d366;
         list-style-type: none;
         transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .c_footer_two .c_footer_two_1 .c_footer_two_content_list a:hover {
+        text-decoration: unset;
+        list-style-type: unset;
+    }
+    .c_related_articles {
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin-right: 0.2cm;
+    }
+
+    .c_related_articles_paragraph {
+        border: 1px solid none;
+        width: 70%;
+        height: auto;
+        position:relative;
+        color: black;
+        font-size: 16px;
+        margin-top: -0.01cm;
+        padding: 1% 0%;
+    }
+
+    .c_footer_two_content_hyperlink {
+        margin-bottom: 0.8cm;
+    }
+
+    .c_footer_two_content_list_items {
+        display: flex;
+        
     }
 
     .c_contact_map_text_container{
@@ -356,17 +405,25 @@ footer {
         color: #25d366;
     }
 
-    .c_footer_five_container_one_B {
-        border-top: 3px solid blue;
-        border-bottom: 3px solid blue;
-    }
     .c_footer_five_container_one_B_content_B .c_footer_navbar_text {
         text-decoration: none;
+    }
+
+    .c_footer_paragraph_for_one {
+        text-align: center;
+        width: 85%;
+        border: 1px solid none;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5em;
+        color: rgb(42, 19, 249);
     }
 
     .c_footer_five {
         margin-bottom: 2.5cm;
     }
+
+
 }
 
 

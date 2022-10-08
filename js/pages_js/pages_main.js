@@ -83,13 +83,13 @@ window.onscroll = function() {
  */
 
 
- var facebookButton = document.querySelector(".c_facebook_share_link")
+ var facebookButton = document.querySelector(".c_facebook_sharing_link")
 
- var linkedinButton = document.querySelector(".c_linkedin_share_link")
+ var linkedinButton = document.querySelector(".c_linkedin_sharing_link")
 
- var twitterButton = document.querySelector(".c_twitter_share_link")
+ var twitterButton = document.querySelector(".c_twitter_sharing_link")
 
- var whatsAppButton = document.querySelector(".c_whatsapp_share_link")
+ var whatsAppButton = document.querySelector(".c_whatsapp_sharing_link")
 
 
  function init(){
