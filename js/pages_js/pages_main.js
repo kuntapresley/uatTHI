@@ -1,3 +1,53 @@
+
+//create an onload event that won't display the menu navaigation shortcut bar on page load
+
+// try {
+//    window.onload = function() {
+//       const cMenuOptions = document.querySelector(".c_menu_options");
+//       cMenuOptions.style.marginLeft = "100%";
+
+
+//       console.log("c_menu_options document object manupulation is working.");
+//    }
+
+//    var checkBotton;
+//    checkBotton = document.querySelector(".checkbotton").addEventListener("click", function(){
+      
+//       const cMenuOptions = document.querySelector(".c_menu_options");
+//       cMenuOptions.style.marginLeft = "0%";
+//       console.log("checkbottonClicked");
+//    });
+
+// }
+
+
+// catch(err){
+//    document.querySelector("header").innerHTML = err.message;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //some document items changes when window scroll
 
 window.onscroll = function() {
