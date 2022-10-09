@@ -2,10 +2,42 @@
     background-image: linear-gradient(30deg, whitesmoke, whitesmoke, white);
 }
 
-
-main {
+.c_menu_header .c_menu_header_image_link img{
+    max-width: 20%;
+    max-height: 20%;
 }
 
+.c_header_navbar ul {
+    float:right;
+    margin-right: 20px; 
+    line-height:10px;
+}
+
+.c_header_navbar ul li{
+    display: inline-block;
+    margin:0 5px;
+}
+
+.c_header_navbar ul li a{
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.checkbox{
+    float:right; 
+    margin-top:16px; 
+    display: none;
+}
+
+.checkbotton{
+    float:right;
+    padding:20px;
+}
+
+#checkbox{
+    display: none;
+}
 
 .c_content {
     padding: 8px 90px;
@@ -116,7 +148,7 @@ main {
     text-decoration: underline none;
     text-align: right;
     font-size: medium;
-    line-height: 1cm;
+    line-height: 0.6cm;
     width: 70%;
     border: 2px solid none;
 }
@@ -149,6 +181,92 @@ footer {
 
 /*media queries */
 
+
+
+
+@media (max-width:858px){
+
+    .checkbox{
+        float:right; 
+        margin-top:16px; 
+        display:block; 
+        cursor:pointer;
+    }
+
+    .checkbotton{
+        display: block;
+    }
+
+    .c_menu_options{
+        position: fixed;
+        width: 100%; 
+        height: 100vh; 
+        background:black; 
+        top:52.4px; 
+        left:0%; 
+        text-align: 
+        center; 
+        transition: all .5s; 
+        display:grid;
+    }
+
+    .c_header_navbar ul li{
+        display: block;
+    }
+
+    .c_menu_options li a {
+        margin-left: -39.5px;
+        padding: 1px  1x;
+    }
+
+    #checkbox:checked ~ ul{
+        left:100%;
+    }
+
+    /* .c_menu_shortcut_icon_container {
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .c_bar1, .c_bar2, .c_bar3 {
+        width: 40px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .c_bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+      
+      .change .c_bar2 {opacity: 0;}
+      
+      .change .c_bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 650px) {
     .c_content {
         padding: 8px 8px;
@@ -157,13 +275,7 @@ footer {
 
     /*share button*/
     
-    .c_social_link_container {
-        border: none 1px solid;
-        text-align: left;
-        width:unset;
-        margin-top: unset;
-        margin-right: unset;
-    }
+
 
     .c_share_button_container {
         transform: unset;
@@ -204,31 +316,70 @@ footer {
 
     .c_share_content_button_container {
         border: 2px solid none;
+        display: grid;
+        margin-top: -5%;
+    }
+
+    .c_social_link_container {
+        border: none 1px solid;
+        text-align: left;
+        width:unset;
+        margin-top: unset;
+        margin-right: unset;
+        margin-top: -5%;
     }
 
     .c_social_content_icons_share_link {
-        margin-left: 1cm;
-        font-size: 25px;
+        margin: 1%;
+        max-width: 40%;
+        max-height: 15%;
+        font-size: 13.5px;
         text-decoration: none;
         display: inline-block;
         text-align: center;
+        display: flex;
+        border: none 2px solid;
+        border-radius: 3rem;
+        padding: 0% 0% 0.3% 0.1%;
     }
 
+
+    .c_facebook_sharing_link, .c_share_on_facebook, .c_facebook_shared {
+        background:#3b5998;
+    }
+
+    .c_twitter_sharing_link, .c_share_on_twitter, .c_twitter_shared{
+        background:#1da1f2;
+    }
+
+    .c_linkedin_sharing_link, .c_share_on_linkedin, .c_linkedin_shared {
+        background:#0077b5;
+    }
+
+    .c_whatsapp_sharing_link, .c_share_on_whatsapp, .c_whatsapp_shared {
+        background:#25d366;
+    }
+
+    .c_share_content_button_container .fa-facebook, .c_share_content_button_container .fa-twitter, .c_share_content_button_container .fa-linkedin, .c_share_content_button_container .fa-whatsapp{
+        height: fit-content;
+        border: 2px solid none;
+        margin-top: 0.15cm;
+        margin-left: 0.25cm;
+    }
     
-    .c_share_content_button_container .fa-facebook{
-        color: #3b5998;
+    .c_share_content_button_container .fa-facebook, .c_share_content_button_container .fa-twitter, .c_share_content_button_container .fa-linkedin, .c_share_content_button_container .fa-whatsapp{
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
     }
 
-    .c_share_content_button_container .fa-twitter{
-        color: #1da1f2;
-    }
-
-    .c_share_content_button_container .fa-linkedin{
-        color: #0077b5;
-    }
-
-    .c_share_content_button_container .fa-whatsapp{
-        color: #25d366;
+    .c_share_button_text {
+        color: white;
+        border: 2px solid none;
+        margin-top: 0.1cm;
+        height: fit-content;
+        font-weight: 400;
+        margin-left: 0.1cm;
     }
 
     footer{
