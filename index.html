@@ -31,18 +31,12 @@
         
 
         <!---favicon-->
-        <link rel="icon" type="image/x-icon" href="pictures/testing picture/family-medical-healthy-life-cross-clinic-hands-care-logo-parent-kids-love-protect-symbol-icon-design-vector-white-background-149582795.jpg">
+        <link rel="icon" type="image/x-icon" href="pictures/testing picture/favicon.jpg">
 
     </head>
 
 
-
-
-
-    <body>
-
-
-
+<body>
 
 
 
@@ -95,19 +89,6 @@
               
 
         </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         
@@ -432,13 +413,17 @@
                     <button class="c_articles_load_button">Load More Articles</button>
                 </div>
     
-              </div> 
+            </div> 
     
         </div>
     
     
     
         </main>
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"> 
+            <path fill="black" fill-opacity="10" d="M0,256L120,256C240,256,480,256,720,218.7C960,181,1200,107,1320,69.3L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+          </svg> -->
 
         <footer>
 
@@ -685,8 +670,8 @@
                                     <span><a class="c_footer_navbar_text" href="#">  Timob Health International</a></span>&nbsp| <br>
                                     <span><a class="c_footer_navbar_text" href="#">Hepatitis Corner</a></span>&nbsp| <br>
                                     <span><a class="c_footer_navbar_text" href="#">Outreach</a></span>&nbsp| <br>
-                                    <span><a class="c_footer_navbar_text" href="#">&copy 2022 All right reserved</a></span>&nbsp| <br>
-                                    <span class="date c_footer_navbar_text" id="date"></span>Developed & Designed by <span><a class="c_footer_navbar_text" href="">Orodje</a></span>
+                                    <span><a class="c_footer_navbar_text" href="#">&copy <span class="date c_footer_navbar_text" id="date"></span> All right reserved</a></span>&nbsp| <br>
+                                    Developed & Designed by <span><a class="c_footer_navbar_text" href="">Orodje</a></span>
                                 </p>
                             </div>
     
@@ -704,111 +689,111 @@
 
 
 
-<!---javascript links-->
-<script src="js/main.js"></script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!---javascript links-->
+        <script src="js/main.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 
-<!-- inner JS -->
-<script>
+        <!-- inner JS -->
+        <script>
 
 
-        window.onscroll = function() {myFunction()};
+                window.onscroll = function() {myFunction()};
 
-        var navbar = document.querySelector(".c_header_navbar");
-        var sticky = navbar.offsetTop;
+                var navbar = document.querySelector(".c_header_navbar");
+                var sticky = navbar.offsetTop;
 
-        function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-        }
-
-
-        var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "progressbar",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+                function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+                }
 
 
+                var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
 
 
-      let appendNumber = 600;
-    let prependNumber = 1;
-    const swiper = new Swiper('.swiper', {
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      virtual: {
-        slides: (function () {
-          const slides = [];
-          for (var i = 0; i < 600; i += 1) {
-            slides.push('Slide ' + (i + 1));
-          }
-          return slides;
-        })(),
-      },
-    });
 
-    document
-      .querySelector('.slide-1')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.slideTo(0, 0);
-      });
 
-    document
-      .querySelector('.slide-250')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.slideTo(249, 0);
-      });
+            let appendNumber = 600;
+            let prependNumber = 1;
+            const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            virtual: {
+                slides: (function () {
+                const slides = [];
+                for (var i = 0; i < 600; i += 1) {
+                    slides.push('Slide ' + (i + 1));
+                }
+                return slides;
+                })(),
+            },
+            });
 
-    document
-      .querySelector('.slide-500')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.slideTo(499, 0);
-      });
+            document
+            .querySelector('.slide-1')
+            .addEventListener('click', function (e) {
+                e.preventDefault();
+                swiper.slideTo(0, 0);
+            });
 
-    document
-      .querySelector('.prepend-2-slides')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.virtual.prependSlide([
-          'Slide ' + --prependNumber,
-          'Slide ' + --prependNumber,
-        ]);
-      });
+            document
+            .querySelector('.slide-250')
+            .addEventListener('click', function (e) {
+                e.preventDefault();
+                swiper.slideTo(249, 0);
+            });
 
-    document
-      .querySelector('.append-slide')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.virtual.appendSlide('Slide ' + ++appendNumber);
-      });
+            document
+            .querySelector('.slide-500')
+            .addEventListener('click', function (e) {
+                e.preventDefault();
+                swiper.slideTo(499, 0);
+            });
 
-</script>
-    
- 
-    </body>
+            document
+            .querySelector('.prepend-2-slides')
+            .addEventListener('click', function (e) {
+                e.preventDefault();
+                swiper.virtual.prependSlide([
+                'Slide ' + --prependNumber,
+                'Slide ' + --prependNumber,
+                ]);
+            });
+
+            document
+            .querySelector('.append-slide')
+            .addEventListener('click', function (e) {
+                e.preventDefault();
+                swiper.virtual.appendSlide('Slide ' + ++appendNumber);
+            });
+
+        </script>
+            
+
+</body>
 
 
 </html>

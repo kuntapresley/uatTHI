@@ -1,5 +1,6 @@
 * {
     background-image: linear-gradient(30deg, whitesmoke, whitesmoke, white);
+    color: black;
 }
 
 .c_menu_header .c_menu_header_image_link img{
@@ -191,6 +192,25 @@ footer {
 .c_footer_one, .c_footer_two, .c_footer_three, .c_footer_five, .c_footer_paragraph {
     background-color: #013372 !important;
   }
+
+  .c_footer_image_logo_container {
+    border: 2px solid green;
+    width: 20%;
+    margin-top: 0.2cm;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2.1cm;
+}
+
+.c_footer_image_logo {
+    color: white;
+    text-align:center;    
+}
+
+.c_footer_image_logo img{
+    width : 80px;
+    height: 80px;
+}
 
   .c_footer_two {
     display: grid;
