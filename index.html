@@ -42,12 +42,25 @@
 
         <header>
 
+
+            <div class="c_header_contact">
+
+                <div class="c_header_contact_alignment">
+                
+                    <p>10, Odelola Street Kilo G82X+4QP, Surulere 101241, Lagos &nbsp &nbsp &nbsp      Any question: +234 803 576 8694 Mon - Sun:   24 Hours 
+        
+                    </p> 
+                
+                    </div>
+        
+            </div>
+
             <div class="c_header_navbar">
 
 
                 <div class="c_menu_header">
                     <a class="c_menu_header_image_link" href="index.html" hreflang="">
-                        <img class="c_menu_header_image_logo" src="pictures/testing picture/basic-rgb-152757075.jpg"/>
+                        <img class="c_menu_header_image_logo" src="pictures/testing picture/images-7.png"/>
                     </a>
                     
                 </div>
@@ -691,11 +704,6 @@
 
         <!---javascript links-->
         <script src="js/main.js"></script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-
-        <!-- inner JS -->
         <script>
 
 
@@ -711,84 +719,6 @@
                     navbar.classList.remove("sticky");
                 }
                 }
-
-
-                var swiper = new Swiper(".mySwiper", {
-                pagination: {
-                el: ".swiper-pagination",
-                type: "progressbar",
-                },
-                navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-                },
-            });
-
-
-
-
-            let appendNumber = 600;
-            let prependNumber = 1;
-            const swiper = new Swiper('.swiper', {
-            slidesPerView: 3,
-            centeredSlides: true,
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            virtual: {
-                slides: (function () {
-                const slides = [];
-                for (var i = 0; i < 600; i += 1) {
-                    slides.push('Slide ' + (i + 1));
-                }
-                return slides;
-                })(),
-            },
-            });
-
-            document
-            .querySelector('.slide-1')
-            .addEventListener('click', function (e) {
-                e.preventDefault();
-                swiper.slideTo(0, 0);
-            });
-
-            document
-            .querySelector('.slide-250')
-            .addEventListener('click', function (e) {
-                e.preventDefault();
-                swiper.slideTo(249, 0);
-            });
-
-            document
-            .querySelector('.slide-500')
-            .addEventListener('click', function (e) {
-                e.preventDefault();
-                swiper.slideTo(499, 0);
-            });
-
-            document
-            .querySelector('.prepend-2-slides')
-            .addEventListener('click', function (e) {
-                e.preventDefault();
-                swiper.virtual.prependSlide([
-                'Slide ' + --prependNumber,
-                'Slide ' + --prependNumber,
-                ]);
-            });
-
-            document
-            .querySelector('.append-slide')
-            .addEventListener('click', function (e) {
-                e.preventDefault();
-                swiper.virtual.appendSlide('Slide ' + ++appendNumber);
-            });
 
         </script>
             
