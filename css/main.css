@@ -11,6 +11,7 @@ html{
 body {
     margin:0;
     border: 2px solid none;
+    overflow-x: hidden;
 }
 
 /* header {
@@ -47,6 +48,7 @@ body {
     height: 15.5vh;
     background: white;
     z-index: 1;
+    background-image: linear-gradient(white)
   }
 
   .sticky {
@@ -98,11 +100,15 @@ body {
     display: none;
 }
 
+.c_main_1_main {
+  border: 2px solid none;
+}
+
 .c_main_1_main_title_container {
-    border: 2px solid white;
+    border: 2px solid none;
     padding: 1%;
     height: 0.6cm;
-    margin-top: 8.9%;
+    margin-top: 5%;
   }
   
   .c_main_1_main_title_A {
@@ -145,7 +151,7 @@ body {
   }
 
   .c_menu_options {
-    border: 2px solid blue;
+    border: 2px solid none;
     margin-top: -2.6cm;
     width:fit-content;
     height: fit-content;
@@ -181,14 +187,14 @@ body {
 }
 
 .c_search_container {
-    border: 2px solid red;
+    border: 2px solid none;
     width: fit-content;
     height: fit-content;
 }
 
 
 .c_search_container form {
-    border: 2px solid yellow;
+    border: 2px solid none;
     margin-top: -0.5cm;
 }
 
@@ -203,13 +209,14 @@ body {
     font-size: 22px;
 }
 
-.c_search_container form button {
+.c_search_container form button{
     border: 2px solid black;
     background-color: black;
     font-size: 20px;
+    margin-left: -0.5cm;
     color: white;
     width: fit-content;
-    height: 1cm;
+    height: 1.2cm;
     cursor: pointer;
     font-size: larger;
     transition-property: all;
@@ -218,19 +225,27 @@ body {
     transition-delay: 0ms;
 }
 
+.fa-search {
+  color: white;
+}
+
 .c_search_container form button:hover {
     border: 2px solid black;
     background-color: white;
     font-size: 22px;
     color: black;
     width: fit-content;
-    height: 1cm;
+    height: 1.2cm;
     cursor: pointer;
     font-size: larger;
     transition-property: all;
     transition-timing-function: cubic-bezier(1, 0, 0, 1);
     transition-duration: 700ms;
     transition-delay: 0ms;
+}
+
+.fa-search:hover {
+  color: black;
 }
 
   /* The main 2 */
@@ -278,7 +293,7 @@ body {
 
 .c_search_2_button {
   float: right;
-  border: 2px solid orange;
+  border: 2px solid none;
   background: #013372;
   color: white;
   width: 18.5%; 
@@ -307,7 +322,7 @@ body {
   background: #013372;
   width: 333.33px;
   height: 505px;
-  margin-left: 8%;
+  margin-left: 6%;
   display: none;
 }
 
@@ -436,7 +451,7 @@ body {
 .c_contact_map {
     border: 2.5px solid none;
     height: 50vh;
-    padding: 2%;
+    padding: 0%;
 }
 
 .c_contact_map iframe {
@@ -480,7 +495,7 @@ footer {
     width: 60%;
     float: right;
     height: fit-content;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: -0.01cm;
     padding: 1% 0%;
     margin-left: unset;
@@ -490,7 +505,7 @@ footer {
 .c_related_articles_paragraph a{
     text-decoration: none;
     color: white;
-    margin-left: -0.11cm;
+    margin-left: -0.1cm;
 }
 
 .c_footer_two_content_list_items {
@@ -596,23 +611,34 @@ footer {
 
 .c_subscribe_title_container {
     padding: 20px;
-    background-color: #f1f1f1;
-    margin-bottom: 0.2cm;
-    margin-top: 0.2cm;
+    background-color: transparent;
+    text-align: center;
+  }
+
+
+  .c_subscribe_title_container p{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .c_subscribe_title_container h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
   }
 
 .c_Subscribe_form {
-    background-color: rgb(16, 20, 122);
     display: flex;
     border: 3px solid none;
-    margin-top: 2.5%;
+    margin-top: 0.5%;
 }
 
 .c_subscribe_form_container {
-    margin: 0% 1%;
-    border: 2px solid red;
-    background-color: orange;
-    margin-left: 25%;
+    margin-top: 1.5cm;
+    border: 2px solid none;
+    background-color: transparent;
+    margin-left: 20%;
 
 }
 
@@ -635,21 +661,27 @@ footer {
 .c_subscribe_Daily_Newsletter {
     float: left;
     margin-top: 1.1vh;
-    border: 2px solid green;
-    margin-left: 4.1em;
-    color: black
+    border: 2px solid none;
+    margin-left: 7.1em;
+    color: white;
 }
 
 input[type=checkbox] {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.c_subscribe_Daily_Newsletter_text {
+  color: white;
+  font-size: 20px;
 }
 
 
 .c_Subscribe_button_container {
     float: left;
     margin-top: 0.5cm;
-    border: 2px solid green;
+    border: 2px solid none;
     margin-left: 10%;
     width: 80%;
     border-radius: 5%;
@@ -674,13 +706,15 @@ input[type=text], input[type=submit] {
   .c_Subscribe_to_our_Newsletter {
     font-size: x-large;
     line-height: 2em;
-    text-align: center
-    ;
+    text-align: center;
   }
 
   input[type=submit] {
     background-color: #04AA6D;
-    color: black;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width: fit-content;
   }
 
   input[type=submit]:hover {
@@ -695,23 +729,66 @@ input[type=text], input[type=submit] {
 
 
  .c_footer_five_container_one_A, .c_footer_five_container_one_B, .c_footer_five_container_one_C, .c_footer_five_container_one_D{
-    margin-left: 1cm;
+    margin-left: 0.5%;
     border: 2px solid none;
-    margin-right: 1cm;
+    margin-right: 5%;
+    width: 100%;
+    font-size: 17px;
 }
-
-    
-.c_footer_five_container .c_footer_five_container_one .c_footer_five_container_one_A .c_footer_five_container_paragraph_one,      .c_footer_five_container .c_footer_five_container_one .c_footer_five_container_one_B .c_footer_five_container_paragraph_one{
+ 
+.c_footer_five_container .c_footer_five_container_one .c_footer_five_container_one_A .c_footer_five_container_paragraph_one,.c_footer_five_container .c_footer_five_container_one .c_footer_five_container_one_B .c_footer_five_container_paragraph_one{
   color: white;
 }
 
 .c_footer_five_container .c_footer_five_container_one .c_footer_five_container_one_C .c_footer_five_container_one_B_content_A .c_footer_navbar_text {
   color: white;
+  line-height: 0cm;
+  text-decoration: none;
 }
+
 
 .c_footer_five_container .c_footer_five_container_one .c_footer_five_container_one_D .c_footer_five_container_one_B_content_B .c_footer_navbar_text {
   color: white;
 }
+
+
+.c_share_content_button_container .fa-facebook{
+  color: #3b5998;
+  margin: 12px;
+}
+
+.c_share_content_button_container .fa-twitter{
+  color: #1da1f2;
+}
+
+.c_share_content_button_container .fa-linkedin{
+  color: #0077b5;
+}
+
+.c_share_content_button_container .fa-whatsapp{
+  color: #25d366;
+}
+
+
+.c_social_media_link_section .c_fa_social_icons {
+  margin-right: 2.5%;
+  font-size: 25px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -730,6 +807,12 @@ input[type=text], input[type=submit] {
    body {
     overflow-x: hidden;
    }
+
+   .c_header_contact {
+    height: auto;
+  }
+  
+  
 
     header {
         position: fixed;
@@ -882,11 +965,11 @@ input[type=text], input[type=submit] {
     }
     
     .c_main_1_main_title_B h2 a {
-    border: 2px none black;
+    border: 2px solid black;
     width: 4.4cm;
-    right: -1.2cm;
+    right: -1cm;
     color: black;
-    font-size: 24.5px;
+    font-size: 19.5px;
     text-align: center;
     margin-top: 0.1cm;
     }
@@ -1166,6 +1249,19 @@ input[type=text], input[type=submit] {
       color: rgb(16, 20, 122);
       padding: 1.8%;
   }
+
+  
+  .c_subscribe_title_container p{
+    color: blue;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .c_subscribe_title_container h2{
+    color: blue;
+    font-size: 35px;
+    font-weight: 700;
+  }
   
   .c_Subscribe_form {
     background-color: rgb(16, 20, 122);
@@ -1208,7 +1304,7 @@ input[type=text], input[type=submit] {
   
   .c_subscribe_Daily_Newsletter_text {
       font-size: 30px;
-      color: rgb(16, 20, 122)
+      color: white;
   }
   
   input[type=checkbox] {

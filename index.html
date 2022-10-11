@@ -254,8 +254,8 @@
                 <div class="c_main_2_content_search">
                     <div class="c_main_2_content_search_container">
                         <form action="/action_page.php">
-                          <input class="c_search_2_input c_search_2_myInput" onkeyup="myFunction()" type="text" placeholder="Search Articles.." name="search">
-                          <button class="c_search_2_button" type="submit">Search<i class="fa fa-search"></i></button>
+                          <input class="c_search_2_input c_search_2_myInput" onkeyup="myFunction()" type="text" placeholder="Search Articles..." name="search">
+                          <button class="c_search_2_button" type="submit">Search <i class="fa fa-search"></i></button>
                         </form>
                     </div>
                 </div>
@@ -282,7 +282,7 @@
                         </div>
     
                         <div class="c_articles_column_body_readmore_content">
-                            <a class="c_articles_column_body_href" href="pages/page_1.html"> Read -></a> 
+                            <a class="c_articles_column_body_href" href="pages/page_1.html"> Read <i class="fa fa-arrow-right"></i></a> 
                         </div>
     
                     </div>
@@ -472,7 +472,7 @@
                                 <li class="c_footer_two_content_list_items">
                                     <img src="pictures/testing picture/background_images/Woman-performing-yoga-square-medium.jpg" class="c_related_articles">
                                         <p class="c_related_articles_paragraph">
-                                            Woman performing yoga square medium 
+                                            Happy family going for picnic
                                             <span>...</span> <a href="#">Read more</a>
                                         </p>
                                 </li>
@@ -558,7 +558,7 @@
                 <div class="c_contact_map">
     
                     <p class="c_contact_map_text_container">
-                        <span class="c_contact_map_text c_contact_map_text_A">Locate us </span> <span class="c_contact_map_text c_contact_map_text_B">at</span> <span class="c_contact_map_text c_contact_map_text_C"> 10, Odelola Street Kilo G82X+4QP, Surulere  101241,  Lagos </span> <span class="c_contact_map_text c_contact_map_text_D">|</span> 
+                        <span class="c_contact_map_text c_contact_map_text_A"> <i class="fas fa-map-marker-alt"></i> Locate us </span> <span class="c_contact_map_text c_contact_map_text_B">at</span> <span class="c_contact_map_text c_contact_map_text_C"> 10, Odelola Street Kilo G82X+4QP, Surulere  101241,  Lagos </span> <span class="c_contact_map_text c_contact_map_text_D">|</span> 
                     </p>
     
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63427.97620267909!2d3.3087804184700915!3d6.490184080418627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c0f7bc8de87%3A0x62650fcb3d2c8fb1!2sSurulere%2C%20101241%2C%20Ikeja!5e0!3m2!1sen!2sng!4v1663881357757!5m2!1sen!2sng" >
@@ -617,28 +617,28 @@
                     <div class="c_footer_five_container_one">
         
                         <div class="c_footer_five_container_one_A">
-                            <br>
-                            <br>
-                        <span  class="c_footer_five_container_paragraph_one c_footer_five_container_paragraph_one_light">Enquires 24/7</span> 
-                        <br><br> 
-                        <span class="c_footer_five_container_paragraph_one">+234 803 576 8694</span>
-                        <br><br>
-                        <span class="c_footer_five_container_paragraph_one"> +234 741 723 4205</span> 
-                        <br><br>
-                        <span class="c_footer_five_container_paragraph_one"> info@timobhealthinternational.com</span> 
+
+                            <span  class="c_footer_five_container_paragraph_one c_footer_five_container_paragraph_one_light">Enquires 24/7</span> 
+                            <br><br> 
+                            <span class="c_footer_five_container_paragraph_one">+234 803 576 8694</span>
+                            <br><br>
+                            <span class="c_footer_five_container_paragraph_one"> +234 741 723 4205</span> 
+                            <br><br>
+                            <span class="c_footer_five_container_paragraph_one"> info@timobhealthinternational.com</span> 
+                            
                         </div> 
   
+
                         <div class="c_footer_five_container_one_B">
+
+                            <span  class="c_footer_five_container_paragraph_one c_footer_five_container_paragraph_one_light">Support 24/7:</span> 
+                            <br><br> 
+                            <span class="c_footer_five_container_paragraph_one">Health Support: +234 803 576 8694</span>
+                            <br><br>
+                            <span class="c_footer_five_container_paragraph_one">Technical Support: +234 70 5222 3261</span> 
+                            <br><br>
+                            <span class="c_footer_five_container_paragraph_one"> support@timobhealthinternational.com</span>
         
-                                      
-                    <span  class="c_footer_five_container_paragraph_one c_footer_five_container_paragraph_one_light">Support 24/7:</span> 
-                    <br><br> 
-                    <span class="c_footer_five_container_paragraph_one">Health Support: +234 803 576 8694</span>
-                    <br><br>
-                    <span class="c_footer_five_container_paragraph_one">Technical Support: +234 70 5222 3261</span> 
-                    <br><br>
-                    <span class="c_footer_five_container_paragraph_one"> support@timobhealthinternational.com</span>
-    
                         </div>
 
                         <div class="c_footer_five_container_one_C">
@@ -713,10 +713,11 @@
                 var sticky = navbar.offsetTop;
 
                 function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
+                if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
                 } else {
                     navbar.classList.remove("sticky");
+                    navbar.style.backgroundColor="white";
                 }
                 }
 
