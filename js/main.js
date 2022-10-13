@@ -1,17 +1,7 @@
+//manupulate the fontsize of icons in the index .html document
 
-//sticky header function
-window.onscroll = function() {myFunction()};
 
-var navbar = document.querySelector(".c_header_navbar");
-var sticky = navbar.offsetTop;
 
-function myFunction() {
-if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-} else {
-    navbar.classList.remove("sticky");
-}
-}
 
 
 
@@ -36,43 +26,6 @@ displayScreen();
 
 
 
-
-
-
-
-
-//website loading event
-
-//get website element by creating variables
-
-    // var topLoading = document.querySelector(".w3-top"), 
-    // bgLoading = document.querySelector(".bgimg"), 
-    // mainLoading = document.querySelector(".w3-main"), 
-    // waveDesignerLoading = document.querySelector(".waveDesign"),
-    // footerLoading = document.querySelector("footer");
-
-
-
-    // topLoading.style.display="none";
-    // bgLoading.style.display="none";
-    // mainLoading.style.display="none";
-    // waveDesignerLoading.style.display="none";
-    // footerLoading.style.display="none";
-
-
-
-    // var overlay = document.getElementById("overlay");
-    // window.addEventListener('load', function(){
-    // overlay.style.display="none";
-    // topLoading.style.display="block";
-    // bgLoading.style.display="block";
-    // mainLoading.style.display="block";
-    // waveDesignerLoading.style.display="block";
-    // footerLoading.style.display="block";
-    // document.querySelector("#menu_unorder_list").style.left="100%";
-    // });
-
-//website loading event
 
 
 
@@ -152,3 +105,38 @@ function myFunction(){
 };
 
 // document.querySelector("#c_desktop_view").style.display = "none";
+
+
+
+
+
+
+
+
+                //website loading event
+
+//get website element by creating variables
+var headerLoading = document.querySelector("header"), 
+mainLoading = document.querySelector("main"), 
+footerLoading = document.querySelector("footer");
+
+
+
+headerLoading.style.display="none";
+mainLoading.style.display="none";
+footerLoading.style.display="none";
+
+
+
+var overlay = document.getElementById("overlay");
+window.addEventListener('load', function(){
+overlay.style.display="none";
+headerLoading.style.display="block";
+mainLoading.style.display="block";
+footerLoading.style.display="block";
+});
+
+//website loading event
+
+
+
