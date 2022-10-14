@@ -46,6 +46,10 @@
      height: auto;
    }
    
+
+   .c_header_contact_alignment {
+    transform: translate(0%, 10%);
+   }
    
  
      header {
@@ -105,12 +109,12 @@
          min-width: 100%; 
          height: 90vh; 
          background-image: linear-gradient(30deg, whitesmoke, whitesmoke, white);
-         margin-top: -0.1cm;
          left:100%; 
          text-align: left; 
          transition: all .5s; 
          display:grid;
          z-index: 1;
+         transform: translate(0%, 5.5%);
      }
  
      .c_header_navbar ul li{
