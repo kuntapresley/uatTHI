@@ -1,19 +1,6 @@
-//manupulate the fontsize of icons in the index .html document
 
 
 
-
-
-
-//create function to display c_mobile_view on media size and hide c_desktop_view on media size
-
-function displayScreen() {
-
-    
-    console.log("Boy, Girl, Pinky and Brain")
-}
-
-displayScreen();
 
 
 
@@ -117,7 +104,7 @@ function myFunction(){
 
 //get website element by creating variables
 var headerLoading = document.querySelector("header"), 
-mainLoading = document.querySelector("main"), 
+mainLoading = document.querySelector("main"), cMenuOptions = document.querySelector(".c_menu_options"),
 footerLoading = document.querySelector("footer");
 
 
