@@ -183,6 +183,7 @@ header {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 5%;
+  z-index: 1;
 }
 
 
@@ -810,6 +811,7 @@ input[type=text], input[type=submit] {
     display: flex;
     font-size: 17px;
     width: 100%;
+    margin-bottom: 10%;
   }
 
   .c_footer_five_container {
@@ -865,8 +867,7 @@ input[type=text], input[type=submit] {
   justify-content: space-between;
 }
 
-.c_footer_social_links {`
-}
+
 .c_fa_social_icons {
   border: 2px solid none;
   color: white;

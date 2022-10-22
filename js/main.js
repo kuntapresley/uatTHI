@@ -5,6 +5,27 @@
 
 
 
+    function mycBarFunction(x) {
+        x.classList.toggle("change");
+    };
+
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.querySelector(".c_header_navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+    if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        navbar.style.borderTop = "10px solid #f6921e";
+        navbar.style.transitionProperty = "all";
+        navbar.style.transitionDuration = "2s";
+        navbar.style.transitionTimingFunction = "ease-in-out";
+    } else {
+        navbar.classList.remove("sticky");
+        navbar.style.borderTop = "none";
+    }
+    };
 
 
 
