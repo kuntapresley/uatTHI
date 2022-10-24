@@ -190,7 +190,7 @@ header {
 }
 
 .c_menu_options_container {
-  border: 5px solid red;
+  border: 5px solid none;
   display: flex;
 }
 
@@ -249,7 +249,7 @@ header {
 .c_search_container form input {
   border: 2px solid black;
   width: 8cm;
-  height: 1cm;
+  height: 0.99cm;
   border-radius: 0.19rem;
 }
 
@@ -261,10 +261,10 @@ header {
   border: 2px solid #f6921e;
   background-color: #f6921e;
   font-size: 20px;
-  margin-left: -0.5cm;
+  margin-left: -0.1cm;
   color: white;
   width: fit-content;
-  height: 1.2cm;
+  height: 0.99cm;
   cursor: pointer;
   font-size: larger;
   transition-property: all;
@@ -272,6 +272,7 @@ header {
   transition-duration: 700ms;
   transition-delay: 0ms;
 }
+
 
 .c_shortcut_menu_footer_container {
   display: none;
@@ -287,7 +288,6 @@ color: white;
   font-size: 22px;
   color: #f6921e;
   width: fit-content;
-  height: 1.2cm;
   cursor: pointer;
   font-size: larger;
   transition-property: all;
@@ -908,7 +908,7 @@ input[type=text], input[type=submit] {
   }
 
   .c_checkbox {
-    border: 2px solid red;
+    border: 2px solid none;
     display: block;
     margin-right: 10%;
     cursor: pointer;
@@ -917,6 +917,13 @@ input[type=text], input[type=submit] {
 .c_checkboxToggle {
   margin-right: 0%;
 }
+
+.c_checkbox_close {
+  border: 1px dashed black;
+  width: fit-content ;
+  margin-top: 1%;
+  margin-left: 5%;
+  }
 
 .c_bar1, .c_bar2, .c_bar3 {
   width: 40px;
@@ -945,7 +952,7 @@ input[type=text], input[type=submit] {
     background-color: white;
     width: 100%;
     height: 100vh;
-    border: 5px solid red;
+    border: 5px solid none;
     position: fixed;
     left: 100%;
     top: 0;
@@ -958,22 +965,43 @@ input[type=text], input[type=submit] {
     flex-direction: column-reverse; */
   }
 
+  .c_menu_options_items {
+    color: black;
+  }
+
+ .c_menu_list {
+    border: 2px sandybrown none;
+    margin-bottom: 2.5%;
+  }
+
+  .c_menu_options_items:hover {
+    color: unset;
+    font-weight: unset;
+    font-size: unset;
+    transition: unset;
+  }
+
   #checkbox:checked ~ .c_menu_options {
     left: 0%;
   }
 
   .c_menu_options .c_menu_list, .c_menu_options .c_search_container {
   display: block;
-  border: 2px solid blue;
+  border-bottom: 5px solid black;
+  cursor: pointer;
 }
 
   .c_menu_acordion_panel {
-    border: 1px solid red;
+    border-bottom: 5px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     display: none;
+    padding-left: 2%;
   }
 
   .c_menu_list:after {
-    content: '\e114';
+    content: '\002B';
     color: black;
     font-weight: bold;
     float: right;
@@ -982,34 +1010,45 @@ input[type=text], input[type=submit] {
   }
   
   .active:after {
-    content: ">";
+    content: "\2212";
   
   }
 
   .c_menu_options_container {
-    border: 5px solid blue;
-    width: 97%;
+    border: 5px solid none;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin-top: 2%;
     padding: 0;
     position: relative;
+    overflow-x: hidden;
 
+  }
+
+  .c_menu_options_shortcut_signature {
+    border: 2px solid none;
+    text-align: center;
+    padding: 0% 5.99% 5.99% 5.99%;
   }
 
   .c_search_container {
-    border: 2px solid red;
+    border: 2px solid none;
+    border-top: 5px solid black;
     order: -1;
     width: 100%;
     flex-wrap: nowrap;
+    margin-bottom: 1.5%;
   }
   
-  
+
   .c_search_container form {
-    border: 2px solid red;
+    border: 2px solid none;
     width: 100%;
     height: fit-content;
-    margin-top: unset;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
   }
   
   .c_search_container form input {
@@ -1026,11 +1065,11 @@ input[type=text], input[type=submit] {
   .c_search_container form button{
     border: 2px solid #f6921e;
     background-color: #f6921e;
-    font-size: 20px;
-    margin-left: -0.5cm;
+    font-size: 18px;
+    margin-left: -0.1cm;
     color: white;
     width: fit-content;
-    height: 1.2cm;
+    height: 0.99cm;
     cursor: pointer;
     font-size: larger;
     transition-property: all;
@@ -1043,7 +1082,7 @@ input[type=text], input[type=submit] {
     display: block;
     height: 50px;
     width: fit-content;
-    border: 2px solid red;
+    border: 2px solid none;
     float: right;
     margin-top: -11%;
     margin-right: 30%;
