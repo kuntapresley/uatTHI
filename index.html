@@ -111,17 +111,80 @@
                             </div>
                     </label>
 
-                        <li class="c_menu_list"><a class="c_menu_options_items c_menu_options_home" href="index_2.html">Home</a></li>
+                    <div class="c_menu_header c_menu_header_shortcut_menu">
+                        <a class="c_menu_header_image_link" href="index.html">
+                            <img class="c_menu_header_image_logo" src="pictures/testing picture/images-7.png"/>
+                        </a>
+                        
+                    </div>
 
-                        <li class="c_menu_list"><a class="c_menu_options_items c_menu_options_about" href="#news">About Us</a></li>
+                    <div class="c_menu_options_container">
 
-                        <li class="c_menu_list"><a class="c_menu_options_items c_menu_options_blog" href="#news">Blogs</a></li>
+                        <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_home" href="index_2.html">Home</a></li>
+                        <div class="c_menu_acordion_panel">
+                            <p style="color:black; font-size:larger">
+                        
+                            Hi, I am a computer software developer with hands on experience developing websites and web applications.
+                            Someone with a good grasp of software engineering concepts and process, data structures, algorithms and the user interface and user experience design of computer software systems.
+                        
+                            </p>
+                        </div>
 
-                        <li class="c_menu_list"><a class="c_menu_options_items c_menu_options_whoweare" href="#news">Who We Are</a></li>
+                        <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_about" href="#news">About Us</a></li>
+                        <div class="c_menu_acordion_panel">
+                            <p style="color:black; font-size:larger">
+                        
+                            Hi, I am a computer software developer with hands on experience developing websites and web applications.
+                            Someone with a good grasp of software engineering concepts and process, data structures, algorithms and the user interface and user experience design of computer software systems.
+                        
+                            </p>
+                        </div>
 
-                        <li class="c_menu_list"><a class="c_menu_options_items c_menu_options_contact" href="#contact">Contact</a></li>
+                        <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_blog" href="#news">Blogs</a></li>
+                        <div class="c_menu_acordion_panel">
+                            <p style="color:black; font-size:larger">
+                        
+                            Hi, I am a computer software developer with hands on experience developing websites and web applications.
+                            Someone with a good grasp of software engineering concepts and process, data structures, algorithms and the user interface and user experience design of computer software systems.
+                        
+                            </p>
+                        </div>
 
-                        <li class="c_menu_list"><a class="c_menu_options_items c_menu_options_appoinment" href="#contact">Book an appoinment</a></li>
+
+
+                        <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_whoweare" href="#news">Who We Are</a></li>
+                        <div class="c_menu_acordion_panel">
+                            <p style="color:black; font-size:larger">
+                        
+                            Hi, I am a computer software developer with hands on experience developing websites and web applications.
+                            Someone with a good grasp of software engineering concepts and process, data structures, algorithms and the user interface and user experience design of computer software systems.
+                        
+                            </p>
+                        </div>
+
+
+
+                        <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_contact" href="#contact">Contact</a></li>
+                        <div class="c_menu_acordion_panel">
+                            <p style="color:black; font-size:larger">
+                        
+                            Hi, I am a computer software developer with hands on experience developing websites and web applications.
+                            Someone with a good grasp of software engineering concepts and process, data structures, algorithms and the user interface and user experience design of computer software systems.
+                        
+                            </p>
+                        </div>
+
+
+                        <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_appoinment" href="#contact">Book an appoinment</a></li>
+                        <div class="c_menu_acordion_panel">
+                            <p style="color:black; font-size:larger">
+                        
+                            Hi, I am a computer software developer with hands on experience developing websites and web applications.
+                            Someone with a good grasp of software engineering concepts and process, data structures, algorithms and the user interface and user experience design of computer software systems.
+                        
+                            </p>
+                        </div>
+
 
 
                     <div class="c_search_container">
@@ -130,8 +193,18 @@
                           <button type="submit">Search<i class="fa fa-search"></i></button>
                         </form>
                     </div>
+
+                    <div class="c_shortcut_menu_footer_container">
+                        <p>
+                            &copy 2008 - 2022 Timob Health International All right reserved Terms of use. Timob Health International provides medical advise. See additional information.
+                        </p>
+                    </div>
+
+                    </div>
                     
                 </ul>
+
+                
         
             </div>
               
@@ -756,10 +829,12 @@
         <script src="js/main.js"></script>
         <script>
 
-                function mycBarFunction(x) {
-                    x.classList.toggle("change");
-                };
 
+
+
+
+
+                //window onscroll function
                 window.onscroll = function() {myFunction()};
 
                 var navbar = document.querySelector(".c_header_navbar");
@@ -779,6 +854,72 @@
                 };
 
 
+                
+				//accordion programming
+				const accordion = document.getElementsByClassName("c_menu_accordion");
+				for (i = 0; i < accordion.length; i++) {
+					accordion[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					const panel = this.nextElementSibling;
+					if (panel.style.display === "none") {
+					panel.style.display = "block";
+					} else {
+					panel.style.display = "none";
+					}
+				});
+				}
+
+
+                //functions prevent nav href on media query
+                var mediaQuery = window.matchMedia("(max-width: 850px)");
+                menuOptionsMediaQuery(mediaQuery);
+
+                mediaQuery.addListener(menuOptionsMediaQuery);
+
+                function menuOptionsMediaQuery(mediaQuery){
+                    
+                    const cMenuAcordionPanel = document.querySelector(".c_menu_acordion_panel");
+                    const cMenuOptionsItems = document.querySelector("body");
+
+                    if(!mediaQuery.matches) {
+                        cMenuAcordionPanel.preventDefault(true);
+                    }
+                    else {
+                        cMenuAcordionPanel.style.display="none";
+                    }
+                }
+
+
+
+                //functions prevent nav href on media query
+                // var mediaQuery = window.matchMedia("(max-width: 850px)");                
+                // menuOptionsMediaQuery(mediaQuery);
+                // mediaQuery.addListener(menuOptionsMediaQuery);         
+                
+                
+                // function menuOptionsMediaQuery(mediaQuery){
+
+                    //accordion programming
+                //     const accordion = document.getElementsByClassName("c_menu_accordion");
+                    
+                //     if(mediaQuery.matches) {
+                //         for (i = 0; i < accordion.length; i++) {
+                //             accordion[i].addEventListener("click", function() {
+                //             this.classList.toggle("active");
+                //             const panel = this.nextElementSibling;
+                //             if (panel.style.display === "none") {
+                //             panel.style.display = "block";
+                //             } else {
+                //             panel.style.display = "none";
+                //             }
+                //         });
+                //         }
+                //     }
+
+                //     else {
+                //          panel.style.display = "none";
+                //     }
+                // }
 
                 // document.querySelector(".c_menu_shortcut_icon_container").addEventListener("click", function(this) {
                 //     this.classList.toggle("change");

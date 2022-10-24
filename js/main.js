@@ -5,16 +5,41 @@
 
 
 
-    function mycBarFunction(x) {
-        x.classList.toggle("change");
-    };
 
-    window.onscroll = function() {myFunction()};
 
-    var navbar = document.querySelector(".c_header_navbar");
-    var sticky = navbar.offsetTop;
 
-    function myFunction() {
+
+//this function changes short cut menu bar
+// function mycBarFunction(x) {
+//     x.classList.toggle("c_checkboxToggle");
+// };
+
+
+
+//shortcut menu display change
+function mycBarFunction(x) {
+
+    const cCheckbox = document.querySelector(".c_checkbox");
+
+    if (cCheckbox.active) {
+        
+     const websiteBody = document.querySelector("body");
+     websiteBody.style.overflow = " hidden";
+    }
+
+    else {
+        websiteBody.style.overflow = " auto";
+    }
+
+};
+
+//sticky header/navigation
+window.onscroll = function () { myFunction() };
+
+var navbar = document.querySelector(".c_header_navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
     if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
         navbar.style.borderTop = "10px solid #f6921e";
@@ -25,7 +50,7 @@
         navbar.classList.remove("sticky");
         navbar.style.borderTop = "none";
     }
-    };
+};
 
 
 
@@ -41,11 +66,11 @@
 
 //date update start
 
-    const updatedTime = document.querySelector('.date');
-    const newTime = new Date();
-    const newShortTime = newTime.getFullYear();
-    updatedTime.innerHTML = newShortTime;
-    
+const updatedTime = document.querySelector('.date');
+const newTime = new Date();
+const newShortTime = newTime.getFullYear();
+updatedTime.innerHTML = newShortTime;
+
 //date update ends
 
 
@@ -70,9 +95,9 @@ var cArticlesColumnButton = document.querySelector(".c_articles_load_button");
 
 var currentimg = 3;
 
-cArticlesColumnButton.addEventListener("click", function(){
-    for(var i = currentimg; i < currentimg + 3; i++){
-        if(cArticlesColumn[i]) {
+cArticlesColumnButton.addEventListener("click", function () {
+    for (var i = currentimg; i < currentimg + 3; i++) {
+        if (cArticlesColumn[i]) {
             cArticlesColumn[i].style.display = "block";
         }
     }
@@ -91,9 +116,9 @@ cArticlesColumnButton.addEventListener("click", function(){
 
 
 //search articles functions
-function myFunction(){
+function myFunction() {
 
-    
+
     var cSearchmMyInput, filter, articlesList, articlesContents, a, i, txtValue;
 
     cSearchmMyInput = document.querySelector(".c_search_2_myInput");
@@ -121,27 +146,27 @@ function myFunction(){
 
 
 
-                //website loading event
+//website loading event
 
 //get website element by creating variables
-var headerLoading = document.querySelector("header"), 
-mainLoading = document.querySelector("main"), cMenuOptions = document.querySelector(".c_menu_options"),
-footerLoading = document.querySelector("footer");
+var headerLoading = document.querySelector("header"),
+    mainLoading = document.querySelector("main"), cMenuOptions = document.querySelector(".c_menu_options"),
+    footerLoading = document.querySelector("footer");
 
 
 
-headerLoading.style.display="none";
-mainLoading.style.display="none";
-footerLoading.style.display="none";
+headerLoading.style.display = "none";
+mainLoading.style.display = "none";
+footerLoading.style.display = "none";
 
 
 
 var overlay = document.getElementById("overlay");
-window.addEventListener('load', function(){
-overlay.style.display="none";
-headerLoading.style.display="block";
-mainLoading.style.display="block";
-footerLoading.style.display="block";
+window.addEventListener('load', function () {
+    overlay.style.display = "none";
+    headerLoading.style.display = "block";
+    mainLoading.style.display = "block";
+    footerLoading.style.display = "block";
 });
 
 //website loading event
