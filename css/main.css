@@ -90,8 +90,6 @@ body {
 header {
   border: 2px solid none;
   z-index: 1;
-  display: flex;
-  justify-content: space-between;
 }
 
 .c_menu_header_shortcut_menu {
@@ -108,6 +106,8 @@ header {
   position: static;
   display: flex;
   justify-content: center;
+  width: 100%;
+  border: 2px solid red;
 }
 
 
@@ -896,6 +896,28 @@ input[type=text], input[type=submit] {
 
 
 
+
+
+
+
+
+.c_error_message {
+  border: 2px solid none;
+  color: red;
+  background: white;
+  padding: 5% 5% 20% 5%;
+  line-height: 1.3em;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
 @media(max-width: 850px) {
 
   .c_header_contact_alignment p {
@@ -949,10 +971,11 @@ input[type=text], input[type=submit] {
 
 
   .c_menu_options { 
-    background-image: url("../pictures/testing picture/images-7.png") !important;
+    /* background-image: url("../pictures/testing picture/images-7.png") !important;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background: white;
     width: 100%;
     height: 100vh;
     border: 5px solid none;
@@ -1005,6 +1028,22 @@ input[type=text], input[type=submit] {
     margin-top: -4%;
   }
 
+  .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details{
+    border: 2px solid none;
+    width: fit-content;
+    padding: 0% 2% 0% 2%;;
+    list-style-type: armenian;
+    list-style-position: outside;
+  }
+
+.c_menu_acordion_panel_list .c_menu_acordion_panel_list_details a{
+    color: red;
+    font-size: large;
+    line-height: 1.5em;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
   .c_menu_list:after {
     content: '\002B';
     color: black;
@@ -1028,7 +1067,6 @@ input[type=text], input[type=submit] {
     padding: 0;
     position: relative;
     overflow-x: hidden;
-
   }
 
   .c_menu_options_shortcut_signature {
@@ -1044,7 +1082,7 @@ input[type=text], input[type=submit] {
   }
 
   .c_search_container {
-    border: 2px solid none;
+    border: 2px solid red;
     border-top: 5px solid black;
     order: -1;
     width: 100%;
@@ -1055,7 +1093,7 @@ input[type=text], input[type=submit] {
 
   .c_search_container form {
     border: 2px solid black;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -1064,13 +1102,13 @@ input[type=text], input[type=submit] {
   
   .c_search_container form input {
     border: 2px solid black;
-    width: fit-content;
+    width: 78%;
     height: 1cm;
     border-radius: 0.19rem;
   }
   
   .c_search_container form input[type="text"] {
-    font-size: 22px;
+    font-size: 18px;
   }
   
   .c_search_container form button{
@@ -1079,7 +1117,7 @@ input[type=text], input[type=submit] {
     font-size: 15px;
     margin-left: -0.1cm;
     color: white;
-    width: fit-content;
+    width: 19%;
     height: 0.99cm;
     cursor: pointer;
     font-size: larger;

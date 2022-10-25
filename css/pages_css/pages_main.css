@@ -3,6 +3,53 @@
     font-family: "Roboto", sans-serif;
 }
 
+.c_content_title_header_container {
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.c_c_t_h_c {
+  width: fit-content !important;
+  margin-left: 5%;
+}
+
+.c_content_title {
+  border: 2px solid none;
+  width: 100%;
+}
+
+.c_blog_author {
+  border: 2px solid none;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+}
+
+.c_blog_author_container {
+  border: 2px solid none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0%;
+  width: 100%;
+  height: fit-content;
+}
+
+.c_blog_author_li {
+  border: 2px solid black;
+  width: fit-content;
+  height: 0.59cm;
+  display: flex;
+}
+
+.c_blog_author_li .c_blog_author_p {
+  border: 2px solid none;
+  width: fit-content;
+  height: 100%;
+  font-size: x-small;
+}
 
 main {
   border: none 2px solid;
@@ -62,7 +109,117 @@ main {
   left: -2%;
 }
 
+.c_table_of_content_button_bar1, .c_table_of_content_button_bar2, .c_table_of_content_button_bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 8px 5px;
+  transition: 0.4s;
+}
 
+.c_table_of_content_button_close_bar .c_table_of_content_button_bar1_close {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.c_table_of_content_button_close_bar .c_table_of_content_button_bar2_close {
+  opacity: 0;
+}
+
+.c_table_of_content_button_close_bar .c_table_of_content_button_bar3_close {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);   
+} 
+
+.c_table_of_content_button_container {
+  border: 2px solid none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.c_table_of_content_button {
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+}
+
+.c_table_of_content_close_button_container {
+  border: 2px solid none;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c_table_of_content_close_button {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.c_table_of_content_modal {
+  border: 2px solid none;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 4.5%;
+  cursor: pointer;
+  background-color: #f6921e;
+  filter: drop-shadow(.45em .45em .5em);
+  /* float: right; */
+}
+
+.c_table_of_content_container {
+  border: 2px solid none;
+  display: none;
+  width: 8cm;
+  padding: 0.5%;
+}
+
+.c_table_of_content_details_container  {
+  border: 2px solid none;
+  padding: 0.5%;
+}
+
+.c_table_of_content_container_list {
+  border: 2px solid none;
+  padding: 0.5% ;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6921e;
+  counter-reset: item;
+}
+
+.c_table_of_content_list_details {
+  border: 2px solid black;
+}
+
+.c_table_of_content_container_list .c_table_of_content_list_details {
+  border: none 3px solid;
+  list-style-type:none;
+  text-decoration: none;
+  padding: 0.5%;
+}
+
+.c_table_of_content_container_list .c_table_of_content_list_details:before {
+  aspect-ratio: 1;
+  counter-increment: item;
+  content: counter(item);
+  color: darkorange;
+  background-color: black;
+}
+
+.c_table_of_content_container_list .c_table_of_content_list_details a {
+  border: none 3px solid;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.c_table_of_content_container_list .c_table_of_content_list_details a:hover {
+  text-decoration: 2px underline white;
+}
 
 .c_content_paragraph_one .c_share_social_image {
   border: 2px solid none;
@@ -72,14 +229,22 @@ main {
 
 .c_content_paragraph_two {
   text-decoration: underline none;
-  text-align: right;
+  text-align: left;
   font-size: medium;
   line-height: 0.6cm;
-  width: 70%;
-  border: 2px solid none;
+  width: 90%;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2% 5% 1% 7%;
+  line-height: 2em;
 }
 
-
+.c_content_paragraph_two p {
+  border: 2px solid black;
+  margin-bottom: 2.5em;
+  width: fit-content;
+}
 
 
 /*share button*/

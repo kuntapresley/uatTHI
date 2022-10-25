@@ -50,26 +50,26 @@
 
 //some document items changes when window scroll
 
-window.onscroll = function() {
+// window.onscroll = function() {
 
    
-   var cShareButtonContainer = document.querySelector(".c_share_button_container");
+   // var cShareButtonContainer = document.querySelector(".c_share_button_container");
 
-   var cSocialIconsShareLinkA = document.querySelector(".c_facebook_share_link i");
-   var cSocialIconsShareLinkB = document.querySelector(".c_twitter_share_link i");
-   var cSocialIconsShareLinkC = document.querySelector(".c_linkedin_share_link i");
-   var cSocialIconsShareLinkD = document.querySelector(".c_whatsapp_share_link i");
+   // var cSocialIconsShareLinkA = document.querySelector(".c_facebook_share_link i");
+   // var cSocialIconsShareLinkB = document.querySelector(".c_twitter_share_link i");
+   // var cSocialIconsShareLinkC = document.querySelector(".c_linkedin_share_link i");
+   // var cSocialIconsShareLinkD = document.querySelector(".c_whatsapp_share_link i");
 
-   cShareButtonContainer.style.height = "0.8cm";
+   // cShareButtonContainer.style.height = "0.8cm";
 
-   cSocialIconsShareLinkA.style.fontSize = "22px";
-   cSocialIconsShareLinkB.style.fontSize = "22px";
-   cSocialIconsShareLinkC.style.fontSize = "22px";
-   cSocialIconsShareLinkD.style.fontSize = "22px";
+   // cSocialIconsShareLinkA.style.fontSize = "22px";
+   // cSocialIconsShareLinkB.style.fontSize = "22px";
+   // cSocialIconsShareLinkC.style.fontSize = "22px";
+   // cSocialIconsShareLinkD.style.fontSize = "22px";
 
-   console.log("Working");
+//    console.log("Working");
 
-}
+// }
 
 
 
@@ -133,32 +133,61 @@ window.onscroll = function() {
  */
 
 
- var facebookButton = document.querySelector(".c_facebook_sharing_link")
+ var facebookButton = document.querySelectorAll(".c_facebook_sharing_link")
 
  var linkedinButton = document.querySelector(".c_linkedin_sharing_link")
 
- var twitterButton = document.querySelector(".c_twitter_sharing_link")
+ var twitterButton = document.querySelectorAll(".c_twitter_sharing_link")
 
- var whatsAppButton = document.querySelector(".c_whatsapp_sharing_link")
-
-
- function init(){
-    var socialLinkImages = document.querySelector(".c_share_social_image");
-    var postURL = document.location.href;
-    var postTitle = "Hi Everyone, please check this out";
-    var postImg = encodeURI(socialLinkImages.src);
-
-    facebookButton.setAttribute("href", `https://www.facebook.com/sharer.php?u=${postURL}`);
-
-    linkedinButton.setAttribute("href", `https://www.linkedin.com/shareArticle?url=${postURL}&title=${postTitle}`);
-
-    twitterButton.setAttribute("href", `https://twitter.com/share?url=${postURL}&text=${postTitle}`);
-
-    whatsAppButton.setAttribute("href", `https://api.whatsapp.com/send?text=${postTitle} ${postURL}`);
- }
-
- init();
+ var whatsAppButton = document.querySelectorAll(".c_whatsapp_sharing_link")
 
 
+//  function init(){
+   //  var socialLinkImages = document.querySelector(".c_share_social_image");
+   //  var postURL = document.location.href;
+   //  var postTitle = "Hi Everyone, please check this out";
+   //  var postImg = encodeURI(socialLinkImages.src);
+
+//     facebookButton.setAttribute("href", `https://www.facebook.com/sharer.php?u=${postURL}`);
+
+//     linkedinButton.setAttribute("href", `https://www.linkedin.com/shareArticle?url=${postURL}&title=${postTitle}`);
+
+//     twitterButton.setAttribute("href", `https://twitter.com/share?url=${postURL}&text=${postTitle}`);
+
+//     whatsAppButton.setAttribute("href", `https://api.whatsapp.com/send?text=${postTitle} ${postURL}`);
+//  }
+
+//  init();
+
+
+
+
+function openTableOfContentModal() {
+   var cTableOfContent = document.querySelector(".c_table_of_content_button");
+   cTableOfContent.addEventListener("click", ()=>{
+      document.querySelector(".c_table_of_content_container").style.display="block";
+      cTableOfContent.style.display = "none";
+      cTableOfContent.style.transitionProperty = "all";
+      cTableOfContent.style.transitionDuration = "2s";
+      cTableOfContent.style.transitionTimingFunction = "ease-in-out";
+   });
+}
+openTableOfContentModal();
+
+
+function closeTableOfContentModal() {
+   
+   var closeTableOfContent = document.querySelector(".c_table_of_content_close_button");
+   var cTableOfContent = document.querySelector(".c_table_of_content_button");
+   closeTableOfContent.addEventListener("click", ()=>{
+      document.querySelector(".c_table_of_content_container").style.display="none";
+      cTableOfContent.style.display = "block";
+      cTableOfContent.style.transitionProperty = "all";
+      cTableOfContent.style.transitionDuration = "2s";
+      cTableOfContent.style.transitionTimingFunction = "ease-in-out";
+      
+   });
+}
+closeTableOfContentModal();
 
 
