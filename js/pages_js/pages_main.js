@@ -164,16 +164,17 @@
 
 function openTableOfContentModal() {
    var cTableOfContent = document.querySelector(".c_table_of_content_button");
+   var cTableOfContentModal = document.querySelector(".c_table_of_content_modal");
    cTableOfContent.addEventListener("click", ()=>{
       document.querySelector(".c_table_of_content_container").style.display="block";
       cTableOfContent.style.display = "none";
       cTableOfContent.style.transitionProperty = "all";
       cTableOfContent.style.transitionDuration = "2s";
       cTableOfContent.style.transitionTimingFunction = "ease-in-out";
+      
    });
 }
 openTableOfContentModal();
-
 
 function closeTableOfContentModal() {
    
@@ -181,7 +182,7 @@ function closeTableOfContentModal() {
    var cTableOfContent = document.querySelector(".c_table_of_content_button");
    closeTableOfContent.addEventListener("click", ()=>{
       document.querySelector(".c_table_of_content_container").style.display="none";
-      cTableOfContent.style.display = "block";
+      cTableOfContent.style.display = "flex";
       cTableOfContent.style.transitionProperty = "all";
       cTableOfContent.style.transitionDuration = "2s";
       cTableOfContent.style.transitionTimingFunction = "ease-in-out";

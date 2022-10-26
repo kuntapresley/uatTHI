@@ -149,7 +149,7 @@ header {
     max-height: 100%;
     position: relative;
     left: 100%;
-    width: fit-content;
+    width: 70px;
     
 }
 
@@ -929,6 +929,9 @@ input[type=text], input[type=submit] {
     height: 80px;
   }
 
+  .c_menu_header .c_menu_header_image_link img{
+    left: 50%;
+}
   .c_checkbox {
     border: 2px solid none;
     display: block;
@@ -1030,15 +1033,15 @@ input[type=text], input[type=submit] {
   }
 
   .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details{
-    border: 2px solid none;
-    width: fit-content;
+    border:  none;
+    width: 100%;
     padding: 0% 2% 0% 2%;;
     list-style-type: armenian;
     list-style-position: outside;
   }
 
 .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details a{
-    color: red;
+    color: black;
     font-size: large;
     line-height: 1.5em;
     text-decoration: none;
@@ -1083,7 +1086,7 @@ input[type=text], input[type=submit] {
   }
 
   .c_search_container {
-    border: 2px solid red;
+    border: 2px solid none;
     border-top: 5px solid black;
     order: -1;
     width: 100%;
