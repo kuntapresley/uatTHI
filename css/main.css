@@ -107,7 +107,7 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 2px solid red;
+  border: 2px solid none;
 }
 
 
@@ -986,6 +986,7 @@ input[type=text], input[type=submit] {
     transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
     display: block;
     overflow: auto;
+    z-index: 1;
     /* flex-wrap: nowrap;
     overflow-x: hidden;
     flex-direction: column-reverse; */

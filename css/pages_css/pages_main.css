@@ -4,7 +4,7 @@
 }
 
 .c_content_title_header_container {
-  border: 2px solid red;
+  border: 2px solid none;
   display: flex;
   flex-wrap: wrap;  
 }
@@ -20,12 +20,12 @@
 }
 
 .c_blog_author {
-  border: 2px solid black;
+  border: 2px solid none;
   height: fit-content;
 }
 
 .c_blog_author_container {
-  border: 2px solid black;
+  border: 2px solid none;
   display: flex;
   flex-wrap: wrap;
   padding: 0%;
@@ -33,17 +33,21 @@
 }
 
 .c_blog_author_li {
-  border: 2px solid black;
+  border-right: 2px solid black;
   width: fit-content;
-  height: 0.59cm;
+  height: fit-content;
   display: flex;
 }
 
 .c_blog_author_li .c_blog_author_p {
   border: 2px solid none;
-  width: fit-content;
+  width: 100%;
   height: 100%;
   font-size: x-small;
+}
+
+.c_blog_author_li .c_blog_author_p:nth-child(2){
+  border: none;
 }
 
 main {
@@ -84,24 +88,24 @@ main {
   border: none;
 }
 
+.c_content_paragraph_one  {
+  border: 2px solid none;
+  padding-right: 20px;
+  margin-left: 10%;
+}
+
 .c_content img {
     border: none 4px solid;
     max-height: 400px;
+    width: 400px;
     float:left;
     padding: 1%;
-    filter: drop-shadow(.45em .45em .5em);
     transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
     cursor: pointer;
 }
 
 .c_content img:hover {
-  max-height: 410px;
-  padding: 0.8%;
-  filter: drop-shadow(.65em .65em .2em);
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
-  cursor: crosshair;
-  position: relative;
-  left: -2%;
 }
 
 .c_table_of_content_button_bar1, .c_table_of_content_button_bar2, .c_table_of_content_button_bar3 {
@@ -162,7 +166,7 @@ main {
   cursor: pointer;
   background-color: #f6921e;
   filter: drop-shadow(.45em .45em .5em);
-  /* float: right; */
+
 }
 
 .c_table_of_content_container {
@@ -188,7 +192,7 @@ main {
 }
 
 .c_table_of_content_list_details {
-  border: 2px solid black;
+  border: 2px solid none;
 }
 
 .c_table_of_content_container_list .c_table_of_content_list_details {
@@ -216,11 +220,6 @@ main {
   text-decoration: 2px underline white;
 }
 
-.c_content_paragraph_one .c_share_social_image {
-  border: 2px solid none;
-  padding-right: 20px;
-  min-height: 100%;
-}
 
 .c_content_paragraph_two {
   text-decoration: underline none;
@@ -228,7 +227,7 @@ main {
   font-size: medium;
   line-height: 0.6cm;
   width: 90%;
-  border: 2px solid black;
+  border: 2px solid none;
   margin-left: auto;
   margin-right: auto;
   padding: 2% 5% 1% 7%;
@@ -236,7 +235,7 @@ main {
 }
 
 .c_content_paragraph_two p {
-  border: 2px solid black;
+  border: 2px solid none;
   margin-bottom: 2.5em;
   width: fit-content;
 }
@@ -253,7 +252,7 @@ main {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 95%;
+    margin-left: 80%;
 }
 
 .c_share_button_container a i {
@@ -310,7 +309,7 @@ main {
 .c_social_content_icons_share_link {
   border: 2px solid none;
   display: inline-block;
-  margin-left: 2%;
+  margin-left: 1%;
   height: 0.8cm;
 }
 
@@ -322,8 +321,9 @@ main {
   float: right;
   position: relative;
   margin-right: -2%;
-  margin-top: -3.5%;
+  margin-top: -2%;
 }
+
 
 .c_sharing_link_text {
   border: 2px solid none;
@@ -335,13 +335,15 @@ main {
   margin-top: auto;
   margin-bottom: auto;
   color: white;
+  font-size: smaller;
+  font-weight: 500;
 }
 
 .c_facebook_sharing_link, .c_twitter_sharing_link, .c_linkedin_sharing_link, .c_whatsapp_sharing_link {
   background-color: #3b5998;
-  padding: 0.7% 1% 0% 1%;
+  padding: 0.7% 1.5% 0% 1.5%;
   box-sizing: border-box;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 
 }
 
@@ -363,24 +365,15 @@ main {
 
 .c_share_content_button_container .fa-facebook{
     color: white;
-    font-size: 25px;
-    margin-top: 0.5%;
+    font-size: 20px;
+    margin-top: 1%;
 }
 
-.c_share_content_button_container .fa-twitter{
+.c_share_content_button_container .fa-twitter, .c_share_content_button_container .fa-linkedin, .c_share_content_button_container .fa-whatsapp{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.c_share_content_button_container .fa-linkedin{
-    color: white;
-    font-size: 25px;
-}
-
-.c_share_content_button_container .fa-whatsapp{
-    color: white;
-    font-size: 25px;
-}
 
 
 
@@ -401,6 +394,39 @@ main {
 @media(max-width: 856px) {
 /*website icon styling both big size and media query*/
 
+main {
+  border: none 2px solid;
+  padding: 0%
+ }
+
+.c_content_title_header_container {
+  border: 2px solid none;
+  padding: 1.5%;
+}
+ 
+
+.c_share_button_container {
+  border: 2px solid none;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  filter: drop-shadow(.5rem .5rem .1rem);
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 90%
+}
+
+.c_c_t_h_c {
+  width: fit-content !important;
+  margin-left: 0%;
+}
+
+.c_content_paragraph_two {
+  padding: 0%;
+}
+
   .c_share_content_button_container {
     border: solid 1px none;
     display: flex;
@@ -418,13 +444,29 @@ main {
   .c_social_link_container {
     border: solid 1px none;
     width: 100%;
+    margin-bottom: 25%;
   }
+
 
   .c_social_content_icons_share_link {
     border: 2px solid none;
     display: inline-block;
     margin: 2%;
     height: 0.8cm;
+    padding: 0.9% 3% 0% 3%;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+  }
+
+
+  .c_sharing_link_icon {
+    border: 2px solid none;
+    width: fit-content;
+    display: flex;
+    float: right;
+    position: relative;
+    margin-right: -2.5%;
+    margin-top: -2%;
   }
 
 }
