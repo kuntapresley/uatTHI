@@ -37,9 +37,10 @@
 
 .c_blog_author_li {
   border: 2px solid none;
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  height: 0.4cm;
   display: flex;
+  line-height: 0.99em;
 }
 
 .c_blog_author_li .c_blog_author_p {
@@ -480,8 +481,14 @@ main {
 }
 
 .c_blog_author_container {
+  border: 1px solid black;
   position: relative;
   margin-top: unset;
+  width: 50%;
+}
+
+.c_blog_author_li {
+  border: 2px solid black;
 }
 
 .c_table_of_content_modal {
@@ -500,6 +507,12 @@ main {
   position: relative;
   justify-content: center;
   width: 100%;
+}
+
+.c_content_paragraph_one  {
+  border: 2px solid black;
+  padding-right: 0px;
+  margin-left: 0%;
 }
 
 .c_content_paragraph_two {

@@ -71,21 +71,24 @@ try {
 
 //sticky header/navigation
 
-// var navbar = document.querySelectorAll(".c_header_navbar");
-// var sticky = navbar.offsetTop;
+var navbar = document.querySelectorAll(".c_header_navbar");
+var sticky = navbar.offsetTop;
 
-// window.onscroll = function myFunction() {
-//     if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
-//         navbar.classList.add("sticky");
-//         navbar.style.borderTop = "10px solid #f6921e";
-//         navbar.style.transitionProperty = "all";
-//         navbar.style.transitionDuration = "2s";
-//         navbar.style.transitionTimingFunction = "ease-in-out";
-//     } else {
-//         navbar.classList.remove("sticky");
-//         navbar.style.borderTop = "none";
-//     }
-// };
+window.onscroll = function myFunction() {
+    for(i = 0; i < navbar.length; i++) {
+        if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+            navbar.style.borderTop = "10px solid #f6921e";
+            navbar.style.transitionProperty = "all";
+            navbar.style.transitionDuration = "2s";
+            navbar.style.transitionTimingFunction = "ease-in-out";
+        } else {
+            navbar.classList.remove("sticky");
+            navbar.style.borderTop = "none";
+        }
+    }
+
+};
 
 
 

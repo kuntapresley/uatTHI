@@ -108,19 +108,42 @@ header {
   justify-content: center;
   width: 100%;
   border: 2px solid none;
+  padding: 1%;
 }
 
 
-.c_header_contact_alignment p {
+.c_header_contact_alignment  {
   border: 1px solid none;
   position: relative;
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2.5%;
-  width: fit-content;
-  color:white;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: auto;
+}
+
+.c_header_paragraphcontact_alignment {
+  border: 2px solid none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c_header_contact_container {
+  border: 2px solid none;
+  display: flex;
+  padding: unset;
+}
+
+.c_header_contact_container .c_header_contact_items p {
+  border: 2px solid none;
+  color: white;
+}
+
+.c_header_contact_container .c_header_contact_items i {
+  border: 2px solid none;
+  font-size: x-large;
 }
 
 /* The header navigation bar */
@@ -920,10 +943,15 @@ input[type=text], input[type=submit] {
 
 @media(max-width: 850px) {
 
-  .c_header_contact_alignment p {
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
+
+.c_header_contact {
+  padding: 5.5%;
+}
+
+.c_header_contact_container {
+  padding: 1%;
+}
+
 
   .c_header_navbar {
     height: 80px;
