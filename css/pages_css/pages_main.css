@@ -20,21 +20,16 @@
 }
 
 .c_blog_author {
-  border: 2px solid none;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
+  border: 2px solid black;
   height: fit-content;
 }
 
 .c_blog_author_container {
-  border: 2px solid none;
+  border: 2px solid black;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 0%;
   width: 100%;
-  height: fit-content;
 }
 
 .c_blog_author_li {
