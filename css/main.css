@@ -1,5 +1,10 @@
 /*website icon styling both big size and media query*/
 
+.c_contact_href {
+  color: white !important;
+}
+
+
 .spinner{
   width:80px; 
   height:80px;  

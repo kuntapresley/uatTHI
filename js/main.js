@@ -2,8 +2,40 @@
 try {
 
 
+//website loading event
+//get website element by creating variables
+function websitePageOnload() {
 
-    //accordion programming starts
+    var headerLoading = document.querySelector("header"),
+    mainLoading = document.querySelector("main"),
+    footerLoading = document.querySelector("footer");
+
+
+    headerLoading.style.display = "none";
+    mainLoading.style.display = "none";
+    footerLoading.style.display = "none";
+
+
+
+
+    var overlay = document.querySelector(".overlay");
+    window.addEventListener('load', function () {
+        overlay.style.display = "none";
+        headerLoading.style.display = "block";
+        mainLoading.style.display = "block";
+        footerLoading.style.display = "block";
+    });
+
+}
+websitePageOnload();
+
+//website loading event
+
+
+//accordion programming starts
+
+function loadAccordion(){
+        
     var accordion = document.querySelectorAll(".c_menu_accordion");
     for (i = 0; i < accordion.length; i++) {
         accordion[i].addEventListener("click", function() {
@@ -16,7 +48,10 @@ try {
         }
     });
     }
-    //accordion programming ends
+    
+}loadAccordion();
+
+//accordion programming ends
 
 
 
@@ -24,22 +59,30 @@ try {
 
 
 //sticky header/navigation
-window.onscroll = function() {myFunction()};
-const navbar = document.querySelector(".c_header_navbar");
-const sticky = navbar.offsetTop;
-    function myFunction() {
-            if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-                navbar.style.borderTop = "10px solid #f6921e";
-                navbar.style.transitionProperty = "all";
-                navbar.style.transitionDuration = "2s";
-                navbar.style.transitionTimingFunction = "ease-in-out";
-            } 
-            else {
-                navbar.classList.remove("sticky");
-                navbar.style.borderTop = "none";
-            }
-    };
+
+function websiteHeaderRemainSticky() {
+    const navbar = document.querySelector(".c_header_navbar");
+    const sticky = navbar.offsetTop;
+     document.addEventListener("scroll", function(){
+        if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+            navbar.style.borderTop = "10px solid #f6921e";
+            navbar.style.transitionProperty = "all";
+            navbar.style.transitionDuration = "2s";
+            navbar.style.transitionTimingFunction = "ease-in-out";
+        } 
+        else {
+            navbar.classList.remove("sticky");
+            navbar.style.borderTop = "none";
+        }
+    
+     });   
+}
+websiteHeaderRemainSticky();
+
+//sticky header/navigation
+
+
 
 
 
@@ -49,10 +92,15 @@ const sticky = navbar.offsetTop;
 
 //date update start
 
-const updatedTime = document.querySelectorAll('.date');
-const newTime = new Date();
-const newShortTime = newTime.getFullYear();
-updatedTime.innerHTML = newShortTime;
+function upDateWebsiteDateYear() {
+
+    const updatedTime = document.querySelector('.date');
+    const newTime = new Date();
+    const newShortTime = newTime.getFullYear();
+    updatedTime.innerHTML = newShortTime;
+
+}
+upDateWebsiteDateYear();
 
 //date update ends
 
@@ -60,34 +108,30 @@ updatedTime.innerHTML = newShortTime;
 
 
 
+//load more articles function
+    
+function loadMoreArticlesFunction() {
+    
+    var cArticlesColumn = document.querySelectorAll(".c_articles_column");
+    var cArticlesColumnButton = document.querySelector(".c_articles_load_button");
 
+    var currentimg = 3;
+    cArticlesColumnButton?.addEventListener("click", function () {
+        for (var i = currentimg; i < currentimg + 3; i++) {
+            if (cArticlesColumn[i]) {
+                cArticlesColumn[i].style.display = "block";
+            }
+        }
 
-
-
-
-
-
-
-
-
-
+        currentimg += 3;
+    });
+       
+}
+loadMoreArticlesFunction();
 
 //load more articles function
-var cArticlesColumn = document.querySelector(".c_articles_column");
-var cArticlesColumnButton = document.querySelector(".c_articles_load_button");
 
-var currentimg = 3;
-if(cArticlesColumnButton){
-cArticlesColumnButton.addEventListener("click", function () {
-    for (var i = currentimg; i < currentimg + 3; i++) {
-        if (cArticlesColumn[i]) {
-            cArticlesColumn[i].style.display = "block";
-        }
-    }
 
-    currentimg += 3;
-});
-}
 
 
 
@@ -133,33 +177,6 @@ cArticlesColumnButton.addEventListener("click", function () {
 
 
 
-//website loading event
-
-//get website element by creating variables
-
-
-    // var headerLoading = document.querySelectorAll(".c_header"),
-    // mainLoading = document.querySelectorAll("main"),
-    // footerLoading = document.querySelectorAll("footer");
-
-
-
-    // headerLoading.style.display = "none";
-    // mainLoading.style.display = "none";
-    // footerLoading.style.display = "none";
-
-
-
-    // var overlay = document.querySelector(".overlay");
-    // window.addEventListener('load', function () {
-    //     overlay.style.display = "none";
-    //     headerLoading.style.display = "block";
-    //     mainLoading.style.display = "block";
-    //     footerLoading.style.display = "block";
-    // });
-
-
-//website loading event
 
 
 
@@ -219,6 +236,7 @@ cArticlesColumnButton.addEventListener("click", function () {
 
 
 }
+
 catch(err) {
 
     document.querySelector("body").innerHTML = `<p class="c_error_message"> Dear Users/ Customers,` + "<br>"+ "<br>"  + `Thank you for visiting our website!` + "<br>" +  "<br>" + "<br>" + "&nbsp" + "&nbsp" +  "&nbsp" +  ` 

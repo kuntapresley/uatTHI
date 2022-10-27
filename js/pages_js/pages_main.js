@@ -133,31 +133,37 @@
  */
 
 
- var facebookButton = document.querySelectorAll(".c_facebook_sharing_link")
+ function shareContentOrArticlesLinkToSocailMedia() {
 
- var linkedinButton = document.querySelector(".c_linkedin_sharing_link")
+   var facebookButton = document.querySelector(".c_facebook_sharing_link")
 
- var twitterButton = document.querySelectorAll(".c_twitter_sharing_link")
+   var linkedinButton = document.querySelector(".c_linkedin_sharing_link")
 
- var whatsAppButton = document.querySelectorAll(".c_whatsapp_sharing_link")
+   var twitterButton = document.querySelector(".c_twitter_sharing_link")
+
+   var whatsAppButton = document.querySelector(".c_whatsapp_sharing_link")
 
 
-//  function init(){
-   //  var socialLinkImages = document.querySelector(".c_share_social_image");
-   //  var postURL = document.location.href;
-   //  var postTitle = "Hi Everyone, please check this out";
-   //  var postImg = encodeURI(socialLinkImages.src);
+   function init(){
+      var socialLinkImages = document.querySelector(".c_share_social_image");
+      var postURL = document.location.href;
+      var postTitle = "Hi Everyone, please check this out";
+      var postImg = encodeURI(socialLinkImages.src);
 
-//     facebookButton.setAttribute("href", `https://www.facebook.com/sharer.php?u=${postURL}`);
+      facebookButton.setAttribute("href", `https://www.facebook.com/sharer.php?u=${postURL}`);
 
-//     linkedinButton.setAttribute("href", `https://www.linkedin.com/shareArticle?url=${postURL}&title=${postTitle}`);
+      linkedinButton.setAttribute("href", `https://www.linkedin.com/shareArticle?url=${postURL}&title=${postTitle}`);
 
-//     twitterButton.setAttribute("href", `https://twitter.com/share?url=${postURL}&text=${postTitle}`);
+      twitterButton.setAttribute("href", `https://twitter.com/share?url=${postURL}&text=${postTitle}`);
 
-//     whatsAppButton.setAttribute("href", `https://api.whatsapp.com/send?text=${postTitle} ${postURL}`);
-//  }
+      whatsAppButton.setAttribute("href", `https://api.whatsapp.com/send?text=${postTitle} ${postURL}`);
+   }
 
-//  init();
+   init();
+
+ }
+ shareContentOrArticlesLinkToSocailMedia();
+
 
 
 

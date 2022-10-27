@@ -441,7 +441,7 @@ main {
  
 
 .c_share_button_container {
-  border: 2px solid none;
+  border: 2px solid red;
   background: #fff;
   display: flex;
   flex-direction: row;
@@ -449,7 +449,7 @@ main {
   width: 100%;
   position: fixed;
   top: 1;
-  transform: translateY(335%);
+  transform: translateY(40vh);
   margin-left: unset;
   bottom: 1;
 }
