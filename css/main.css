@@ -925,12 +925,13 @@ input[type=text], input[type=submit] {
 
 
 .c_error_message {
-  border: 2px solid none;
+  border: 2px dashed azure;
+  background-color:azure;
   color: red;
-  background: white;
-  padding: 5% 5% 20% 5%;
+  padding: 10% 10% 10% 10%;
   line-height: 1.3em;
   font-weight: bolder;
+  height: 90vh;
 }
 
 

@@ -3,25 +3,6 @@ try {
 
 
 
-    //run some program
-    // function cOpenndClosecheckbox() {
-    //     console.log("Shop");
-    //     var cCheckboxOpen = document.querySelectorAll(".c_checkbox_open");
-    //     var cCheckboxClose = document.querySelectorAll(".c_checkbox_close");
-
-    //     cCheckboxOpen.addEventListener("click", ()=> {
-    //     var cTableOfContentModal = document.querySelectorAll(".c_table_of_content_modal");
-    //     cTableOfContentModal.style.display = "none";
-    //     });
-
-    //     cCheckboxClose.addEventListener("click", ()=> {
-    //         var cTableOfContentModal = document.querySelectorAll(".c_table_of_content_modal");
-    //         cTableOfContentModal.style.display = "block";
-    //         });
-    // }
-    // cOpenndClosecheckbox();
-
-
     //accordion programming starts
     var accordion = document.querySelectorAll(".c_menu_accordion");
     for (i = 0; i < accordion.length; i++) {
@@ -42,109 +23,23 @@ try {
 
 
 
-//this function changes short cut menu bar
-// function mycBarFunction(x) {
-//     x.classList.toggle("c_checkboxToggle");
-// };
-
-
-
-//shortcut menu display change
-// function mycBarFunction(x) {
-
-//     const cCheckbox = document.querySelector(".c_checkbox");
-
-//     if (cCheckbox.active) {
-        
-//      const websiteBody = document.querySelector("body");
-//      websiteBody.style.overflow = " hidden";
-//     }
-
-//     else {
-//         websiteBody.style.overflow = " auto";
-//     }
-
-// };
-//shortcut menu display change
-
-
-
 //sticky header/navigation
-
-var navbar = document.querySelectorAll(".c_header_navbar");
-var sticky = navbar.offsetTop;
-
-window.onscroll = function myFunction() {
-    for(i = 0; i < navbar.length; i++) {
-        if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-            navbar.style.borderTop = "10px solid #f6921e";
-            navbar.style.transitionProperty = "all";
-            navbar.style.transitionDuration = "2s";
-            navbar.style.transitionTimingFunction = "ease-in-out";
-        } else {
-            navbar.classList.remove("sticky");
-            navbar.style.borderTop = "none";
-        }
-    }
-
-};
-
-
-
-// window.onscroll = function() {myFunction()};
-// const navbar = document.querySelectorAll("header .c_header_navbar");
-// const sticky = navbar.offsetTop;
-//     function myFunction() {
-//             if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
-//                 navbar.classList.add("sticky");
-//                 navbar.style.borderTop = "10px solid #f6921e";
-//                 navbar.style.transitionProperty = "all";
-//                 navbar.style.transitionDuration = "2s";
-//                 navbar.style.transitionTimingFunction = "ease-in-out";
-//             } 
-//             else {
-//                 navbar.classList.remove("sticky");
-//                 navbar.style.borderTop = "none";
-//             }
-//     };
-
-    
-// const navbar = document.querySelectorAll(".c_header_navbar");
-// const sticky = navbar.offsetTop;
-// window.addEventListener("scroll", ()=> {
-//             if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
-//                 for(i = 0; i < navbar.length; i++){
-//                 navbar[i].classList.add("sticky");
-//                 navbar[i].style.borderTop = "10px solid #f6921e";
-//                 navbar[i].style.transitionProperty = "all";
-//                 navbar[i].style.transitionDuration = "2s";
-//                 navbar[i].style.transitionTimingFunction = "ease-in-out";
-//                 }
-//             } 
-//             else {
-//                 navbar[i].classList.remove("sticky");
-//                 navbar[i].style.borderTop = "none";
-//             }   
-
-// });
-
-//sticky header/navigation
-// var accordion = document.querySelectorAll(".c_menu_accordion");
-// for (i = 0; i < accordion.length; i++) {
-//     accordion[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     const panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//     panel.style.display = "none";
-//     } else {
-//     panel.style.display = "block";
-//     }
-// });
-// }
-
-
-
+window.onscroll = function() {myFunction()};
+const navbar = document.querySelector(".c_header_navbar");
+const sticky = navbar.offsetTop;
+    function myFunction() {
+            if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+                navbar.style.borderTop = "10px solid #f6921e";
+                navbar.style.transitionProperty = "all";
+                navbar.style.transitionDuration = "2s";
+                navbar.style.transitionTimingFunction = "ease-in-out";
+            } 
+            else {
+                navbar.classList.remove("sticky");
+                navbar.style.borderTop = "none";
+            }
+    };
 
 
 
@@ -178,20 +73,20 @@ updatedTime.innerHTML = newShortTime;
 
 
 //load more articles function
-// var cArticlesColumn = document.querySelectorAll(".c_articles_column");
-// var cArticlesColumnButton = document.querySelectorAll(".c_articles_load_button");
+var cArticlesColumn = document.querySelectorAll(".c_articles_column");
+var cArticlesColumnButton = document.querySelector(".c_articles_load_button");
 
-// var currentimg = 3;
+var currentimg = 3;
 
-// cArticlesColumnButton.addEventListener("click", function () {
-//     for (var i = currentimg; i < currentimg + 3; i++) {
-//         if (cArticlesColumn[i]) {
-//             cArticlesColumn[i].style.display = "block";
-//         }
-//     }
+cArticlesColumnButton.addEventListener("click", function () {
+    for (var i = currentimg; i < currentimg + 3; i++) {
+        if (cArticlesColumn[i]) {
+            cArticlesColumn[i].style.display = "block";
+        }
+    }
 
-//     currentimg += 3;
-// });
+    currentimg += 3;
+});
 
 
 
@@ -254,7 +149,7 @@ updatedTime.innerHTML = newShortTime;
 
 
 
-    // var overlay = document.querySelectorAll(".overlay");
+    // var overlay = document.querySelector(".overlay");
     // window.addEventListener('load', function () {
     //     overlay.style.display = "none";
     //     headerLoading.style.display = "block";
