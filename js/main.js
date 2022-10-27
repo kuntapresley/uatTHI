@@ -73,11 +73,11 @@ updatedTime.innerHTML = newShortTime;
 
 
 //load more articles function
-var cArticlesColumn = document.querySelectorAll(".c_articles_column");
+var cArticlesColumn = document.querySelector(".c_articles_column");
 var cArticlesColumnButton = document.querySelector(".c_articles_load_button");
 
 var currentimg = 3;
-
+if(cArticlesColumnButton){
 cArticlesColumnButton.addEventListener("click", function () {
     for (var i = currentimg; i < currentimg + 3; i++) {
         if (cArticlesColumn[i]) {
@@ -87,6 +87,7 @@ cArticlesColumnButton.addEventListener("click", function () {
 
     currentimg += 3;
 });
+}
 
 
 
