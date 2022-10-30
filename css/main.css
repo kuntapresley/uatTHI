@@ -259,8 +259,14 @@ header {
 
 .c_menu_acordion_panel {
   border: 1px solid red;
+  display: inherit;
+  background-color: #04AA6D;
+  color: white;
+  position: absolute;
+  margin-top: 10%;
   display: none;
 }
+
 
 .c_search_container {
   border: 2px solid none;
@@ -344,7 +350,7 @@ main {
 }
 
 .c_main_1_main_title_container {
-    border: 2px solid black;
+    border: 2px solid none;
     display: flex;
     justify-content: space-between;
     margin: 10% 2.5% 1% 2.5%;
@@ -648,6 +654,19 @@ footer {
   font-size: 25px;
 }
 
+.c_footer_one_title {
+  border: 1px solid none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+
+.c_footer_one_titles {
+  font-weight: bolder;
+  letter-spacing: 0.6em;
+}
+
 .c_footer_paragraph_for_one {
   text-align: center;
   width: fit-content;
@@ -674,6 +693,7 @@ footer {
   justify-content: space-between;
   height: 100px;
   margin-bottom: 5%;
+  width: fit-content;
 }
 
 .c_footer_two_content_hyperlink {
@@ -685,11 +705,14 @@ footer {
  .c_related_articles {
     border: 11px solid none;
     height: 100%; 
-    width: 100%;
+    width: 150px;
 }
 
 .c_related_articles_paragraph {
   border: 2px solid none;
+  height: fit-content;
+  width: 270px;
+  margin-left: 2%;
 } 
 
 
@@ -857,6 +880,7 @@ input[type=text], input[type=submit] {
     font-size: 17px;
     width: 100%;
     margin-bottom: 10%;
+    margin-top: 10%;
   }
 
   .c_footer_five_container {
@@ -1064,7 +1088,9 @@ input[type=text], input[type=submit] {
     padding-left: 2%;
     background-color:white;
     margin-top: -4%;
+    position: relative;
   }
+  
 
   .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details{
     border:  none;
@@ -1082,6 +1108,7 @@ input[type=text], input[type=submit] {
     list-style-type: none;
   }
 
+
   .c_menu_list:after {
     content: '\002B';
     color: black;
@@ -1097,7 +1124,7 @@ input[type=text], input[type=submit] {
   }
 
   .c_menu_options_container {
-    border: 5px solid none;
+    border: none;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1106,6 +1133,7 @@ input[type=text], input[type=submit] {
     position: relative;
     overflow-x: hidden;
   }
+  
 
   .c_menu_options_shortcut_signature {
     border: 2px solid none;
@@ -1194,6 +1222,19 @@ input[type=text], input[type=submit] {
     margin-right: auto;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+
+  .c_footer_one_title {
+    border: 1px solid none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+  }
+  
+  .c_footer_one_titles {
+    font-weight: bolder;
+    letter-spacing: 0.1em;
   }
 
   .c_footer_five_container {

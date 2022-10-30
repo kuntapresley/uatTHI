@@ -1,33 +1,96 @@
 
-//create an onload event that won't display the menu navaigation shortcut bar on page load
-
-// try {
-//    window.onload = function() {
-//       const cMenuOptions = document.querySelector(".c_menu_options");
-//       cMenuOptions.style.marginLeft = "100%";
 
 
-//       console.log("c_menu_options document object manupulation is working.");
-//    }
 
-//    var checkBotton;
-//    checkBotton = document.querySelector(".checkbotton").addEventListener("click", function(){
-      
-//       const cMenuOptions = document.querySelector(".c_menu_options");
-//       cMenuOptions.style.marginLeft = "0%";
-//       console.log("checkbottonClicked");
+document.querySelector(".c_content_like_button").addEventListener("click", function() {
+
+   const clicked = false;
+
+      if(localStorage.clickcount) {
+         localStorage.clickcount = Number(localStorage.clickcount) + 1;
+         document.querySelector(".c_liked_icon").innerHTML=`<i class="fas fa-thumbs-up"></i>`;
+      }
+      else {
+         localStorage.clickcount = 1;
+      }
+
+      document.querySelector(".c_user_content_like_count").innerHTML = localStorage.clickcount;
+      console.log(localStorage.clickcount);
+   });
+//website socail content like button functionality
+
+   // var cLikedIcon = document.querySelector(".c_liked_icon");
+   // let clicked = false;
+
+
+
+//  function checkIfButtonsAreWorking() {
+
+//    let likedIcon = document.querySelector(".c_liked_icon");
+//    var likedCount = document.querySelector(".c_user_content_like_count");
+//    let clicked = false;
+
+
+//    document.querySelector(".c_content_like_button").addEventListener("click", function(){
+
+      // if(!clicked) {
+      //    clicked = true;
+      //    likedCount.textContent++;
+      //    likedIcon.innerHTML = `<i class="fas fa-thumbs-up">`;
+      // }
+
+      // else {
+      //    clicked = false;
+      //    likedCount.textContent--;
+      //    likedIcon.innerHTML = `<i class="far fa-thumbs-up">`;
+
+      // }
+
+//       saveLikedInLocalStorage();
+
+
 //    });
 
+//   window.onload = function() {
+
+//    var preventAct = function preventDefaultAct() {
+//       this.preventDefault;
+//    }
+
+//    preventAct = ()=> {
+//       function saveLikedInLocalStorage() {
+//          if(localStorage.counter) {
+//             localStorage.counter = Number(localStorage.counter) + 1;
+//          }
+//          else {
+//             localStorage.counter = 1;
+//          }
+   
+//          function showCounters() {
+//             likedCount.innerHTML = localStorage.counter;
+//             console.log(localStorage.counter);
+//          }
+//          showCounters();
+//       }
+   
+//       saveLikedInLocalStorage();
+//    }
+
+//    preventAct();
+//   }    
+   
+
+//  }
+
+//  checkIfButtonsAreWorking();
+
+
+
+// let array = [1, "turing", {c:2}, [3,4], {y:5}];
+// for (let i =0; i< inputs.length; i++) {
+//    if (inputs[i]==="turing") inputs.splice(i,1)
+//    else console.log(inputs[i]);
 // }
-
-
-// catch(err){
-//    document.querySelector("header").innerHTML = err.message;
-// }
-
-
-
-
 
 
 
@@ -53,60 +116,23 @@
 // window.onscroll = function() {
 
    
-   // var cShareButtonContainer = document.querySelector(".c_share_button_container");
+//    var cShareButtonContainer = document.querySelector(".c_share_button_container");
 
-   // var cSocialIconsShareLinkA = document.querySelector(".c_facebook_share_link i");
-   // var cSocialIconsShareLinkB = document.querySelector(".c_twitter_share_link i");
-   // var cSocialIconsShareLinkC = document.querySelector(".c_linkedin_share_link i");
-   // var cSocialIconsShareLinkD = document.querySelector(".c_whatsapp_share_link i");
+//    var cSocialIconsShareLinkA = document.querySelector(".c_facebook_share_link i");
+//    var cSocialIconsShareLinkB = document.querySelector(".c_twitter_share_link i");
+//    var cSocialIconsShareLinkC = document.querySelector(".c_linkedin_share_link i");
+//    var cSocialIconsShareLinkD = document.querySelector(".c_whatsapp_share_link i");
 
-   // cShareButtonContainer.style.height = "0.8cm";
+//    cShareButtonContainer.style.height = "0.8cm";
 
-   // cSocialIconsShareLinkA.style.fontSize = "22px";
-   // cSocialIconsShareLinkB.style.fontSize = "22px";
-   // cSocialIconsShareLinkC.style.fontSize = "22px";
-   // cSocialIconsShareLinkD.style.fontSize = "22px";
+//    cSocialIconsShareLinkA.style.fontSize = "22px";
+//    cSocialIconsShareLinkB.style.fontSize = "22px";
+//    cSocialIconsShareLinkC.style.fontSize = "22px";
+//    cSocialIconsShareLinkD.style.fontSize = "22px";
 
 //    console.log("Working");
 
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

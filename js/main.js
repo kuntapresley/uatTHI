@@ -34,26 +34,61 @@ websitePageOnload();
 
 //accordion programming starts
 
-function loadAccordion(){
-        
-    var accordion = document.querySelectorAll(".c_menu_accordion");
-    for (i = 0; i < accordion.length; i++) {
-        accordion[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        const panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-        panel.style.display = "none";
-        } else {
-        panel.style.display = "block";
-        }
-    });
-    }
-    
-}loadAccordion();
+function c_Accordion_Function(e) {
 
+    function accordionLoading(website) {
+
+        var accordion = document.querySelectorAll(".c_menu_accordion");
+
+        if(website.matches) {
+
+            for (i = 0; i < accordion.length; i++) {
+                accordion[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+            
+        }   
+
+    }
+
+    const accordionLoad = window.matchMedia("(max-width: 850px)");
+
+    accordionLoading(accordionLoad);
+
+    accordionLoad.addListener(accordionLoading);
+}
+c_Accordion_Function();
+    
 //accordion programming ends
 
 
+// function disableNavBarHREF() {
+
+//     function navbarHref(website) {
+
+//     if(!website.matches) {
+//         document.querySelector(".c_menu_acordion_panel").style.display= "none";
+//     }    
+//     else {
+//         document.querySelector(".c_menu_options_items").href="javascript:void(0)";
+//     }
+//     }
+
+//     const hrefLink = window.matchMedia("(max-width: 850px)");
+
+//     navbarHref(hrefLink);
+
+//     hrefLink.addListener(navbarHref);
+
+// }
+// disableNavBarHREF();
 
 
 
@@ -130,12 +165,6 @@ function loadMoreArticlesFunction() {
 loadMoreArticlesFunction();
 
 //load more articles function
-
-
-
-
-
-
 
 
 
