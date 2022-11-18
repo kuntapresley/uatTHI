@@ -1,0 +1,555 @@
+
+
+
+.c_general_image {
+    border: 2px solid none;
+    background-image: url("../pictures/testing picture/background_images/Call-Center-Management-1.png");
+    width: 100%;
+    height: 50vh; 
+}
+
+.c_general_div {
+    border: 2px solid none;
+}
+
+.c_general_container {
+    border: 2px solid none;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c_content_title_header_container {
+    border: 2px solid none;
+}
+
+.c_content_title {
+    border: 2px solid none;
+    float: left;
+}
+
+.c_content_title_list {
+    font-weight: bold;
+    font-style: oblique;
+    font-size: xx-large;
+    color: #f6921e;
+}
+
+.c_content_title_list li{
+    color: #f6921e;
+}
+
+.c_our_story_sections {
+    border: 2px solid none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.c_our_story_sections_header {
+    border: 2px solid none;
+    margin-top: 20%;
+}
+
+.c_our_story_sections_main {
+    border: 2px solid none;
+    display: flex;
+    flex-direction: column;
+}
+
+.c_our_story_sections_main p{
+    border: 2px solid none;
+    font-size: large;
+    line-height: 1.5em;
+}
+
+.c_our_story_sections_main ul li {
+    font-size: large;
+}
+
+.c_general {
+    border: 2px solid none;
+    width: fit-content;
+    color: #f6921e;
+    font-size: 80px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-property:all;
+    transition-timing-function: linear;
+    transition-duration: 2s;
+    transition-delay: 0s;
+    margin-top: auto;
+}
+
+.c_general:hover {
+    text-decoration: 8px underline #f6921e;
+    transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-property:all;
+    transition-timing-function: linear;
+    transition-duration: 2s;
+    transition-delay: 0s;
+    animation-name: c_general_hover;
+    animation-timing-function: ease-in-out;
+    animation-duration: 700ms;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.c_general_one {
+    border: 2px solid none;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.c_medical_specialists_header {
+    border: 2px solid none;
+    background:rgba(9, 3, 3, 0.726);
+    height: fit-content;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0.5em;
+    padding-bottom: 3%;
+    margin-top: 30%;
+}
+
+.c_medical_specialists_header_title {
+    border: 2px solid none;
+    grid-column: 1/4;
+    text-align: center;
+    color: white;
+}
+
+.c_medical_specialists_faq {
+    border: 2px solid none;
+}
+
+.c_medical_specialists_header_image {
+    border: 2px solid none;
+}
+
+.c_medical_specialists_table_of_content {
+    border: 2px solid none;
+    position: relative;
+}
+
+.c_medical_specialists_header_title h2{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.c_medical_specialists_header_image img {
+    border: 2px solid none;
+    height: 100%;
+}
+
+.c_medical_specialists_faq ul li, .c_medical_specialists_faq ul li a,  .c_medical_specialists_faq h3 {
+    color: white;
+    letter-spacing: 1%;
+    border: 2px solid none;
+}
+
+.c_medical_specialists_faq h3 {
+    font-weight: 900;
+} 
+
+.c_medical_specialists_faq ul li a {
+    font-size: medium;
+} 
+
+.c_medical_specialists_table_of_content ul h4, .c_medical_specialists_table_of_content ul li, .c_medical_specialists_table_of_content ul li a {
+    color: white;
+}
+
+.c_medical_specialists_table_of_content ul {
+    border: 2px solid none;
+    margin-top: 20%;
+}
+
+.c_medical_specialists_table_of_content ul h4 {
+    border: 2px solid none;
+    font-weight: 900;
+    width: fit-content;
+    font-size: large;
+}
+
+.c_medical_specialists_body {
+    border: 2px solid none;
+    background: white;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    padding-right: 1%;
+    padding-left: 1%;
+    text-align: left;
+}
+
+.c_medical_specialists_body_sections {
+    border: 2px solid none;
+    margin-bottom: 7%;
+    background-color: white;
+    filter: drop-shadow(.1em .1em .1em);
+    z-index: -1;
+}
+
+.c_medical_specialists_body_sections h2 {
+    border: 2px solid none;
+    margin-bottom: 1%;
+    width: fit-content;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.c_medical_specialists_body_sections p {
+    border: 2px solid none;
+    font-size: large;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.c_medical_specialists_body_sections .c_medical_specialists_body_paragraph ul li {
+    font-size: large;
+}
+
+.c_medical_specialists {
+    border: 2px solid none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.c_medical_specialists div {
+    border: 2px solid none;
+}
+
+.c_medical_specialists_feedback_buttons {
+    border: 2px solid none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c_medical_specialists_share_article_buttons a i {
+    border: 2px solid none;
+    font-size: x-large; 
+    color: black;
+    margin-right: 0.3cm;
+}
+
+
+.c_medical_specialists_share_article_buttons a i:hover { 
+    color: purple;
+}
+
+.c_medical_specialist_article_feedback {
+    border: 2px solid none;
+    border-radius: 50%;
+    width: 60px;
+    height: 1.5cm;
+    font-size: large;
+}
+
+.c_medical_specialist_article_feedback_yes {
+    border: 2px solid #173886;
+    color: #173886;
+}
+
+.c_medical_specialist_article_feedback_yes:hover {
+    background: #173886;
+    color: white;
+}
+
+.c_medical_specialist_article_feedback_no {
+    border: 2px solid #c72f2f;
+    color: #c72f2f;
+}
+
+.c_medical_specialist_article_feedback_no:hover {
+    background: #c72f2f;
+    color: white;
+}
+
+.c_medical_specialists_posted_times p {
+    border: 2px solid none;
+    text-align: center;
+}
+
+.c_medical_specialists_posted_times_button_container {
+    border: 2px solid none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c_medical_specialists_posted_times_button {
+    border: 2px solid none;
+    display: flex;
+}
+
+.c_general_two .c_general_two_sections{
+    border: 2px solid transparent;
+    margin-bottom: 20%;
+}
+
+.c_general_container .c_general_two {
+    border: 2px solid none;
+    width: 80%;
+}
+
+.c_general_container > .c_general_two > p {
+    border: 2px solid none;
+    color: rgba(9, 3, 3, 0.726);
+    line-height: 1em;
+    font-size: large;
+    line-height: 3.1rem;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.c_general_two .c_general_two_box_container {
+    border: 2px solid none;
+    height: fit-content;
+    width: 1200px;
+    padding: 1%;
+}
+
+.c_general_two_h5_container {
+    border: 2px solid none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+ .c_general_two_h5_details {
+    border: 2px solid none;
+    height: 20vh;
+    width: 850px;
+    background-image: radial-gradient(350deg, white , white, black);
+    filter: drop-shadow(.1rem .1rem .1rem);
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.c_general_details_container {
+    height:  fit-content;
+    border: 2px solid none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.c_general_details {
+    border: 2px solid none;
+    margin-bottom: 5%;
+}
+
+.c_general_details_one {
+    border: 2px solid none;
+    padding: 1%;
+    width: 100%;
+}
+
+.c_general_details_two {
+    border: 2px solid none;
+    width: fit-content;
+    background-color: white;
+    filter: drop-shadow(.15em .15em .3em);
+    padding: 1%;
+    z-index: -1;
+}
+
+.c_general_details_three {
+    border: 2px solid none;
+    filter: drop-shadow(.15em .15em .3em);
+    padding: 1%;
+    z-index: -1;
+}
+
+.c_general_us_form {
+    border: 2px solid none;
+    background-color: white;
+    filter: drop-shadow(.15em .15em .3em);
+    z-index: -1;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+#c_general_form {
+    display: table;
+    border: 2px solid none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c_form_item_row {
+    display: table-row;
+    border: 2px solid none;
+}
+
+.c_form_item_row label {
+    display: table-cell;
+    border: 2px solid none;
+    width: fit-content;
+    font-size: large;
+    text-align: center;
+    height: fit-content;
+}
+
+.c_form_item_row #c_general_form_message {
+    vertical-align: top;
+}
+
+.c_form_item_row .c_general_form_details[type="text"], .c_form_item_row .c_general_form_details[type="tel"], .c_form_item_row .c_general_form_details[type="email"] {
+    border-radius: 2px;
+    display: table-cell;
+    border: 2px solid none;
+    width: 10cm;
+    height: 1.3cm; 
+    font-size: large;
+}
+
+.c_form_item_row textarea {
+    border-radius: 2px;
+    border: 2px solid none;
+    width: 10cm;
+    height: 2.8cm; 
+    font-size: large;
+}
+
+.c_form_item_row input[type="submit"] {
+    background-color: #f6921e;
+ }
+
+.c_form_title h2 {
+    border: 2px solid none;
+    width: 100%;
+    text-align: center;
+    filter: drop-shadow(.1em .1em .1em);
+    z-index: -1;
+    margin-bottom: 3%;
+    font-style: oblique;
+    font-size: 35px;
+}
+
+.c_general_details_two {
+    border: 2px solid none;
+    height: fit-content;
+}
+
+.c_general_details_two_details {
+    border: 2px solid none;
+    display: flex;
+    font-size: medium;
+    justify-content: space-evenly;
+}
+
+.c_general_details_two_details p{
+    text-align: center;
+    border: 2px solid none;
+    color: black;
+}
+
+.c_general_details_two .c_general_details_two_details_one p {
+    border: 2px solid none;
+    font-size: 20px;
+    color: black;
+    filter: drop-shadow(.1em .1em .1em);
+}
+
+.c_general_details_two .c_general_details_two_details_one p a, .c_general_details_two .c_general_details_two_details_two p a, .c_general_details_two .c_general_details_two_details_three p a, .c_general_details_two .c_general_details_two_details_four p a, .c_general_details_two .c_general_details_two_details_five p a{
+    color: black;
+}
+
+
+
+
+/*media queries*/
+
+@media(max-width:  850px) {
+
+    .c_content_title {
+        font-size: 50px;
+        margin-top: 2cm;
+    }
+
+    .c_general_container .c_general_two {
+        width: 100%;
+    }
+
+    .c_general_one {
+        border: 2px solid none;
+        height: auto;
+    }
+
+    .c_general_details {
+        margin-bottom: 15%;
+    }
+
+    .c_form_item_row .c_general_form_details[type="text"], .c_form_item_row .c_general_form_details[type="tel"], .c_form_item_row .c_general_form_details[type="email"] {
+        width: 100%;
+    }
+    
+    .c_form_item_row textarea {
+        width: 100%;
+    }
+
+    .c_form_item_row input[type="submit"] {
+       width: 100%;
+       background-color: #f6921e;
+    }
+
+    .c_medical_specialists_header {
+        border: 2px solid none;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .c_medical_specialists_header_title  h2{
+        font-size: 40px;
+    }
+
+    .c_medical_specialists_faq h3 {
+        font-weight: 400;
+    } 
+
+    .c_medical_specialists_table_of_content ul h4 {
+        font-weight: 400;
+    }
+
+    .c_medical_specialists_table_of_content ul {
+        border: 2px solid none;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-top: -2%;
+    }
+
+    .c_medical_specialists {
+      flex-direction: column;
+    }
+
+    .c_medical_specialists_posted_times_button_container {
+        justify-content: space-evenly;
+    }
+
+    .c_medical_specialists_feedback_buttons {
+        justify-content:space-evenly;
+    }
+
+    .c_medical_specialists_feedback p, .c_medical_specialists_share_article p {
+        border: 2px solid none;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .c_medical_specialists_share_article .c_medical_specialists_share_article_buttons {
+        border: 2px solid none;
+        display: flex;
+        justify-content: center;
+    }
+
+}

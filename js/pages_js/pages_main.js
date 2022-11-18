@@ -224,3 +224,15 @@ function closeTableOfContentModal() {
 closeTableOfContentModal();
 
 
+
+
+//c_general_pages_date_update
+
+// function cGeneralPagesUpdateDate() {
+
+//    const cGeneralPagesDateUpdate = document.querySelectorAll('.c_general_pages_date_update');
+//    const newDate = new Date();
+//    cGeneralPagesDateUpdate.innerHTML = newDate;
+// }
+
+// cGeneralPagesUpdateDate();

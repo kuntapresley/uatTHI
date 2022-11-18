@@ -2,6 +2,38 @@
 try {
 
 
+
+//website landing page slide show
+function c_slideShows() {
+
+    //get the slides containers
+    let slides = document.querySelectorAll('.c_slide_container');
+    let index = 0;
+
+    //get the slides buttons
+    // document.querySelector('#c_prev').addEventListener('click',previousSlide);
+    // document.querySelector('#c_next').addEventListener('click',nextSlide);
+
+    //next function 
+    function nextSlide() {
+        slides[index].classList.remove('active');
+        index = (index + 1 ) % slides.length;
+        slides[index].classList.add('active');
+    }
+
+    //previous function 
+    function previousSlide() {
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active');
+    }
+
+    setInterval(nextSlide, 7000);
+    
+}
+c_slideShows();
+
+
 //website loading event
 //get website element by creating variables
 function websitePageOnload() {
@@ -138,7 +170,6 @@ function upDateWebsiteDateYear() {
 upDateWebsiteDateYear();
 
 //date update ends
-
 
 
 
