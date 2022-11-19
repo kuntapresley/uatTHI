@@ -1,7 +1,25 @@
 
 try {
 
+async function cLandingPageAlert() {
+    alert("We recommend you use google chrome browser!");
+        
+    //     function cLandingPageConfirm() {
+    //     let text;
 
+    //     if (confirm() == true) {
+    //       text = "You are using google chrome browser!";
+    //     } 
+        
+    //     else {
+    //       text = "You are not using google chrome browser, please use google chrome for a better experience!";
+    //     }
+    //     document.querySelector(".c_browser_verification").innerHTML = text;
+    // }
+    
+    // );
+}
+cLandingPageAlert();
 
 //website landing page slide show
 function c_slideShows() {
