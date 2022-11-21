@@ -151,7 +151,7 @@ function websiteHeaderRemainSticky() {
      document.addEventListener("scroll", function(){
         if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
             navbar.classList.add("sticky");
-            navbar.style.borderTop = "10px solid #f6921e";
+            navbar.style.backgroundColor = "white";
             navbar.style.transitionProperty = "all";
             navbar.style.transitionDuration = "2s";
             navbar.style.transitionTimingFunction = "ease-in-out";
