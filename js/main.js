@@ -151,6 +151,7 @@ function websiteHeaderRemainSticky() {
      document.addEventListener("scroll", function(){
         if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
             navbar.classList.add("sticky");
+            navbar.style.height = "60px";
             navbar.style.backgroundColor = "white";
             navbar.style.transitionProperty = "all";
             navbar.style.transitionDuration = "2s";
@@ -159,6 +160,7 @@ function websiteHeaderRemainSticky() {
         else {
             navbar.classList.remove("sticky");
             navbar.style.borderTop = "none";
+            navbar.style.height = "80px";
         }
     
      });   
@@ -218,11 +220,68 @@ loadMoreArticlesFunction();
 
 
 
+//Scroll toTop Button script begins//
+function backToTheTop() {
+
+    var toTop = document.querySelector(".c_back_to_top");
+    window.addEventListener("scroll", ()=>{
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+    
+    
+    });
+
+}
+backToTheTop();
+//Scroll toTop Button script ends//
 
 
 
 
+//onScroll animation script begins//
+function onScrollAnimation() {
 
+    var animationItems = document.querySelectorAll(".c_main_0_A_header");
+
+    window.addEventListener("scroll", ()=>{
+
+        const triggerBotton = window.innerHeight / 5 * 4;
+
+        animationItems.forEach( (items) => {
+            const itemsTop = items.getBoundingClientRect().top;
+
+        if (itemsTop < animationItems) {
+            box.classList.add("show");
+        } 
+        else {
+            box.classList.remove("show");
+        }
+        });
+
+    
+    
+    });
+
+}
+onScrollAnimation();
+//onScroll animation script ends//
+
+
+function c_medical_specialist_article_feedback_yes() {
+
+    const c_medical_specialist_article_feedback_yes = document.querySelector("#c_medical_specialist_article_feedback_yes");
+    
+    c_medical_specialist_article_feedback_yes.addEventListener("click", ()=> {
+        c_medical_specialist_article_feedback_yes.innerHTML = "Yes i liked the article";
+        
+    alert("Yes i liked the article");
+    });
+    
+}
+c_medical_specialist_article_feedback_yes();
 
 
 //search articles functions

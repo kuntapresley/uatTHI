@@ -47,6 +47,36 @@
 }
 
 
+.c_back_to_top {
+  background: #f6921e; 
+  position:fixed; 
+  bottom: 11cm; 
+  right: 32px; 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content:center; 
+  font-size: 32px; 
+  color:#1f1f1f; 
+  text-decoration:none; 
+  opacity:0; 
+  pointer-events: none; 
+  transition:all .3s; 
+}
+
+.c_back_to_top.active {
+  opacity:1; 
+  pointer-events: auto; 
+  bottom: 1cm;
+}
+
+.c_back_to_top_icon {
+  color: white;
+}
+
+
 .c_icon_general_styling {
   color: #f6921e;
   font-size: 20px;
@@ -1219,6 +1249,12 @@ input[type=text], input[type=submit] {
 
 @media(max-width: 850px) {
 
+
+
+  
+  .c_back_to_top_icon {
+    margin-right: -30%;
+  }
 
 .c_header_contact {
   padding: 5.5%;

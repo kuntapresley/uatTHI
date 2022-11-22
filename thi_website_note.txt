@@ -1,0 +1,10 @@
+To do list
+
+1. Create search engine.
+2. Create the backend of contact form.
+3. Create the backend and pages of create account.
+4. Create was the article feedback form backend process for medical specilty
+5. Create share this  article functions
+6. Create how we reviewed this  article 
+7. Create scroll to the top.= done
+8. Create scroll to the bottom.
