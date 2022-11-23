@@ -33,7 +33,7 @@
 
 .c_contact {
     border: 2px solid none;
-    color: #f6921e;
+    color: #0b76af;
     font-size: 80px;
     text-transform: capitalize;
     font-weight: bolder;
@@ -143,7 +143,7 @@
 }
 
 .c_form_item_row input[type="submit"] {
-    background-color: #f6921e;
+    background-color: #0b76af;
  }
 
 .c_form_title h2 {
@@ -203,7 +203,7 @@
 
 .c_our_team_title {
     border: 2px solid none;
-    color: #f6921e;
+    color: #0b76af;
     font-size: 70px;
     text-transform: capitalize;
     font-weight: bolder;
@@ -274,7 +274,7 @@
 
     .c_form_item_row input[type="submit"] {
        width: 100%;
-       background-color: #f6921e;
+       background-color: #0b76af;
     }
 
     .c_our_team_container {
