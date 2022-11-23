@@ -1,27 +1,30 @@
 
 try {
 
-async function cLandingPageAlert() {
-    alert("We recommend you use google chrome browser!");
+// async function cLandingPageAlert() {
+//     alert("We recommend you use google chrome browser!");
         
-    //     function cLandingPageConfirm() {
-    //     let text;
+//     //     function cLandingPageConfirm() {
+//     //     let text;
 
-    //     if (confirm() == true) {
-    //       text = "You are using google chrome browser!";
-    //     } 
+//     //     if (confirm() == true) {
+//     //       text = "You are using google chrome browser!";
+//     //     } 
         
-    //     else {
-    //       text = "You are not using google chrome browser, please use google chrome for a better experience!";
-    //     }
-    //     document.querySelector(".c_browser_verification").innerHTML = text;
-    // }
+//     //     else {
+//     //       text = "You are not using google chrome browser, please use google chrome for a better experience!";
+//     //     }
+//     //     document.querySelector(".c_browser_verification").innerHTML = text;
+//     // }
     
-    // );
-}
-cLandingPageAlert();
+//     // );
+// }
+// cLandingPageAlert();
 
 //website landing page slide show
+
+
+
 function c_slideShows() {
 
     //get the slides containers
@@ -270,18 +273,15 @@ onScrollAnimation();
 //onScroll animation script ends//
 
 
-function c_medical_specialist_article_feedback_yes() {
+// function c_medical_specialist_article_feedback_yes() {
 
-    const c_medical_specialist_article_feedback_yes = document.querySelector("#c_medical_specialist_article_feedback_yes");
-    
-    c_medical_specialist_article_feedback_yes.addEventListener("click", ()=> {
-        c_medical_specialist_article_feedback_yes.innerHTML = "Yes i liked the article";
+//     document.getElementById("#c_medical_specialist_article_feedback_yes").addEventListener("click", function() {
         
-    alert("Yes i liked the article");
-    });
+//     alert("Yes i liked the article");
+//     });
     
-}
-c_medical_specialist_article_feedback_yes();
+// }
+// c_medical_specialist_article_feedback_yes();
 
 
 //search articles functions
