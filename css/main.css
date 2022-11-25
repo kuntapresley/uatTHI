@@ -480,11 +480,13 @@ main {
 .c_main_0 .c_slide_container .c_slide .c_image{
   border: 2px solid none;
   flex: 1 1 300px;
+  margin-right: 5%;
  }
 
 .c_main_0 .c_slide_container .c_slide .c_content{
   border: 2px solid none;
   flex: 2 1 300px;
+  margin-left: 5%;
   animation: slideContent .4s linear .6s backwards;
 }
 
@@ -518,7 +520,7 @@ main {
 
 .c_main_0 .c_slide_container .c_slide .c_image img{
   border: 2px solid none;
-  width: 70%;
+  width: 100%;
   max-height: 60vh;
   animation: slideImage .4s linear;
  }
@@ -1284,7 +1286,7 @@ input[type=text], input[type=submit] {
 
 
 
-@media(max-width: 850px) {
+@media(min-width: 167px) and (max-width: 1403px) {
 
   .spinner{
     width:50%; 
@@ -1316,7 +1318,7 @@ input[type=text], input[type=submit] {
   .c_checkbox {
     border: 2px solid none;
     display: block;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-right: 10%;
     cursor: pointer;
 }
@@ -1664,7 +1666,34 @@ input[type=text], input[type=submit] {
 
 
 
+/* @media(min-width: 967px) and (max-width: 1503px) {
 
+  .c_menu_options_items {
+    font-size: 100%;  
+  }
+
+  .c_search_container {
+    display: none;
+  }
+  
+  
+  .c_search_container form {
+    
+    display: none;
+  }
+  
+  .c_search_container form input {
+    border: 2px solid black;
+    width: 2cm;
+    height: 0.99cm;
+    border-radius: 0.19rem;
+  }
+  
+  .c_search_container form input[type="text"] {
+    font-size: 12px;
+  }
+
+} */
 
 
 
