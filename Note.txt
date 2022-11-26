@@ -24,3 +24,6 @@ Hint for this website project.
 
 5. create a subscribe form to update users for newsletter update.
 
+nkij
+ifmd
+

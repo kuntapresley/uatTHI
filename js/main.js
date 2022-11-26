@@ -122,26 +122,26 @@ c_Accordion_Function();
 //accordion programming ends
 
 
-function disableNavBarHREF() {
+// function disableNavBarHREF() {
 
-    function navbarHref(website) {
+//     function navbarHref(website) {
 
-    if(!website.matches) {
-        document.querySelector(".c_menu_acordion_panel").style.display= "none";
-    }    
-    else {
-        document.querySelector(".c_menu_options_items").href="javascript:void(0)";
-    }
-    }
+//     if(!website.matches) {
+//         document.querySelector(".c_menu_acordion_panel").style.display= "block";
+//     }    
+//     else {
+//         document.querySelector(".c_menu_options_items").href="javascript:void(0)";
+//     }
+//     }
 
-    const hrefLink = window.matchMedia("(max-width: 850px)");
+//     const hrefLink = window.matchMedia("(max-width: 850px)");
 
-    navbarHref(hrefLink);
+//     navbarHref(hrefLink);
 
-    hrefLink.addListener(navbarHref);
+//     hrefLink.addListener(navbarHref);
 
-}
-disableNavBarHREF();
+// }
+// disableNavBarHREF();
 
 
 
