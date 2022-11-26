@@ -1648,7 +1648,7 @@ input[type=text], input[type=submit] {
 
 
 
-@media(min-width: 167px) and (max-width: 1002px) {
+@media(max-width: 850px) {
 
   .spinner{
     width:50%; 
