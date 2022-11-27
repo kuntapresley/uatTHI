@@ -149,24 +149,99 @@ c_Accordion_Function();
 //sticky header/navigation
 
 function websiteHeaderRemainSticky() {
-    const navbar = document.querySelector(".c_header_navbar");
-    const sticky = navbar.offsetTop;
-     document.addEventListener("scroll", function(){
-        if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky");
-            navbar.style.height = "60px";
-            navbar.style.backgroundColor = "white";
-            navbar.style.transitionProperty = "all";
-            navbar.style.transitionDuration = "2s";
-            navbar.style.transitionTimingFunction = "ease-in-out";
-        } 
-        else {
-            navbar.classList.remove("sticky");
-            navbar.style.borderTop = "none";
-            navbar.style.height = "80px";
-        }
+      
     
-     });   
+        function c_navbarMedia_Function(e) {
+
+
+            function navbarMedia_Function_Loading(website) {
+
+                const navbar = document.querySelector(".c_header_navbar");
+                const navbarImage = document.querySelector(".c_menu_header_image_logo");
+                const sticky = navbar.offsetTop;
+
+                if(website.matches) {
+
+                    window.onload = document.addEventListener("scroll", function(){
+                        if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky");
+                            navbar.style.height = "60px";
+                            navbar.style.backgroundColor = "white";
+                            navbar.style.transitionProperty = "all";
+                            navbar.style.transitionDuration = "2s";
+                            navbar.style.transitionTimingFunction = "ease-in-out";
+                            navbarImage.style.transitionProperty = "all";
+                            navbarImage.style.transitionDuration = "2s";
+                            navbarImage.style.transitionTimingFunction = "ease-in-out";
+                            navbarImage.style.width = "120px";
+                            navbarImage.style.left = "20%";
+                        } 
+                        else {
+                            navbar.classList.remove("sticky");
+                            navbar.style.borderTop = "none";
+                            navbar.style.height = "70px";
+                            navbarImage.style.left = "10%";
+                            navbarImage.style.width = "180px";
+                            navbar.style.backgroundColor = "white";
+                            navbar.style.transitionProperty = "all";
+                            navbar.style.transitionDuration = "2s";
+                            navbar.style.transitionTimingFunction = "ease-in-out";
+                            navbarImage.style.transitionProperty = "all";
+                            navbarImage.style.transitionDuration = "2s";
+                            navbarImage.style.transitionTimingFunction = "ease-in-out";
+                        }
+                    });
+
+                }
+
+                else {
+                    document.addEventListener("scroll", function(){
+                        if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky");
+                            navbar.style.height = "60px";
+                            navbar.style.backgroundColor = "white";
+                            navbar.style.transitionProperty = "all";
+                            navbar.style.transitionDuration = "2s";
+                            navbar.style.transitionTimingFunction = "ease-in-out";
+                            navbarImage.style.transitionProperty = "all";
+                            navbarImage.style.transitionDuration = "2s";
+                            navbarImage.style.transitionTimingFunction = "ease-in-out";
+                            navbarImage.style.width = "140px";
+                            navbarImage.style.left = "60%";
+                        } 
+                        else {
+                            navbar.classList.remove("sticky");
+                            navbar.style.borderTop = "none";
+                            navbar.style.height = "100px";
+                            navbarImage.style.left = "20%";
+                            navbarImage.style.width = "200px";
+                            navbar.style.backgroundColor = "white";
+                            navbar.style.transitionProperty = "all";
+                            navbar.style.transitionDuration = "2s";
+                            navbar.style.transitionTimingFunction = "ease-in-out";
+                            navbarImage.style.transitionProperty = "all";
+                            navbarImage.style.transitionDuration = "2s";
+                            navbarImage.style.transitionTimingFunction = "ease-in-out";
+                        }
+
+                    });
+                
+                }
+        
+                }
+
+        
+            const websiteLogoMediaQueryF = window.matchMedia("(max-width: 850px)");
+    
+            navbarMedia_Function_Loading(websiteLogoMediaQueryF);
+        
+            websiteLogoMediaQueryF.addListener(navbarMedia_Function_Loading);
+
+        }
+
+        c_navbarMedia_Function();
+
+     
 }
 websiteHeaderRemainSticky();
 
