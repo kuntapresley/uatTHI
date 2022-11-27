@@ -122,26 +122,38 @@ c_Accordion_Function();
 //accordion programming ends
 
 
-// function disableNavBarHREF() {
 
-//     function navbarHref(website) {
 
-//     if(!website.matches) {
-//         document.querySelector(".c_menu_acordion_panel").style.display= "block";
-//     }    
-//     else {
-//         document.querySelector(".c_menu_options_items").href="javascript:void(0)";
-//     }
-//     }
 
-//     const hrefLink = window.matchMedia("(max-width: 850px)");
 
-//     navbarHref(hrefLink);
+function disableNavBarHREF() {
 
-//     hrefLink.addListener(navbarHref);
+    function navbarHref(website) {
 
-// }
-// disableNavBarHREF();
+        if(!website.matches) {
+            document.querySelector(".c_menu_options_home").href="javascript:void(0)";
+            document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
+            document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
+            document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
+        } 
+
+        else {
+            document.querySelector(".c_menu_options_home").href="javascript:void(0)";
+            document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
+            document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
+            document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
+        }
+
+    }
+
+    var hrefLink = window.matchMedia("(max-width: 850px)");
+
+    navbarHref(hrefLink);
+
+    hrefLink.addListener(navbarHref);
+
+}
+disableNavBarHREF();
 
 
 
