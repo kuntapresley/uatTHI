@@ -172,75 +172,97 @@ function websiteHeaderRemainSticky() {
                 const navbarImage = document.querySelector(".c_menu_header_image_logo");
                 const sticky = navbar.offsetTop;
 
-                if(website.matches) {
+                        if(website.matches) {
 
-                    window.onload = document.addEventListener("scroll", function(){
-                        if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
-                            navbar.classList.add("sticky");
-                            navbar.style.height = "60px";
-                            navbar.style.backgroundColor = "white";
-                            navbar.style.transitionProperty = "all";
-                            navbar.style.transitionDuration = "2s";
-                            navbar.style.transitionTimingFunction = "ease-in-out";
-                            navbarImage.style.transitionProperty = "all";
-                            navbarImage.style.transitionDuration = "2s";
-                            navbarImage.style.transitionTimingFunction = "ease-in-out";
-                            navbarImage.style.width = "120px";
-                            navbarImage.style.left = "20%";
-                        } 
-                        else {
-                            navbar.classList.remove("sticky");
-                            navbar.style.borderTop = "none";
-                            navbar.style.height = "70px";
-                            navbarImage.style.left = "10%";
-                            navbarImage.style.width = "180px";
-                            navbar.style.backgroundColor = "white";
-                            navbar.style.transitionProperty = "all";
-                            navbar.style.transitionDuration = "2s";
-                            navbar.style.transitionTimingFunction = "ease-in-out";
-                            navbarImage.style.transitionProperty = "all";
-                            navbarImage.style.transitionDuration = "2s";
-                            navbarImage.style.transitionTimingFunction = "ease-in-out";
-                        }
-                    });
+                            window.onload = document.addEventListener("scroll", function(){
+                                if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+                                    navbar.classList.add("sticky");
+                                    navbar.style.height = "60px";
+                                    navbar.style.backgroundColor = "white";
+                                    navbar.style.transitionProperty = "all";
+                                    navbar.style.transitionDuration = "2s";
+                                    navbar.style.transitionTimingFunction = "ease-in-out";
+                                    navbarImage.style.transitionProperty = "all";
+                                    navbarImage.style.transitionDuration = "2s";
+                                    navbarImage.style.transitionTimingFunction = "ease-in-out";
+                                    navbarImage.style.width = "120px";
+                                    navbarImage.style.left = "20%";
+                                } 
+                                else {
+                                    navbar.classList.remove("sticky");
+                                    navbar.style.borderTop = "none";
+                                    navbar.style.height = "70px";
+                                    navbarImage.style.left = "10%";
+                                    navbarImage.style.width = "180px";
+                                    navbar.style.backgroundColor = "white";
+                                    navbar.style.transitionProperty = "all";
+                                    navbar.style.transitionDuration = "2s";
+                                    navbar.style.transitionTimingFunction = "ease-in-out";
+                                    navbarImage.style.transitionProperty = "all";
+                                    navbarImage.style.transitionDuration = "2s";
+                                    navbarImage.style.transitionTimingFunction = "ease-in-out";
+                                }
+                            });
 
-                }
-
-                else {
-                    document.addEventListener("scroll", function(){
-                        if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
-                            navbar.classList.add("sticky");
-                            navbar.style.height = "60px";
-                            navbar.style.backgroundColor = "white";
-                            navbar.style.transitionProperty = "all";
-                            navbar.style.transitionDuration = "2s";
-                            navbar.style.transitionTimingFunction = "ease-in-out";
-                            navbarImage.style.transitionProperty = "all";
-                            navbarImage.style.transitionDuration = "2s";
-                            navbarImage.style.transitionTimingFunction = "ease-in-out";
-                            navbarImage.style.width = "140px";
-                            navbarImage.style.left = "60%";
-                        } 
-                        else {
-                            navbar.classList.remove("sticky");
-                            navbar.style.borderTop = "none";
-                            navbar.style.height = "100px";
-                            navbarImage.style.left = "20%";
-                            navbarImage.style.width = "200px";
-                            navbar.style.backgroundColor = "white";
-                            navbar.style.transitionProperty = "all";
-                            navbar.style.transitionDuration = "2s";
-                            navbar.style.transitionTimingFunction = "ease-in-out";
-                            navbarImage.style.transitionProperty = "all";
-                            navbarImage.style.transitionDuration = "2s";
-                            navbarImage.style.transitionTimingFunction = "ease-in-out";
                         }
 
-                    });
+                        else {
+
+
+                            document.addEventListener("scroll", function(){
+
+
+                            if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+
+                                navbar.classList.add("sticky");
+                                navbar.style.height = "60px";
+                                navbar.style.backgroundColor = "white";
+                                navbar.style.transitionProperty = "all";
+                                navbar.style.transitionDuration = "2s";
+                                navbar.style.transitionTimingFunction = "ease-in-out";
+                                navbar.style.transitionTimingFunction = "ease-in-out";
+                                navbarImage.style.transitionProperty = "all";
+                                navbarImage.style.transitionProperty = "all";
+                                navbarImage.style.transitionDuration = "2s";
+                                navbarImage.style.transitionTimingFunction = "ease-in-out";
+                                navbarImage.style.width = "140px";
+                                navbarImage.style.left = "60%";
+
+                                let navBarOptions = document.querySelectorAll(".c_menu_accordion");
+                                let i;
+                                for(i = 0; i < navBarOptions.length; i++){                                    
+                                    navBarOptions[i].style.height = "55px";
+                                    navBarOptions[i].style.transitionDuration = "2s";
+                                    navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
+                                }
+                            } 
+
+                            else {
+
+                                navbar.classList.remove("sticky");
+                                navbar.style.borderTop = "none";
+                                navbar.style.height = "100px";
+                                navbar.style.backgroundColor = "white";
+                                navbar.style.transitionProperty = "all";
+                                navbar.style.transitionDuration = "2s";
+                                navbar.style.transitionTimingFunction = "ease-in-out";
+                                navbarImage.style.left = "20%";
+                                navbarImage.style.width = "200px";
+                                navbarImage.style.transitionProperty = "all";
+                                navbarImage.style.transitionDuration = "2s";
+                                navbarImage.style.transitionTimingFunction = "ease-in-out";
+                                navbarImage.style.transitionProperty = "all";
+                                    
+                                
+                                
+
+                            }
+
+                            });
                 
-                }
+                       }
         
-                }
+            }
 
         
             const websiteLogoMediaQueryF = window.matchMedia("(max-width: 850px)");
