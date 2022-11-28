@@ -1,62 +1,149 @@
 
 try {
 
-// async function cLandingPageAlert() {
-//     alert("We recommend you use google chrome browser!");
-        
-//     //     function cLandingPageConfirm() {
-//     //     let text;
 
-//     //     if (confirm() == true) {
-//     //       text = "You are using google chrome browser!";
-//     //     } 
-        
-//     //     else {
-//     //       text = "You are not using google chrome browser, please use google chrome for a better experience!";
-//     //     }
-//     //     document.querySelector(".c_browser_verification").innerHTML = text;
-//     // }
+
+
+window.onload=function(){
+
     
-//     // );
-// }
-// cLandingPageAlert();
+    function c_slideShows() {
 
-//website landing page slide show
+        // get the slides containers
+        let slides = document.querySelectorAll('.c_slide_container');
+        let index = 0;
 
+        // get the slides buttons
+        document.querySelector('#c_prev').addEventListener('click',previousSlide);
+        document.querySelector('#c_next').addEventListener('click',nextSlide);
 
+        // next function 
+        function nextSlide() {
+            slides[index].classList.remove('active');
+            index = (index + 1 ) % slides.length;
+            slides[index].classList.add('active');
+        }
 
-function c_slideShows() {
+        //previous function 
+        function previousSlide() {
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
 
-    //get the slides containers
-    let slides = document.querySelectorAll('.c_slide_container');
-    let index = 0;
-
-    //get the slides buttons
-    // document.querySelector('#c_prev').addEventListener('click',previousSlide);
-    // document.querySelector('#c_next').addEventListener('click',nextSlide);
-
-    //next function 
-    function nextSlide() {
-        slides[index].classList.remove('active');
-        index = (index + 1 ) % slides.length;
-        slides[index].classList.add('active');
+        setInterval(nextSlide, 7000);
+        
     }
+    c_slideShows();
 
-    //previous function 
-    function previousSlide() {
-        slides[index].classList.remove('active');
-        index = (index - 1 + slides.length) % slides.length;
-        slides[index].classList.add('active');
-    }
 
-    setInterval(nextSlide, 7000);
+
+    function slideTouchFunction() {
     
+        const elViewCon = document.querySelector(".c_main_0");
+        const el = document.querySelectorAll('.c_slide_container');
+        const lilen = el[1].length - 1;
+        let conWidth = elViewCon.clientWidth;
+        let leftData = parseInt(el[0].style.left);
+    
+    
+        const pointer = {}; //{start:0, end:0, gap:0};
+        let SLIDE_COUNT = 0;
+        let PERMISSION = true;
+        let TIMED = 500;
+    
+        elViewCon.style.overflowX = "hidden";
+        el[0].style.marginLeft = 0;
+        el[0].style.position = "relatve";
+        el[0].style.left = 0;
+        el[0].style.transition = "left" + TIMED + "ms linear";
+    
+    
+        const fnSlideMove = () => {
+    
+            if(PERMISSION) {
+    
+                PERMISSION = false;
+    
+                if (pointer.gap >= 100 && SLIDE_COUNT < lilen){
+                    SLIDE_COUNT +=1;
+                }
+    
+                else if(pointer.gap <= -100 && SLIDE_COUNT > 0 ){
+                    SLIDE_COUNT -=1;
+                }
+    
+                el[0].style.left = -100 * SLIDE_COUNT + '%';
+                setTimeout(()=> {PERMISSION = true;}, TIMED);
+            }
+        };
+    
+        elViewCon.addEventListener('touchstart', (e) => {
+            console.log("Hello", e.changedTouches[0].pageX);
+            pointer.start = e.changedTouches[0].pageX;
+            leftData = parseInt(el[0].style.left);
+        });
+      
+        elViewCon.addEventListener('touchmove', (e) => {
+            let _newPointer = e.changedTouches[0].pageX;
+            let _pointerMove = pointer.start - _newPointer;
+            let movePer = parseInt(_pointerMove / conWidth * 100);
+            let moverPx = leftData - movePer;
+    
+            // if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
+            //     el[0].style.left = (leftData - movePer) + '%';
+            // }
+    
+            let firstLocationCheck = SLIDE_COUNT === 0 && _pointerMove > 0;
+            let lastLocationCheck = SLIDE_COUNT !== lilen && _pointerMove < 0;
+    
+            if(firstLocationCheck || lastLocationCheck) {
+                el[0].style.left = (leftData - movePer) + '%';
+            }
+    
+            else if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
+                el[0].style.left = (leftData - movePer) + '%';
+            }
+            
+        });
+    
+        elViewCon.addEventListener('touchend', (e)=> {
+    
+            console.log("Touch End", e.changedTouches[0].pageX);
+            pointer.end = e.changedTouches[0].pageX;
+    
+            pointer.gap = pointer.start - pointer.end;
+            console.log(pointer);
+            fnSlideMove();
+        });
+    
+    
+    
+    
+    };
+    slideTouchFunction();
+    
+    
+
 }
-c_slideShows();
 
 
-//website loading event
-//get website element by creating variables
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function websitePageOnload() {
 
     var headerLoading = document.querySelector("header"),
@@ -83,6 +170,11 @@ function websitePageOnload() {
 websitePageOnload();
 
 //website loading event
+
+
+
+
+
 
 
 //accordion programming starts
