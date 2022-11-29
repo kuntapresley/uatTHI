@@ -38,90 +38,90 @@ window.onload=function(){
 
 
 
-    function slideTouchFunction() {
+    // function slideTouchFunction() {
     
-        const elViewCon = document.querySelector(".c_main_0");
-        const el = document.querySelectorAll('.c_slide_container');
-        const lilen = el[1].length - 1;
-        let conWidth = elViewCon.clientWidth;
-        let leftData = parseInt(el[0].style.left);
-    
-    
-        const pointer = {}; //{start:0, end:0, gap:0};
-        let SLIDE_COUNT = 0;
-        let PERMISSION = true;
-        let TIMED = 500;
-    
-        elViewCon.style.overflowX = "hidden";
-        el[0].style.marginLeft = 0;
-        el[0].style.position = "relatve";
-        el[0].style.left = 0;
-        el[0].style.transition = "left" + TIMED + "ms linear";
+    //     const elViewCon = document.querySelector(".c_main_0");
+    //     const el = document.querySelectorAll('.c_slide_container');
+    //     const lilen = el[1].length - 1;
+    //     let conWidth = elViewCon.clientWidth;
+    //     let leftData = parseInt(el[0].style.left);
     
     
-        const fnSlideMove = () => {
+    //     const pointer = {}; //{start:0, end:0, gap:0};
+    //     let SLIDE_COUNT = 0;
+    //     let PERMISSION = true;
+    //     let TIMED = 500;
     
-            if(PERMISSION) {
+    //     elViewCon.style.overflowX = "hidden";
+    //     el[0].style.marginLeft = 0;
+    //     el[0].style.position = "relatve";
+    //     el[0].style.left = 0;
+    //     el[0].style.transition = "left" + TIMED + "ms linear";
     
-                PERMISSION = false;
     
-                if (pointer.gap >= 100 && SLIDE_COUNT < lilen){
-                    SLIDE_COUNT +=1;
-                }
+    //     const fnSlideMove = () => {
     
-                else if(pointer.gap <= -100 && SLIDE_COUNT > 0 ){
-                    SLIDE_COUNT -=1;
-                }
+    //         if(PERMISSION) {
     
-                el[0].style.left = -100 * SLIDE_COUNT + '%';
-                setTimeout(()=> {PERMISSION = true;}, TIMED);
-            }
-        };
+    //             PERMISSION = false;
     
-        elViewCon.addEventListener('touchstart', (e) => {
-            console.log("Hello", e.changedTouches[0].pageX);
-            pointer.start = e.changedTouches[0].pageX;
-            leftData = parseInt(el[0].style.left);
-        });
+    //             if (pointer.gap >= 100 && SLIDE_COUNT < lilen){
+    //                 SLIDE_COUNT +=1;
+    //             }
+    
+    //             else if(pointer.gap <= -100 && SLIDE_COUNT > 0 ){
+    //                 SLIDE_COUNT -=1;
+    //             }
+    
+    //             el[0].style.left = -100 * SLIDE_COUNT + '%';
+    //             setTimeout(()=> {PERMISSION = true;}, TIMED);
+    //         }
+    //     };
+    
+    //     elViewCon.addEventListener('touchstart', (e) => {
+    //         console.log("Hello", e.changedTouches[0].pageX);
+    //         pointer.start = e.changedTouches[0].pageX;
+    //         leftData = parseInt(el[0].style.left);
+    //     });
       
-        elViewCon.addEventListener('touchmove', (e) => {
-            let _newPointer = e.changedTouches[0].pageX;
-            let _pointerMove = pointer.start - _newPointer;
-            let movePer = parseInt(_pointerMove / conWidth * 100);
-            let moverPx = leftData - movePer;
+    //     elViewCon.addEventListener('touchmove', (e) => {
+    //         let _newPointer = e.changedTouches[0].pageX;
+    //         let _pointerMove = pointer.start - _newPointer;
+    //         let movePer = parseInt(_pointerMove / conWidth * 100);
+    //         let moverPx = leftData - movePer;
     
-            // if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
-            //     el[0].style.left = (leftData - movePer) + '%';
-            // }
+    //         // if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
+    //         //     el[0].style.left = (leftData - movePer) + '%';
+    //         // }
     
-            let firstLocationCheck = SLIDE_COUNT === 0 && _pointerMove > 0;
-            let lastLocationCheck = SLIDE_COUNT !== lilen && _pointerMove < 0;
+    //         let firstLocationCheck = SLIDE_COUNT === 0 && _pointerMove > 0;
+    //         let lastLocationCheck = SLIDE_COUNT !== lilen && _pointerMove < 0;
     
-            if(firstLocationCheck || lastLocationCheck) {
-                el[0].style.left = (leftData - movePer) + '%';
-            }
+    //         if(firstLocationCheck || lastLocationCheck) {
+    //             el[0].style.left = (leftData - movePer) + '%';
+    //         }
     
-            else if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
-                el[0].style.left = (leftData - movePer) + '%';
-            }
+    //         else if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
+    //             el[0].style.left = (leftData - movePer) + '%';
+    //         }
             
-        });
+    //     });
     
-        elViewCon.addEventListener('touchend', (e)=> {
+    //     elViewCon.addEventListener('touchend', (e)=> {
     
-            console.log("Touch End", e.changedTouches[0].pageX);
-            pointer.end = e.changedTouches[0].pageX;
+    //         console.log("Touch End", e.changedTouches[0].pageX);
+    //         pointer.end = e.changedTouches[0].pageX;
     
-            pointer.gap = pointer.start - pointer.end;
-            console.log(pointer);
-            fnSlideMove();
-        });
-    
-    
+    //         pointer.gap = pointer.start - pointer.end;
+    //         console.log(pointer);
+    //         fnSlideMove();
+    //     });
     
     
-    };
-    slideTouchFunction();
+    
+    
+    // };
+    // slideTouchFunction();
     
     
 
