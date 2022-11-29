@@ -524,20 +524,76 @@ onScrollAnimation();
 
 
 
+// document.querySelector(".c_menu_icons").addEventListener("mouseover", function(x) {
+//     x.classList.toggle("fa fa-chevron-up");
+//   });
 
 
 
 
 
+function articleSourcesTag() {
+
+    const medicalPostedSourcesArticle = document.querySelector(".c_medical_specialists_posted_times_sources_button");
+    const medicalPostedHistoryArticle = document.querySelector(".c_medical_specialists_posted_times_history_button");
+
+    
+    medicalPostedSourcesArticle.addEventListener("click", ()=> {
+
+        var x = document.querySelector(".c_article_sources_div");
+
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } 
+        
+        else {
+          x.style.display = "none";
+        }
+
+    });
+
+    medicalPostedHistoryArticle.addEventListener("click", ()=> {
+
+        var x = document.querySelector(".c_article_history_div");
+
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } 
+        
+        else {
+          x.style.display = "none";
+        }
+
+    });
+
+}
+
+articleSourcesTag();
 
 
 
 
 
+function faqFunction() {
 
+    var acc = document.getElementsByClassName("c_faq_accordion");
+    var i;
 
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+    }
 
+}
 
+faqFunction();
 
 
 

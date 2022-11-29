@@ -389,24 +389,62 @@ header {
 
 
 .c_dropdown .c_menu_acordion_panel {
-  border: 2px solid none;
+  border: 2px solid white;
   display: none;
   transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   position: relative;
-  width: 150px;
+  background-color: transparent;
 }
 
 .c_dropdown:hover .c_menu_acordion_panel {
   display: grid;
   transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  width: 150px;
 } 
 
+/* .c_dropdown:hover .c_menu_acordion_panel {
+  border: 2px solid blue;
+  width:10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}  */
+
+.c_dropdown .c_menu_acordion_panel .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details a{
+ color: black;
+ font-size: larger;
+ border: 1px solid white;
+ list-style-type: none;
+ width: 150px;
+ padding-left: 2%;
+}
+
+.c_menu_acordion_panel .c_menu_acordion_panel_list {
+  list-style-type: none;
+  width: fit-content;
+  background-color: transparent;
+}
+
+.c_menu_acordion_panel .c_menu_acordion_panel_list li {
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  list-style-type: none;
+  line-height: 2.9em;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateX(-25%);
+}
 
 
 .c_menu_accordion {
   margin-right: 85px;
   background-color: white;
   border: 2px solid navajowhite;
+  border-top: none;
+  border-bottom: none;
   width: 100%;
   height: 95px;
   cursor: pointer;
@@ -417,9 +455,7 @@ header {
   background-color: #0b76af;
   box-shadow: 1px 1px 1px 2px #0b76af;
   border-bottom-right-radius: 2rem;
-  border: 2px solid none;
-  border-top: none;
-  border-bottom: none;
+  border: none;
 }
 
 .c_menu_accordion a p {
@@ -520,6 +556,11 @@ header {
   border: 2px solid none;
   width: fit-content;
   height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 
@@ -1417,11 +1458,34 @@ input[type=text], input[type=submit] {
 
 
 
+.c_menu_icons {
+  border: 2px solid none;
+  background:black;
+  border-radius: 50%;
+  height: fit-content;
+  margin-top: 17.5%;
+}
+
+.c_menu_list .c_menu_options_items i {
+  font-size: x-large;
+  /* margin-top: 18%;*/
+  margin-right: -80%; 
+  color: white;
+  position: absolute;
+}
+
+ .c_menu_icons_long {
+  margin-top: 11.5%;
+}
 
 
 
+.c_menu_icons:hover {
+  background: #0077b5;
+}
 
-
+.c_menu_list .c_menu_options_items i:hover {
+}
 
 
 
@@ -1684,6 +1748,20 @@ input[type=text], input[type=submit] {
 
 @media(max-width: 850px) {
 
+
+
+  .c_menu_icons {
+    display: none;
+  }
+  
+  .c_menu_list .c_menu_options_items i {
+    display: none;
+  }
+  
+   .c_menu_icons_long {
+    display: none;
+  }
+
   .spinner{
     width:50%; 
     height:25%;  
@@ -1780,7 +1858,7 @@ input[type=text], input[type=submit] {
 
   .c_menu_accordion {
     background-color: white;
-    border: 2px solid white;
+    border: 2px solid red;
   }
 
   .c_menu_accordion:hover{
@@ -1793,6 +1871,38 @@ input[type=text], input[type=submit] {
     color: black;
     box-shadow: unset;
   }
+
+  
+.c_dropdown .c_menu_acordion_panel .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details a{
+  color: black;
+  font-size: larger;
+  border: none;
+  list-style-type: none;
+  width: 100%; 
+  padding-left: 0%;
+ }
+ 
+ .c_menu_acordion_panel .c_menu_acordion_panel_list {
+   border-bottom: 5px solid black;
+   list-style-type: circle;
+   width: 100%;
+   background-color: unset;
+ }
+ 
+ .c_menu_acordion_panel .c_menu_acordion_panel_list li {
+  border-top: none;
+  border-bottom: none;
+   border-left: none;
+   border-right: none;
+   list-style-type: circle;
+   line-height: none;
+   background-color: unset;
+   display: block;
+   flex-wrap: none;
+   transform: none;
+ }
+ 
+ 
 
   .c_menu_options_items {
     border: 2px solid none;
@@ -1818,7 +1928,7 @@ input[type=text], input[type=submit] {
 
  .c_menu_list {
     border: 2px sandybrown none;
-    margin-bottom: 2.5%;
+    margin-bottom: 2.8%;
   }
 
   .c_menu_options_items:hover {
