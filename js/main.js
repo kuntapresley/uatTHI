@@ -263,6 +263,7 @@ function websiteHeaderRemainSticky() {
                 const navbar = document.querySelector(".c_header_navbar");
                 const navbarImage = document.querySelector(".c_menu_header_image_logo");
                 const sticky = navbar.offsetTop;
+                // const cMenuAccordionP = document.querySelectorAll(".c_menu_accordion > a > p");
 
                         if(website.matches) {
 
@@ -319,15 +320,19 @@ function websiteHeaderRemainSticky() {
                                 navbarImage.style.transitionTimingFunction = "ease-in-out";
                                 navbarImage.style.width = "140px";
                                 navbarImage.style.left = "60%";
+                                // cMenuAccordionP.style.color = "gold";
 
                                 let navBarOptions = document.querySelectorAll(".c_menu_accordion");
                                 let i;
+
                                 for(i = 0; i < navBarOptions.length; i++){                                    
                                     navBarOptions[i].style.height = "55px";
                                     navBarOptions[i].style.transitionDuration = "2s";
                                     navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
                                 }
+
                             } 
+                            
 
                             else {
 
@@ -345,7 +350,13 @@ function websiteHeaderRemainSticky() {
                                 navbarImage.style.transitionTimingFunction = "ease-in-out";
                                 navbarImage.style.transitionProperty = "all";
                                     
-                                
+                                let navBarOptions = document.querySelectorAll(".c_menu_accordion");
+                                let i;
+                                for(i = 0; i < navBarOptions.length; i++){                                    
+                                    navBarOptions[i].style.height = "95px";
+                                    navBarOptions[i].style.transitionDuration = "2s";
+                                    navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
+                                }
                                 
 
                             }
