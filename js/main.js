@@ -532,43 +532,53 @@ onScrollAnimation();
 
 
 
-function articleSourcesTag() {
 
-    const medicalPostedSourcesArticle = document.querySelector(".c_medical_specialists_posted_times_sources_button");
-    const medicalPostedHistoryArticle = document.querySelector(".c_medical_specialists_posted_times_history_button");
 
-    
-    medicalPostedSourcesArticle.addEventListener("click", ()=> {
+//faq functions begin
+    window.onload = function() {
 
-        var x = document.querySelector(".c_article_sources_div");
+        function articleSourcesTag() {
 
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } 
-        
-        else {
-          x.style.display = "none";
+            const medicalPostedSourcesArticle = document.querySelector(".c_medical_specialists_posted_times_sources_button");
+            const medicalPostedHistoryArticle = document.querySelector(".c_medical_specialists_posted_times_history_button");
+
+            
+            medicalPostedSourcesArticle.addEventListener("click", ()=> {
+
+                var x = document.querySelector(".c_article_sources_div");
+
+                if (x.style.display === "none") {
+                x.style.display = "block";
+                } 
+                
+                else {
+                x.style.display = "none";
+                }
+
+            });
+
+            medicalPostedHistoryArticle.addEventListener("click", ()=> {
+
+                var x = document.querySelector(".c_article_history_div");
+
+                if (x.style.display === "none") {
+                x.style.display = "block";
+                } 
+                
+                else {
+                x.style.display = "none";
+                }
+
+            });
+
         }
 
-    });
+        articleSourcesTag();
 
-    medicalPostedHistoryArticle.addEventListener("click", ()=> {
+    }
+//faq functions ends
 
-        var x = document.querySelector(".c_article_history_div");
 
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } 
-        
-        else {
-          x.style.display = "none";
-        }
-
-    });
-
-}
-
-articleSourcesTag();
 
 
 
