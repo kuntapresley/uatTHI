@@ -2096,7 +2096,7 @@ input[type=text], input[type=submit] {
   .c_articles_column {
     filter: drop-shadow(.0em .0em .1em);
     width: 97%;
-    margin-bottom: 4cm;
+    margin-bottom:100%;
     margin-left: auto;
     margin-right: auto;
   }
