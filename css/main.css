@@ -451,12 +451,7 @@ header {
   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) .5s;
 }
 
-.c_menu_accordion:hover  {
-  background-color: #0b76af;
-  box-shadow: 1px 1px 1px 2px #0b76af;
-  border-bottom-right-radius: 2rem;
-  border: none;
-}
+
 
 .c_menu_accordion a p {
   border: 1px solid none;
@@ -473,8 +468,7 @@ header {
 
 .c_menu_accordion:hover p{
   border: 1px solid none;
-  text-decoration: none;
-  color: white;
+  text-decoration: 2px solid black;
   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) .5s;
 }
 
@@ -1460,7 +1454,7 @@ input[type=text], input[type=submit] {
 
 .c_menu_icons {
   border: 2px solid none;
-  background:black;
+  background:none;
   border-radius: 50%;
   height: fit-content;
   margin-top: 17.5%;
@@ -1470,7 +1464,7 @@ input[type=text], input[type=submit] {
   font-size: x-large;
   /* margin-top: 18%;*/
   margin-right: -80%; 
-  color: white;
+  color: black;
   position: absolute;
 }
 
@@ -1480,12 +1474,7 @@ input[type=text], input[type=submit] {
 
 
 
-.c_menu_icons:hover {
-  background: #0077b5;
-}
 
-.c_menu_list .c_menu_options_items i:hover {
-}
 
 
 

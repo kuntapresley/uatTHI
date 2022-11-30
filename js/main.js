@@ -38,6 +38,9 @@ window.onload=function(){
 
 
 
+
+
+
     // function slideTouchFunction() {
     
     //     const elViewCon = document.querySelector(".c_main_0");
@@ -130,6 +133,50 @@ window.onload=function(){
 
 
 
+// function loadHistButtons() {
+
+//     var cMedicalSpecialistsPostedTimesButton = document.getElementsByClassName("c_medical_specialists_posted_times_button");
+
+//     window.onload = function(){
+        
+       
+//             const medicalPostedSourcesArticle = document.querySelector(".c_medical_specialists_posted_times_sources_button");
+//             const medicalPostedHistoryArticle = document.querySelector(".c_medical_specialists_posted_times_history_button");
+
+            
+//             medicalPostedSourcesArticle.addEventListener("click", ()=> {
+
+//                 var x = document.querySelector(".c_article_sources_div");
+
+//                 if (x.style.display === "none") {
+//                 x.style.display = "block";
+//                 } 
+                
+//                 else {
+//                 x.style.display = "none";
+//                 }
+
+//             });
+
+            
+
+//             medicalPostedHistoryArticle.addEventListener("click", ()=> {
+
+//                 var x = document.querySelector(".c_article_history_div");
+
+//                 if (x.style.display === "none") {
+//                 x.style.display = "block";
+//                 } 
+                
+//                 else {
+//                 x.style.display = "none";
+//                 }
+
+//             });
+    
+//     };
+// }
+// loadHistButtons();
 
 
 
@@ -485,100 +532,9 @@ onScrollAnimation();
 //onScroll animation script ends//
 
 
-// function c_medical_specialist_article_feedback_yes() {
-
-//     document.getElementById("#c_medical_specialist_article_feedback_yes").addEventListener("click", function() {
-        
-//     alert("Yes i liked the article");
-//     });
-    
-// }
-// c_medical_specialist_article_feedback_yes();
-
-
-//search articles functions
-// function myFunction() {
-
-
-//     var cSearchmMyInput, filter, articlesList, articlesContents, a, i, txtValue;
-
-//     cSearchmMyInput = document.querySelector(".c_search_2_myInput");
-//     filter = cSearchmMyInput.value.toUpperCase();
-//     articlesList = document.querySelector(".c_articles_row");
-//     articlesContents = articlesList.querySelectorAll(".c_articles_column");
-//     for (i = 0; i < articlesContents.length; i++) {
-//         a = articlesContents[i].querySelector("p")[0];
-//         txtValue = a.textContent || a.innerText;
-//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//             articlesContents[i].style.display = "";
-//         } else {
-//             articlesContents[i].style.display = "none";
-//         }
-//     }
-
-// };
 
 
 
-
-
-
-
-// document.querySelector(".c_menu_icons").addEventListener("mouseover", function(x) {
-//     x.classList.toggle("fa fa-chevron-up");
-//   });
-
-
-
-
-
-
-
-//faq functions begin
-    window.onload = function() {
-
-        function articleSourcesTag() {
-
-            const medicalPostedSourcesArticle = document.querySelector(".c_medical_specialists_posted_times_sources_button");
-            const medicalPostedHistoryArticle = document.querySelector(".c_medical_specialists_posted_times_history_button");
-
-            
-            medicalPostedSourcesArticle.addEventListener("click", ()=> {
-
-                var x = document.querySelector(".c_article_sources_div");
-
-                if (x.style.display === "none") {
-                x.style.display = "block";
-                } 
-                
-                else {
-                x.style.display = "none";
-                }
-
-            });
-
-            
-
-            medicalPostedHistoryArticle.addEventListener("click", ()=> {
-
-                var x = document.querySelector(".c_article_history_div");
-
-                if (x.style.display === "none") {
-                x.style.display = "block";
-                } 
-                
-                else {
-                x.style.display = "none";
-                }
-
-            });
-
-        }
-
-        articleSourcesTag();
-
-    }
-//faq functions ends
 
 
 
