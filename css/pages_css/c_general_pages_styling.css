@@ -565,7 +565,9 @@
     }
 
     .c_general_container .c_general_two {
+        border: 2px solid none;
         width: 100%;
+        padding: 5%;
     }
 
     .c_general_one {
