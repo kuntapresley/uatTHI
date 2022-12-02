@@ -1,0 +1,14 @@
+
+work todo list
+
+*change the font size
+*update dropdown in navbar
+*fix a symbol in load more articles button
+*fix explore articles text
+*fix a picture in navbar shortcut menus
+*add live chat
+
+
+
+
+
