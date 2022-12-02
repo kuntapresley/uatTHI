@@ -1,9 +1,15 @@
 /*website icon styling both big size and media query*/
 
 @font-face {
-  font-family: 'Fredoka-Regular';
-  src: url('css/static/Fredoka/Fredoka-Regular.ttf')
+  font-family: 'EduSABeginner-Bold.ttf';
+  src: url("EduSABeginner-Bold.ttf.ttf");
 }
+
+* {
+  font-family:'EduSABeginner-Bold.ttf';
+}
+
+
 
 .c_contact_href_header {
   color: white !important;
@@ -169,11 +175,6 @@ p .c_icon_header_content_general_styling {
 
 /*website icon styling both big size and media query*/
 
-
-
-*{
-    color: black;
-}
 
 html{
     box-sizing:border-box;
@@ -1735,7 +1736,7 @@ input[type=text], input[type=submit] {
 
 
 
-@media(max-width: 850px) {
+@media screen and (max-width: 850px) {
 
 
 
