@@ -179,6 +179,7 @@ p .c_icon_header_content_general_styling {
 html{
     box-sizing:border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
