@@ -2010,7 +2010,11 @@ input[type=text], input[type=submit] {
   }
 
 
-  
+  main {
+    border: 2px solid red;
+    width: 100%;
+  }
+
   .c_main_0_A_content_container {
     flex-direction: column;
     height: auto;
