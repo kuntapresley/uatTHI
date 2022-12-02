@@ -191,30 +191,30 @@ window.onload=function(){
 
 
 
-function websitePageOnload() {
+// function websitePageOnload() {
 
-    var headerLoading = document.querySelector("header"),
-    mainLoading = document.querySelector("main"),
-    footerLoading = document.querySelector("footer");
-
-
-    headerLoading.style.display = "none";
-    mainLoading.style.display = "none";
-    footerLoading.style.display = "none";
+//     var headerLoading = document.querySelector("header"),
+//     mainLoading = document.querySelector("main"),
+//     footerLoading = document.querySelector("footer");
 
 
+//     headerLoading.style.display = "none";
+//     mainLoading.style.display = "none";
+//     footerLoading.style.display = "none";
 
 
-    var overlay = document.querySelector(".overlay");
-    window.addEventListener('load', function () {
-        overlay.style.display = "none";
-        headerLoading.style.display = "block";
-        mainLoading.style.display = "block";
-        footerLoading.style.display = "block";
-    });
 
-}
-websitePageOnload();
+
+//     var overlay = document.querySelector(".overlay");
+//     window.addEventListener('load', function () {
+//         overlay.style.display = "none";
+//         headerLoading.style.display = "block";
+//         mainLoading.style.display = "block";
+//         footerLoading.style.display = "block";
+//     });
+
+// }
+// websitePageOnload();
 
 //website loading event
 
@@ -226,37 +226,37 @@ websitePageOnload();
 
 //accordion programming starts
 
-function c_Accordion_Function(e) {
+// function c_Accordion_Function(e) {
 
-    function accordionLoading(website) {
+//     function accordionLoading(website) {
 
-        var accordion = document.querySelectorAll(".c_menu_accordion");
+//         var accordion = document.querySelectorAll(".c_menu_accordion");
 
-        if(website.matches) {
+//         if(website.matches) {
 
-            for (i = 0; i < accordion.length; i++) {
-                accordion[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                const panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                panel.style.display = "none";
-                } else {
-                panel.style.display = "block";
-                }
-            });
-            }
+//             for (i = 0; i < accordion.length; i++) {
+//                 accordion[i].addEventListener("click", function() {
+//                 this.classList.toggle("active");
+//                 const panel = this.nextElementSibling;
+//                 if (panel.style.display === "block") {
+//                 panel.style.display = "none";
+//                 } else {
+//                 panel.style.display = "block";
+//                 }
+//             });
+//             }
             
-        }   
+//         }   
 
-    }
+//     }
 
-    const accordionLoad = window.matchMedia("(max-width: 850px)");
+//     const accordionLoad = window.matchMedia("(max-width: 850px)");
 
-    accordionLoading(accordionLoad);
+//     accordionLoading(accordionLoad);
 
-    accordionLoad.addListener(accordionLoading);
-}
-c_Accordion_Function();
+//     accordionLoad.addListener(accordionLoading);
+// }
+// c_Accordion_Function();
     
 //accordion programming ends
 
@@ -265,169 +265,169 @@ c_Accordion_Function();
 
 
 
-function disableNavBarHREF() {
+// function disableNavBarHREF() {
 
-    function navbarHref(website) {
+//     function navbarHref(website) {
 
-        if(!website.matches) {
-            document.querySelector(".c_menu_options_home").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
-        } 
+//         if(!website.matches) {
+//             document.querySelector(".c_menu_options_home").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
+//         } 
 
-        else {
-            document.querySelector(".c_menu_options_home").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
-        }
+//         else {
+//             document.querySelector(".c_menu_options_home").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
+//         }
 
-    }
+//     }
 
-    var hrefLink = window.matchMedia("(max-width: 850px)");
+//     var hrefLink = window.matchMedia("(max-width: 850px)");
 
-    navbarHref(hrefLink);
+//     navbarHref(hrefLink);
 
-    hrefLink.addListener(navbarHref);
+//     hrefLink.addListener(navbarHref);
 
-}
-disableNavBarHREF();
+// }
+// disableNavBarHREF();
 
 
 
 
 //sticky header/navigation
 
-function websiteHeaderRemainSticky() {
+// function websiteHeaderRemainSticky() {
       
     
-        function c_navbarMedia_Function(e) {
+//         function c_navbarMedia_Function(e) {
 
 
-            function navbarMedia_Function_Loading(website) {
+//             function navbarMedia_Function_Loading(website) {
 
-                const navbar = document.querySelector(".c_header_navbar");
-                const navbarImage = document.querySelector(".c_menu_header_image_logo");
-                const sticky = navbar.offsetTop;
-                // const cMenuAccordionP = document.querySelectorAll(".c_menu_accordion > a > p");
+//                 const navbar = document.querySelector(".c_header_navbar");
+//                 const navbarImage = document.querySelector(".c_menu_header_image_logo");
+//                 const sticky = navbar.offsetTop;
+//                 // const cMenuAccordionP = document.querySelectorAll(".c_menu_accordion > a > p");
 
-                        if(website.matches) {
+//                         if(website.matches) {
 
-                            window.onload = document.addEventListener("scroll", function(){
-                                if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
-                                    navbar.classList.add("sticky");
-                                    navbar.style.height = "60px";
-                                    navbar.style.backgroundColor = "white";
-                                    navbar.style.transitionProperty = "all";
-                                    navbar.style.transitionDuration = "2s";
-                                    navbar.style.transitionTimingFunction = "ease-in-out";
-                                    navbarImage.style.transitionProperty = "all";
-                                    navbarImage.style.transitionDuration = "2s";
-                                    navbarImage.style.transitionTimingFunction = "ease-in-out";
-                                    navbarImage.style.width = "120px";
-                                    navbarImage.style.left = "20%";
-                                } 
-                                else {
-                                    navbar.classList.remove("sticky");
-                                    navbar.style.borderTop = "none";
-                                    navbar.style.height = "70px";
-                                    navbarImage.style.left = "10%";
-                                    navbarImage.style.width = "180px";
-                                    navbar.style.backgroundColor = "white";
-                                    navbar.style.transitionProperty = "all";
-                                    navbar.style.transitionDuration = "2s";
-                                    navbar.style.transitionTimingFunction = "ease-in-out";
-                                    navbarImage.style.transitionProperty = "all";
-                                    navbarImage.style.transitionDuration = "2s";
-                                    navbarImage.style.transitionTimingFunction = "ease-in-out";
-                                }
-                            });
+//                             window.onload = document.addEventListener("scroll", function(){
+//                                 if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+//                                     navbar.classList.add("sticky");
+//                                     navbar.style.height = "60px";
+//                                     navbar.style.backgroundColor = "white";
+//                                     navbar.style.transitionProperty = "all";
+//                                     navbar.style.transitionDuration = "2s";
+//                                     navbar.style.transitionTimingFunction = "ease-in-out";
+//                                     navbarImage.style.transitionProperty = "all";
+//                                     navbarImage.style.transitionDuration = "2s";
+//                                     navbarImage.style.transitionTimingFunction = "ease-in-out";
+//                                     navbarImage.style.width = "120px";
+//                                     navbarImage.style.left = "20%";
+//                                 } 
+//                                 else {
+//                                     navbar.classList.remove("sticky");
+//                                     navbar.style.borderTop = "none";
+//                                     navbar.style.height = "70px";
+//                                     navbarImage.style.left = "10%";
+//                                     navbarImage.style.width = "180px";
+//                                     navbar.style.backgroundColor = "white";
+//                                     navbar.style.transitionProperty = "all";
+//                                     navbar.style.transitionDuration = "2s";
+//                                     navbar.style.transitionTimingFunction = "ease-in-out";
+//                                     navbarImage.style.transitionProperty = "all";
+//                                     navbarImage.style.transitionDuration = "2s";
+//                                     navbarImage.style.transitionTimingFunction = "ease-in-out";
+//                                 }
+//                             });
 
-                        }
+//                         }
 
-                        else {
-
-
-                            document.addEventListener("scroll", function(){
+//                         else {
 
 
-                            if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
+//                             document.addEventListener("scroll", function(){
 
-                                navbar.classList.add("sticky");
-                                navbar.style.height = "60px";
-                                navbar.style.backgroundColor = "white";
-                                navbar.style.transitionProperty = "all";
-                                navbar.style.transitionDuration = "2s";
-                                navbar.style.transitionTimingFunction = "ease-in-out";
-                                navbar.style.transitionTimingFunction = "ease-in-out";
-                                navbarImage.style.transitionProperty = "all";
-                                navbarImage.style.transitionProperty = "all";
-                                navbarImage.style.transitionDuration = "2s";
-                                navbarImage.style.transitionTimingFunction = "ease-in-out";
-                                navbarImage.style.width = "140px";
-                                navbarImage.style.left = "60%";
-                                // cMenuAccordionP.style.color = "gold";
 
-                                let navBarOptions = document.querySelectorAll(".c_menu_accordion");
-                                let i;
+//                             if (window.pageYOffset > 10 && window.pageYOffset >= sticky) {
 
-                                for(i = 0; i < navBarOptions.length; i++){                                    
-                                    navBarOptions[i].style.height = "55px";
-                                    navBarOptions[i].style.transitionDuration = "2s";
-                                    navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
-                                }
+//                                 navbar.classList.add("sticky");
+//                                 navbar.style.height = "60px";
+//                                 navbar.style.backgroundColor = "white";
+//                                 navbar.style.transitionProperty = "all";
+//                                 navbar.style.transitionDuration = "2s";
+//                                 navbar.style.transitionTimingFunction = "ease-in-out";
+//                                 navbar.style.transitionTimingFunction = "ease-in-out";
+//                                 navbarImage.style.transitionProperty = "all";
+//                                 navbarImage.style.transitionProperty = "all";
+//                                 navbarImage.style.transitionDuration = "2s";
+//                                 navbarImage.style.transitionTimingFunction = "ease-in-out";
+//                                 navbarImage.style.width = "140px";
+//                                 navbarImage.style.left = "60%";
+//                                 // cMenuAccordionP.style.color = "gold";
 
-                            } 
+//                                 let navBarOptions = document.querySelectorAll(".c_menu_accordion");
+//                                 let i;
+
+//                                 for(i = 0; i < navBarOptions.length; i++){                                    
+//                                     navBarOptions[i].style.height = "55px";
+//                                     navBarOptions[i].style.transitionDuration = "2s";
+//                                     navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
+//                                 }
+
+//                             } 
                             
 
-                            else {
+//                             else {
 
-                                navbar.classList.remove("sticky");
-                                navbar.style.borderTop = "none";
-                                navbar.style.height = "100px";
-                                navbar.style.backgroundColor = "white";
-                                navbar.style.transitionProperty = "all";
-                                navbar.style.transitionDuration = "2s";
-                                navbar.style.transitionTimingFunction = "ease-in-out";
-                                navbarImage.style.left = "20%";
-                                navbarImage.style.width = "200px";
-                                navbarImage.style.transitionProperty = "all";
-                                navbarImage.style.transitionDuration = "2s";
-                                navbarImage.style.transitionTimingFunction = "ease-in-out";
-                                navbarImage.style.transitionProperty = "all";
+//                                 navbar.classList.remove("sticky");
+//                                 navbar.style.borderTop = "none";
+//                                 navbar.style.height = "100px";
+//                                 navbar.style.backgroundColor = "white";
+//                                 navbar.style.transitionProperty = "all";
+//                                 navbar.style.transitionDuration = "2s";
+//                                 navbar.style.transitionTimingFunction = "ease-in-out";
+//                                 navbarImage.style.left = "20%";
+//                                 navbarImage.style.width = "200px";
+//                                 navbarImage.style.transitionProperty = "all";
+//                                 navbarImage.style.transitionDuration = "2s";
+//                                 navbarImage.style.transitionTimingFunction = "ease-in-out";
+//                                 navbarImage.style.transitionProperty = "all";
                                     
-                                let navBarOptions = document.querySelectorAll(".c_menu_accordion");
-                                let i;
-                                for(i = 0; i < navBarOptions.length; i++){                                    
-                                    navBarOptions[i].style.height = "95px";
-                                    navBarOptions[i].style.transitionDuration = "2s";
-                                    navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
-                                }
+//                                 let navBarOptions = document.querySelectorAll(".c_menu_accordion");
+//                                 let i;
+//                                 for(i = 0; i < navBarOptions.length; i++){                                    
+//                                     navBarOptions[i].style.height = "95px";
+//                                     navBarOptions[i].style.transitionDuration = "2s";
+//                                     navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
+//                                 }
                                 
 
-                            }
+//                             }
 
-                            });
+//                             });
                 
-                       }
+//                        }
         
-            }
+//             }
 
         
-            const websiteLogoMediaQueryF = window.matchMedia("(max-width: 850px)");
+//             const websiteLogoMediaQueryF = window.matchMedia("(max-width: 850px)");
     
-            navbarMedia_Function_Loading(websiteLogoMediaQueryF);
+//             navbarMedia_Function_Loading(websiteLogoMediaQueryF);
         
-            websiteLogoMediaQueryF.addListener(navbarMedia_Function_Loading);
+//             websiteLogoMediaQueryF.addListener(navbarMedia_Function_Loading);
 
-        }
+//         }
 
-        c_navbarMedia_Function();
+//         c_navbarMedia_Function();
 
      
-}
-websiteHeaderRemainSticky();
+// }
+// websiteHeaderRemainSticky();
 
 //sticky header/navigation
 
