@@ -373,7 +373,7 @@ function websiteHeaderRemainSticky() {
                                 let i;
 
                                 for(i = 0; i < navBarOptions.length; i++){                                    
-                                    navBarOptions[i].style.height = "55px";
+                                    navBarOptions[i].style.height = "52px";
                                     navBarOptions[i].style.transitionDuration = "2s";
                                     navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
                                 }
@@ -385,7 +385,7 @@ function websiteHeaderRemainSticky() {
 
                                 navbar.classList.remove("sticky");
                                 navbar.style.borderTop = "none";
-                                navbar.style.height = "100px";
+                                navbar.style.height = "80px";
                                 navbar.style.backgroundColor = "white";
                                 navbar.style.transitionProperty = "all";
                                 navbar.style.transitionDuration = "2s";
@@ -400,7 +400,7 @@ function websiteHeaderRemainSticky() {
                                 let navBarOptions = document.querySelectorAll(".c_menu_accordion");
                                 let i;
                                 for(i = 0; i < navBarOptions.length; i++){                                    
-                                    navBarOptions[i].style.height = "95px";
+                                    navBarOptions[i].style.height = "72px";
                                     navBarOptions[i].style.transitionDuration = "2s";
                                     navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
                                 }

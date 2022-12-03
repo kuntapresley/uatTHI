@@ -320,7 +320,7 @@ header {
     position: static; /* Set the navbar to fixed position */
     bottom: 1; /* Position the navbar at the bottom of the page */
     width: 100%; /* Full width */
-    height: 100px;
+    height: 80px;
     background: white;
     z-index: 1;
     background-image: linear-gradient(white);
@@ -447,11 +447,13 @@ header {
 
 
 .c_dropdown {
-  border:none;
+  border: none;
   background-color: white;
   height: fit-content;
   display: block;
   width: auto;
+  height: 50px;
+  margin-top: auto;
 }
 
 
@@ -461,7 +463,7 @@ header {
   display: none;
   transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   position: relative;
-  background-color: transparent;
+  background-color: white;
 }
 
 .c_dropdown:hover .c_menu_acordion_panel {
@@ -510,11 +512,11 @@ header {
 .c_menu_accordion {
   margin-right: 85px;
   background-color: white;
-  border: 2px solid navajowhite;
+  border: 2px solid none;
   border-top: none;
   border-bottom: none;
   width: 100%;
-  height: 95px;
+  height: 72px;
   cursor: pointer;
   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) .5s;
 }
@@ -535,8 +537,8 @@ header {
 } */
 
 .c_menu_accordion:hover p{
-  border: 1px solid none;
-  text-decoration: 2px solid black;
+  border: none;
+  color:#0077b5;
   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) .5s;
 }
 
@@ -547,17 +549,17 @@ header {
   color: black;
 }
 
-.c_menu_accordion .c_menu_options_whoweare p {
+/* .c_menu_accordion .c_menu_options_whoweare p {
   margin-top: 12%;
 }
 
 .c_menu_accordion  .c_menu_options_contact p{
   margin-top: 17%;
-}
+} */
 
 .c_menu_options {
   border: 2px solid none;
-  width: auto;
+  width: 80%;
   height: 100%;
   position: relative;
   margin-top: auto;
@@ -585,22 +587,25 @@ header {
 }
 
 .c_menu_options_items {
-  border: 2px solid none;
+  border: 2px solid grey;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   display: flex;
   color:black;
   justify-content: center;
   font-weight: 800;
   text-decoration: none;
-  font-size: 100%;
+  font-size: medium;
   word-spacing: 0.10em;
   letter-spacing: 0.01em;
   transition-property: all;
   transition-duration: 500ms;
   transition-delay: 0ms;
   transition-timing-function: cubic-bezier(1, 0, 0, 1);
-  text-transform: uppercase;
+  text-transform:capitalize;
   border-radius: 3px;
   position: relative;
 
@@ -1653,10 +1658,15 @@ input[type=text], input[type=submit] {
 
 
 .c_footer_five_container .c_footer_five_container_one_D .c_footer_five_container_one_B_content_B .c_footer_navbar_text {
+  border: 2px solid none;
   color: black;
   font-size: 12px;
 }
 
+.c_footer_five_container .c_footer_five_container_one_D .c_footer_five_container_one_B_content_B {
+  border: 2px solid none;
+  width: 7.5cm;
+}
 
 .c_share_content_button_container .fa-facebook{
   color: #3b5998;
@@ -1695,7 +1705,7 @@ input[type=text], input[type=submit] {
 
 
 
-.c_menu_icons {
+/* .c_menu_icons {
   border: 2px solid none;
   background:none;
   border-radius: 50%;
@@ -1705,21 +1715,34 @@ input[type=text], input[type=submit] {
 
 .c_menu_list .c_menu_options_items i {
   font-size: x-large;
-  /* margin-top: 18%;*/
+  /* margin-top: 18%;
   margin-right: -80%; 
   color: black;
   position: absolute;
-}
+} */
 
  .c_menu_icons_long {
   margin-top: 11.5%;
 }
 
+.c_menu_options_items p{
+  border: 2px solid none;
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content:center ;
+}
 
 
+.c_menu_accordion .c_menu_options_items p{
+  border: 2px solid none;
+  margin-top: 6%;
+}
 
-
-
+.c_menu_header_shortcut_menu {
+  display: none;
+}
 
 .c_error_message {
   border: 2px dashed azure;
@@ -2017,6 +2040,34 @@ input[type=text], input[type=submit] {
     height: 80px;
   }
 
+
+  .c_menu_header_shortcut_menu {
+    display: block;
+    border: 1px solid none;
+    position: relative;
+    right: 7%;
+    width: fit-content;
+    float: right;
+  }
+
+  .c_menu_header_shortcut_menu   .c_menu_header_image_link{
+    width: 80px;
+    height: 100%;
+    float: right;
+    margin-top: 14%;
+  }
+
+  .c_menu_header_shortcut_menu   .c_menu_header_image_link .c_menu_header_image_logo{
+    width: 100%;
+    height: 70%;
+    float: right;
+  }
+
+  .c_shortcut_menu_header_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .c_menu_header .c_menu_header_image_link img{
     left: 10%;
 }
@@ -2063,7 +2114,12 @@ input[type=text], input[type=submit] {
 } 
 
 .c_dropdown {
- display:grid;
+ display:flex;
+ flex-direction: column;
+ border-top: none;
+ border-bottom: none;
+ border-left: none;
+ border-right: none;
 }
 
   .c_menu_options { 
@@ -2108,17 +2164,22 @@ input[type=text], input[type=submit] {
 .c_dropdown .c_menu_acordion_panel .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details a{
   color: black;
   font-size: larger;
-  border: none;
+  border: 2px solid red;
   list-style-type: none;
   width: 100%; 
+  height: auto;
   padding-left: 0%;
+  margin-left: -10%;
  }
  
  .c_menu_acordion_panel .c_menu_acordion_panel_list {
-   border-bottom: 5px solid black;
+   border-bottom: 5px solid red;
    list-style-type: circle;
    width: 100%;
    background-color: unset;
+   position: inherit;
+  background-color: white;
+  z-index: 1;
  }
  
  .c_menu_acordion_panel .c_menu_acordion_panel_list li {
@@ -2132,6 +2193,7 @@ input[type=text], input[type=submit] {
    display: block;
    flex-wrap: none;
    transform: none;
+   text-align: left;
  }
  
  
@@ -2510,7 +2572,10 @@ input[type=text], input[type=submit] {
     color: black;
   }
 
-  
+  .c_footer_five_container .c_footer_five_container_one_D .c_footer_five_container_one_B_content_B {
+    border: 2px solid none;
+    width: 100%;
+  }
 
 
 }
