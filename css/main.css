@@ -6,8 +6,10 @@
 }
 
 * {
-  font-family:'EduSABeginner-Bold.ttf';
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none
 }
+
 
 
 .swiper {
@@ -16,15 +18,16 @@
   height: 100%;
   display: flex;
   position: relative;
-  z-index: ;
+  z-index: -1;
   cursor: grabbing;
 }
 
 
 .swiper {
   width: 100%;
-  height: 75vh;
+  height: 100%;
   background: #000;
+  z-index: ;
 }
 
 .swiper-slide {
@@ -840,6 +843,152 @@ main {
  .c_landingPage_slideShow_btns_icons:hover {
   color: white;
  }
+
+ .c_about_us_container {
+  border: 2px solid none;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .c_about_us {
+  border: 2px solid none;
+  height: auto;
+  padding: 2%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+ .c_about_us div h2 {
+  color: #0077b5;
+  font-size: xx-large;
+  font-weight: 700;
+ }
+
+ .c_about_us_B,  .c_about_us_C  {
+  border: 2px solid grey;
+  display: flex;
+  padding: 1%;
+  border-left: none;
+  border-right: none;
+ }
+
+ 
+ .c_about_us_B div,  .c_about_us_C div {
+  border: 2px solid none;
+  width: 45%;
+  
+ }
+
+
+
+ .c_about_us_B div img,  .c_about_us_C div img{
+  border: 2px solid none;
+  width: 60%;
+  height: 6.5cm;
+  margin-left: 20%;
+ }
+
+ /* .c_about_us_B .c_about_us_B_button_container {
+  border: 2px solid #0b76af; 
+
+ } */
+
+ .c_about_us_B  a, .c_about_us_C  a{
+  text-decoration: none;
+ }
+
+ .c_about_us_B  a p,  .c_about_us_C  a p{
+  border: 2px solid #0b76af; 
+  font-size: large;
+  padding: 1.3% 7% 1.3% 7%;
+  width: fit-content;
+  text-decoration: none;
+  background-color: #0077b5;
+  color: white;
+  border-radius: 1em;
+  transition: all ease-in-out .2s;
+ }
+
+ .c_about_us_B  a p:hover,  .c_about_us_C  a p:hover{
+  background-color: white;
+  color: #0077b5;
+ }
+
+ .c_about_us_D_container {
+  border: 2px solid none;
+  width: 100%;
+ }
+
+ .c_about_us_D_container ul li {
+  list-style-type: none;
+ }
+
+ .c_about_us_D_container ul li .c_about_us_D_details {
+  border: 2px solid none;
+  display: flex;
+  justify-content: left;
+ }
+
+ .c_about_us_D_container ul li .c_about_us_D_details .c_about_us_D_detials_image{
+  border: 2px solid none;
+  width: 5cm;
+  height: 2cm;
+ }
+
+ .c_about_us_D_container ul li .c_about_us_D_details .c_about_us_D_detials_image img{
+  border: 2px solid none;
+  width: 80%;
+  height: 2cm;
+ }
+
+ .c_about_us_D_container ul li .c_about_us_D_details .c_about_us_D_detials_paragraph{
+  border: 2px solid none;
+ }
+
+ .c_about_us_E {
+  border: 2px solid grey;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: none;
+  border-right: none;
+ }
+
+ .c_about_us_E .c_about_our_team_accordion {
+  border: 2px solid none;
+  background-color: #0077b5;
+  color: white;
+  list-style-type: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+  font-size: xx-large;
+ }
+
+ .c_about_our_team_acordion_panel {
+  display: none;
+ }
+
+
+ .c_about_our_team_accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.ourTeamIcons:after {
+  content: "\2212";
+}
 
  .c_main_0_A_header {
   border: 2px solid none;
@@ -2081,6 +2230,21 @@ input[type=text], input[type=submit] {
     border: 2px solid none;
     width: 100%;
   }
+
+  .c_about_us_B div,  .c_about_us_C div {
+    border: 2px solid none;
+    width: 95%;
+    
+   }
+  
+  
+  
+   .c_about_us_B div img,  .c_about_us_C div img{
+    border: 2px solid none;
+    width: 90%;
+    height: 6.5cm;
+    margin-left: 0%;
+   }
 
   .c_main_0_A_content_container {
     flex-direction: column;
