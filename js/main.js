@@ -577,8 +577,14 @@ function ourTeamAccordion() {
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
+            panel.style.transitionProperty = "all";
+            panel.style.transitionDuration = ".5s";
+            panel.style.transitionTimingFunction = "ease-in-out";
           } else {
             panel.style.display = "block";
+            panel.style.transitionProperty = "all";
+            panel.style.transitionDuration = ".5s";
+            panel.style.transitionTimingFunction = "ease-in-out";
           }
     });
     }
