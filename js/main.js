@@ -4,131 +4,131 @@ try {
 
 
 
-window.onload=function(){
+// window.onload=function(){
 
     
-    function c_slideShows() {
+//     function c_slideShows() {
 
-        // get the slides containers
-        let slides = document.querySelectorAll('.c_slide_container');
-        let index = 0;
+//         // get the slides containers
+//         let slides = document.querySelectorAll('.c_slide_container');
+//         let index = 0;
 
-        // get the slides buttons
-        document.querySelector('#c_prev').addEventListener('click',previousSlide);
-        document.querySelector('#c_next').addEventListener('click',nextSlide);
+//         // get the slides buttons
+//         document.querySelector('#c_prev').addEventListener('click',previousSlide);
+//         document.querySelector('#c_next').addEventListener('click',nextSlide);
 
-        // next function 
-        function nextSlide() {
-            slides[index].classList.remove('active');
-            index = (index + 1 ) % slides.length;
-            slides[index].classList.add('active');
-        }
+//         // next function 
+//         function nextSlide() {
+//             slides[index].classList.remove('active');
+//             index = (index + 1 ) % slides.length;
+//             slides[index].classList.add('active');
+//         }
 
-        //previous function 
-        function previousSlide() {
-            slides[index].classList.remove('active');
-            index = (index - 1 + slides.length) % slides.length;
-            slides[index].classList.add('active');
-        }
+//         //previous function 
+//         function previousSlide() {
+//             slides[index].classList.remove('active');
+//             index = (index - 1 + slides.length) % slides.length;
+//             slides[index].classList.add('active');
+//         }
 
-        setInterval(nextSlide, 7000);
+//         setInterval(nextSlide, 7000);
         
-    }
-    c_slideShows();
+//     }
+//     c_slideShows();
 
 
 
 
 
 
-    // function slideTouchFunction() {
+//     // function slideTouchFunction() {
     
-    //     const elViewCon = document.querySelector(".c_main_0");
-    //     const el = document.querySelectorAll('.c_slide_container');
-    //     const lilen = el[1].length - 1;
-    //     let conWidth = elViewCon.clientWidth;
-    //     let leftData = parseInt(el[0].style.left);
-    
-    
-    //     const pointer = {}; //{start:0, end:0, gap:0};
-    //     let SLIDE_COUNT = 0;
-    //     let PERMISSION = true;
-    //     let TIMED = 500;
-    
-    //     elViewCon.style.overflowX = "hidden";
-    //     el[0].style.marginLeft = 0;
-    //     el[0].style.position = "relatve";
-    //     el[0].style.left = 0;
-    //     el[0].style.transition = "left" + TIMED + "ms linear";
+//     //     const elViewCon = document.querySelector(".c_main_0");
+//     //     const el = document.querySelectorAll('.c_slide_container');
+//     //     const lilen = el[1].length - 1;
+//     //     let conWidth = elViewCon.clientWidth;
+//     //     let leftData = parseInt(el[0].style.left);
     
     
-    //     const fnSlideMove = () => {
+//     //     const pointer = {}; //{start:0, end:0, gap:0};
+//     //     let SLIDE_COUNT = 0;
+//     //     let PERMISSION = true;
+//     //     let TIMED = 500;
     
-    //         if(PERMISSION) {
+//     //     elViewCon.style.overflowX = "hidden";
+//     //     el[0].style.marginLeft = 0;
+//     //     el[0].style.position = "relatve";
+//     //     el[0].style.left = 0;
+//     //     el[0].style.transition = "left" + TIMED + "ms linear";
     
-    //             PERMISSION = false;
     
-    //             if (pointer.gap >= 100 && SLIDE_COUNT < lilen){
-    //                 SLIDE_COUNT +=1;
-    //             }
+//     //     const fnSlideMove = () => {
     
-    //             else if(pointer.gap <= -100 && SLIDE_COUNT > 0 ){
-    //                 SLIDE_COUNT -=1;
-    //             }
+//     //         if(PERMISSION) {
     
-    //             el[0].style.left = -100 * SLIDE_COUNT + '%';
-    //             setTimeout(()=> {PERMISSION = true;}, TIMED);
-    //         }
-    //     };
+//     //             PERMISSION = false;
     
-    //     elViewCon.addEventListener('touchstart', (e) => {
-    //         console.log("Hello", e.changedTouches[0].pageX);
-    //         pointer.start = e.changedTouches[0].pageX;
-    //         leftData = parseInt(el[0].style.left);
-    //     });
+//     //             if (pointer.gap >= 100 && SLIDE_COUNT < lilen){
+//     //                 SLIDE_COUNT +=1;
+//     //             }
+    
+//     //             else if(pointer.gap <= -100 && SLIDE_COUNT > 0 ){
+//     //                 SLIDE_COUNT -=1;
+//     //             }
+    
+//     //             el[0].style.left = -100 * SLIDE_COUNT + '%';
+//     //             setTimeout(()=> {PERMISSION = true;}, TIMED);
+//     //         }
+//     //     };
+    
+//     //     elViewCon.addEventListener('touchstart', (e) => {
+//     //         console.log("Hello", e.changedTouches[0].pageX);
+//     //         pointer.start = e.changedTouches[0].pageX;
+//     //         leftData = parseInt(el[0].style.left);
+//     //     });
       
-    //     elViewCon.addEventListener('touchmove', (e) => {
-    //         let _newPointer = e.changedTouches[0].pageX;
-    //         let _pointerMove = pointer.start - _newPointer;
-    //         let movePer = parseInt(_pointerMove / conWidth * 100);
-    //         let moverPx = leftData - movePer;
+//     //     elViewCon.addEventListener('touchmove', (e) => {
+//     //         let _newPointer = e.changedTouches[0].pageX;
+//     //         let _pointerMove = pointer.start - _newPointer;
+//     //         let movePer = parseInt(_pointerMove / conWidth * 100);
+//     //         let moverPx = leftData - movePer;
     
-    //         // if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
-    //         //     el[0].style.left = (leftData - movePer) + '%';
-    //         // }
+//     //         // if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
+//     //         //     el[0].style.left = (leftData - movePer) + '%';
+//     //         // }
     
-    //         let firstLocationCheck = SLIDE_COUNT === 0 && _pointerMove > 0;
-    //         let lastLocationCheck = SLIDE_COUNT !== lilen && _pointerMove < 0;
+//     //         let firstLocationCheck = SLIDE_COUNT === 0 && _pointerMove > 0;
+//     //         let lastLocationCheck = SLIDE_COUNT !== lilen && _pointerMove < 0;
     
-    //         if(firstLocationCheck || lastLocationCheck) {
-    //             el[0].style.left = (leftData - movePer) + '%';
-    //         }
+//     //         if(firstLocationCheck || lastLocationCheck) {
+//     //             el[0].style.left = (leftData - movePer) + '%';
+//     //         }
     
-    //         else if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
-    //             el[0].style.left = (leftData - movePer) + '%';
-    //         }
+//     //         else if(SLIDE_COUNT !== 0 && SLIDE_COUNT !== lilen) {
+//     //             el[0].style.left = (leftData - movePer) + '%';
+//     //         }
             
-    //     });
+//     //     });
     
-    //     elViewCon.addEventListener('touchend', (e)=> {
+//     //     elViewCon.addEventListener('touchend', (e)=> {
     
-    //         console.log("Touch End", e.changedTouches[0].pageX);
-    //         pointer.end = e.changedTouches[0].pageX;
+//     //         console.log("Touch End", e.changedTouches[0].pageX);
+//     //         pointer.end = e.changedTouches[0].pageX;
     
-    //         pointer.gap = pointer.start - pointer.end;
-    //         console.log(pointer);
-    //         fnSlideMove();
-    //     });
-    
-    
+//     //         pointer.gap = pointer.start - pointer.end;
+//     //         console.log(pointer);
+//     //         fnSlideMove();
+//     //     });
     
     
-    // };
-    // slideTouchFunction();
+    
+    
+//     // };
+//     // slideTouchFunction();
     
     
 
-}
+// }
 
 
 
@@ -193,9 +193,9 @@ window.onload=function(){
 
 function websitePageOnload() {
 
-    var headerLoading = document.querySelector("header"),
-    mainLoading = document.querySelector("main"),
-    footerLoading = document.querySelector("footer");
+    var headerLoading = document.querySelectorAll("header"),
+    mainLoading = document.querySelectorAll("main"),
+    footerLoading = document.querySelectorAll("footer");
 
 
     headerLoading.style.display = "none";
@@ -265,34 +265,34 @@ c_Accordion_Function();
 
 
 
-function disableNavBarHREF() {
+// function disableNavBarHREF() {
 
-    function navbarHref(website) {
+//     function navbarHref(website) {
 
-        if(!website.matches) {
-            document.querySelector(".c_menu_options_home").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
-        } 
+//         if(!website.matches) {
+//             document.querySelector(".c_menu_options_home").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
+//         } 
 
-        else {
-            document.querySelector(".c_menu_options_home").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
-            document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
-        }
+//         else {
+//             document.querySelector(".c_menu_options_home").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_whoweare").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_contact").href="javascript:void(0)";
+//             document.querySelector(".c_menu_options_blog").href="javascript:void(0)";
+//         }
 
-    }
+//     }
 
-    var hrefLink = window.matchMedia("(max-width: 850px)");
+//     var hrefLink = window.matchMedia("(max-width: 850px)");
 
-    navbarHref(hrefLink);
+//     navbarHref(hrefLink);
 
-    hrefLink.addListener(navbarHref);
+//     hrefLink.addListener(navbarHref);
 
-}
-disableNavBarHREF();
+// }
+// disableNavBarHREF();
 
 
 
