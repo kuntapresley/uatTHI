@@ -193,9 +193,9 @@ try {
 
 function websitePageOnload() {
 
-    var headerLoading = document.querySelectorAll("header"),
-    mainLoading = document.querySelectorAll("main"),
-    footerLoading = document.querySelectorAll("footer");
+    var headerLoading = document.querySelector("header"),
+    mainLoading = document.querySelector("main"),
+    footerLoading = document.querySelector("footer");
 
 
     headerLoading.style.display = "none";
