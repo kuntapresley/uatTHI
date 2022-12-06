@@ -309,6 +309,10 @@ function websiteHeaderRemainSticky() {
 
                 const navbar = document.querySelector(".c_header_navbar");
                 const navbarImage = document.querySelector(".c_menu_header_image_logo");
+                const navBarCustomIconsOne = document.querySelector(".c_bar1");
+                const navBarCustomIconsTwo = document.querySelector(".c_bar2");
+                const navBarCustomIconsThree = document.querySelector(".c_bar3");
+                const navBarCustomContainer = document.querySelector(".c_checkbox");
                 const sticky = navbar.offsetTop;
                 // const cMenuAccordionP = document.querySelectorAll(".c_menu_accordion > a > p");
 
@@ -327,7 +331,24 @@ function websiteHeaderRemainSticky() {
                                     navbarImage.style.transitionTimingFunction = "ease-in-out";
                                     navbarImage.style.width = "120px";
                                     navbarImage.style.left = "20%";
+                                    navBarCustomIconsOne.style.marginTop = "-2.2px";
+                                    navBarCustomIconsOne.style.width = "32.5px";
+                                    navBarCustomIconsOne.style.height = "3px";
+                                    navBarCustomIconsTwo.style.width = "32.5px";
+                                    navBarCustomIconsTwo.style.height = "3px";
+                                    navBarCustomIconsThree.style.width = "32.5px";
+                                    navBarCustomIconsThree.style.height = "3px";
+                                    navBarCustomIconsOne.style.transitionProperty = "all";
+                                    navBarCustomIconsOne.style.transitionDuration = "2s";
+                                    navBarCustomIconsOne.style.transitionTimingFunction = "ease-in-out";
+                                    navBarCustomIconsTwo.style.transitionProperty = "all";
+                                    navBarCustomIconsTwo.style.transitionDuration = "2s";
+                                    navBarCustomIconsTwo.style.transitionTimingFunction = "ease-in-out";
+                                    navBarCustomIconsThree.style.transitionProperty = "all";
+                                    navBarCustomIconsThree.style.transitionDuration = "2s";
+                                    navBarCustomIconsThree.style.transitionTimingFunction = "ease-in-out";
                                 } 
+
                                 else {
                                     navbar.classList.remove("sticky");
                                     navbar.style.borderTop = "none";
@@ -341,6 +362,22 @@ function websiteHeaderRemainSticky() {
                                     navbarImage.style.transitionProperty = "all";
                                     navbarImage.style.transitionDuration = "2s";
                                     navbarImage.style.transitionTimingFunction = "ease-in-out";
+                                    navBarCustomIconsOne.style.marginTop = "0px";
+                                    navBarCustomIconsOne.style.width = "40px";
+                                    navBarCustomIconsOne.style.height = "5px";
+                                    navBarCustomIconsTwo.style.width = "40px";
+                                    navBarCustomIconsTwo.style.height = "5px";
+                                    navBarCustomIconsThree.style.width = "40px";
+                                    navBarCustomIconsThree.style.height = "5px";
+                                    navBarCustomIconsOne.style.transitionProperty = "all";
+                                    navBarCustomIconsOne.style.transitionDuration = "2s";
+                                    navBarCustomIconsOne.style.transitionTimingFunction = "ease-in-out";
+                                    navBarCustomIconsTwo.style.transitionProperty = "all";
+                                    navBarCustomIconsTwo.style.transitionDuration = "2s";
+                                    navBarCustomIconsTwo.style.transitionTimingFunction = "ease-in-out";
+                                    navBarCustomIconsThree.style.transitionProperty = "all";
+                                    navBarCustomIconsThree.style.transitionDuration = "2s";
+                                    navBarCustomIconsThree.style.transitionTimingFunction = "ease-in-out";
                                 }
                             });
 
@@ -373,7 +410,7 @@ function websiteHeaderRemainSticky() {
                                 let i;
 
                                 for(i = 0; i < navBarOptions.length; i++){                                    
-                                    navBarOptions[i].style.height = "52px";
+                                    navBarOptions[i].style.height = "50px";
                                     navBarOptions[i].style.transitionDuration = "2s";
                                     navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
                                 }
@@ -400,7 +437,7 @@ function websiteHeaderRemainSticky() {
                                 let navBarOptions = document.querySelectorAll(".c_menu_accordion");
                                 let i;
                                 for(i = 0; i < navBarOptions.length; i++){                                    
-                                    navBarOptions[i].style.height = "72px";
+                                    navBarOptions[i].style.height = "67px";
                                     navBarOptions[i].style.transitionDuration = "2s";
                                     navBarOptions[i].style.transitionTimingFunction = "ease-in-out";
                                 }
@@ -540,8 +577,6 @@ onScrollAnimation();
 
 
 
-
-
 function faqFunction() {
 
     var acc = document.getElementsByClassName("c_faq_accordion");
@@ -590,7 +625,6 @@ function ourTeamAccordion() {
     }
 
 }
-
 ourTeamAccordion();
 
 
