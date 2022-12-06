@@ -191,30 +191,35 @@ try {
 
 
 
-function websitePageOnload() {
+    
+    function websitePageOnload() {
 
-    var headerLoading = document.querySelector("header"),
-    mainLoading = document.querySelector("main"),
-    footerLoading = document.querySelector("footer");
+        var headerLoading = document.querySelector("header"),
+        mainLoading = document.querySelector("main"),
+        footerLoading = document.querySelector("footer");
+    
+    
+        headerLoading.style.display = "none";
+        mainLoading.style.display = "none";
+        footerLoading.style.display = "none";
+    
+    
+    
+    
+        var overlay = document.querySelector(".overlay");
+        window.addEventListener('load', function () {
+            overlay.style.display = "none";
+            headerLoading.style.display = "block";
+            mainLoading.style.display = "block";
+            footerLoading.style.display = "block";
+        });
+    
+    }
+    websitePageOnload();
 
 
-    headerLoading.style.display = "none";
-    mainLoading.style.display = "none";
-    footerLoading.style.display = "none";
 
 
-
-
-    var overlay = document.querySelector(".overlay");
-    window.addEventListener('load', function () {
-        overlay.style.display = "none";
-        headerLoading.style.display = "block";
-        mainLoading.style.display = "block";
-        footerLoading.style.display = "block";
-    });
-
-}
-websitePageOnload();
 
 //website loading event
 
@@ -222,6 +227,7 @@ websitePageOnload();
 
 
 
+window.onload = function() {
 
 
 //accordion programming starts
@@ -576,7 +582,7 @@ onScrollAnimation();
 
 
 
-
+//frequently asked question js
 function faqFunction() {
 
     var acc = document.getElementsByClassName("c_faq_accordion");
@@ -600,7 +606,7 @@ faqFunction();
 
 
 
-
+//our team dropdown js 
 function ourTeamAccordion() {
 
     var acc = document.getElementsByClassName("c_about_our_team_accordion");
@@ -628,11 +634,51 @@ function ourTeamAccordion() {
 ourTeamAccordion();
 
 
+//modal advert js
+
+    function modalAds() {
+
+        // Get the modal
+        var modal = document.getElementById("c_modal_container");
+    
+        // Get the <span> element that closes the modal
+        var span = document.querySelector(".c_close_modal");
+    
+        // When the modal automatically loads 
+        function displayModal() {
+        modal.style.display = "block";
+        // modal.style.animationName = "modalEffect";
+        // modal.style.animationIterationCount = "infinite";
+        // modal.style.animationTimingFunction = "ease-in-out";
+        // modal.style.animationDuration = ".2s";
+        // modal.style.transitionProperty = "all";
+        // modal.style.transitionDuration = ".10s";
+        // modal.style.transitionTimingFunction = "ease-in-out";
+        }
+    
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    
+        setInterval(displayModal,10000);
+    
+    }
+    modalAds();
 
 
 
 
 
+
+}
 
 
 

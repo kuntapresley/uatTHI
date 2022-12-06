@@ -7,7 +7,8 @@
 
 * {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration: none
+  text-decoration: none;
+  display: ;
 }
 
 
@@ -18,7 +19,7 @@
   height: 100%;
   display: flex;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   cursor: grabbing;
 }
 
@@ -117,7 +118,7 @@
 #overlay{
   height:100vh;
   width:100%;
-  background:white;
+  background:black;
   opacity: 0;
 }
 
@@ -469,7 +470,7 @@ header {
 .c_dropdown:hover .c_menu_acordion_panel {
   display: grid;
   transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  width: 150px;
+  width: auto;
 } 
 
 /* .c_dropdown:hover .c_menu_acordion_panel {
@@ -505,7 +506,8 @@ header {
   background-color: transparent;
   display: flex;
   flex-wrap: wrap;
-  transform: translateX(-25%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -702,6 +704,7 @@ main {
   margin-top: 0.5%;
   z-index: -1;
 }
+
 
 .c_slide {
   border: 2px solid none;
@@ -995,6 +998,51 @@ main {
   width: 100%;
   font-size: xx-large;
  }
+
+ .c_modal_container {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+
+ .c_modal_content {
+  border: 2px solid blue;
+  height: 100%;
+  background-image: url("../pictures/testing picture/Timob Greetings Big.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  margin: auto;
+  padding: 2px;
+  border: 1px solid transparent;
+  width: 80%;
+ }
+
+ 
+/* The Close Button */
+.c_close_modal {
+  color: #aaaaaa;
+  float: right;
+  margin-right: 15%;
+  margin-top: 5%;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.c_close_modal:hover,
+.c_close_modal:focus {
+  color: rgb(209, 16, 16);
+  text-decoration: none;
+  cursor: pointer;
+}
 
  .c_about_us p {
   font-size: larger;
@@ -1761,7 +1809,9 @@ input[type=text], input[type=submit] {
 
 
 
-
+.c_dropdown .c_menu_acordion_panel .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details a:hover{
+  color: #0077b5;
+ }
 
 
 
@@ -2008,7 +2058,14 @@ input[type=text], input[type=submit] {
 
 @media screen and (max-width: 850px) {
 
-
+  .c_close_modal {
+    color: #aaaaaa;
+    float: right;
+    margin-right: 1%;
+    margin-top: 55%;
+    font-size: 60px;
+    font-weight: bold;
+  }
 
   .c_menu_icons {
     display: none;
@@ -2179,6 +2236,7 @@ input[type=text], input[type=submit] {
   padding-left: 0%;
  }
  
+ 
  .c_menu_acordion_panel .c_menu_acordion_panel_list {
    border-bottom: 5px solid none;
    list-style-type: circle;
@@ -2225,12 +2283,12 @@ input[type=text], input[type=submit] {
   .c_menu_options_items p {
     border: 2px solid none;
     width: auto;
-  
+    height: fit-content;
   }
 
  .c_menu_list {
     border: 2px sandybrown none;
-    margin-bottom: 2.8%;
+    margin-bottom: 5.8%;
   }
 
   .c_menu_options_items:hover {
@@ -2246,13 +2304,13 @@ input[type=text], input[type=submit] {
 
   .c_menu_options .c_menu_list, .c_menu_options .c_search_container {
   display: block;
-  border-bottom: 5px solid black;
+  border-bottom: 1px solid grey;
   cursor: pointer;
 }
 
   .c_menu_acordion_panel {
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
+    border-bottom: 5px solid none;
+    border-top: 5px solid none;
     border-left: none;
     border-right: none;
     display: none;
@@ -2265,12 +2323,11 @@ input[type=text], input[type=submit] {
   
 
   .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details{
-    border:  none;
+    border:  2px solid none;
     width: 100%;
     padding: 0% 2% 0% 2%;;
     list-style-type: armenian;
     list-style-position: outside;
-    margin-left: -11%;
   }
 
 .c_menu_acordion_panel_list .c_menu_acordion_panel_list_details a{
@@ -2280,6 +2337,8 @@ input[type=text], input[type=submit] {
     line-height: 1.5em;
     text-decoration: none;
     list-style-type: none;
+    margin-left: -8.7%;
+    font-style: italic;
   }
 
 
