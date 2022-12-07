@@ -1,16 +1,13 @@
 /*website icon styling both big size and media query*/
 
-@font-face {
-  font-family: 'EduSABeginner-Bold.ttf';
-  src: url("EduSABeginner-Bold.ttf.ttf");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&family=Lalezar&family=Radio+Canada&display=swap');
+     
 * {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration: none;
-  display: ;
+   font-family: Radio Canada, serif;
+   font-weight: lighter;
+   text-decoration: none;
+   font-size: small;
 }
-
 
 
 .swiper {

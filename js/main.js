@@ -319,6 +319,7 @@ function websiteHeaderRemainSticky() {
                 const navBarCustomIconsTwo = document.querySelector(".c_bar2");
                 const navBarCustomIconsThree = document.querySelector(".c_bar3");
                 const navBarCustomContainer = document.querySelector(".c_checkbox");
+                const navBarSearch = document.querySelector(".c_search_container");
                 const sticky = navbar.offsetTop;
                 // const cMenuAccordionP = document.querySelectorAll(".c_menu_accordion > a > p");
 
@@ -405,11 +406,14 @@ function websiteHeaderRemainSticky() {
                                 navbar.style.transitionTimingFunction = "ease-in-out";
                                 navbar.style.transitionTimingFunction = "ease-in-out";
                                 navbarImage.style.transitionProperty = "all";
-                                navbarImage.style.transitionProperty = "all";
                                 navbarImage.style.transitionDuration = "2s";
                                 navbarImage.style.transitionTimingFunction = "ease-in-out";
                                 navbarImage.style.width = "140px";
                                 navbarImage.style.left = "60%";
+                                // navBarSearch.style.marginTop = "-0.9px";
+                                // navBarSearch.style.transitionProperty = "all";
+                                // navBarSearch.style.transitionDuration = "2s";
+                                // navBarSearch.style.transitionTimingFunction = "ease-in-out";
                                 // cMenuAccordionP.style.color = "gold";
 
                                 let navBarOptions = document.querySelectorAll(".c_menu_accordion");
@@ -439,6 +443,12 @@ function websiteHeaderRemainSticky() {
                                 navbarImage.style.transitionDuration = "2s";
                                 navbarImage.style.transitionTimingFunction = "ease-in-out";
                                 navbarImage.style.transitionProperty = "all";
+
+                                
+                                // navBarSearch.style.marginTop = "1%";
+                                // navBarSearch.style.transitionProperty = "all";
+                                // navBarSearch.style.transitionDuration = "2s";
+                                // navBarSearch.style.transitionTimingFunction = "ease-in-out";
                                     
                                 let navBarOptions = document.querySelectorAll(".c_menu_accordion");
                                 let i;
@@ -471,7 +481,6 @@ function websiteHeaderRemainSticky() {
      
 }
 websiteHeaderRemainSticky();
-
 //sticky header/navigation
 
 
@@ -483,7 +492,6 @@ websiteHeaderRemainSticky();
 
 
 //date update start
-
 function upDateWebsiteDateYear() {
 
     const updatedTime = document.querySelector('.date');
@@ -493,14 +501,12 @@ function upDateWebsiteDateYear() {
 
 }
 upDateWebsiteDateYear();
-
 //date update ends
 
 
 
 
-//load more articles function
-    
+//load more articles function 
 function loadMoreArticlesFunction() {
     
     var cArticlesColumn = document.querySelectorAll(".c_articles_column");
@@ -519,7 +525,6 @@ function loadMoreArticlesFunction() {
        
 }
 loadMoreArticlesFunction();
-
 //load more articles function
 
 
@@ -601,7 +606,6 @@ function faqFunction() {
     }
 
 }
-
 faqFunction();
 
 
@@ -636,42 +640,42 @@ ourTeamAccordion();
 
 //modal advert js
 
-    function modalAds() {
+function modalAds() {
 
-        // Get the modal
-        var modal = document.getElementById("c_modal_container");
-    
-        // Get the <span> element that closes the modal
-        var span = document.querySelector(".c_close_modal");
-    
-        // When the modal automatically loads 
-        function displayModal() {
-        modal.style.display = "block";
-        // modal.style.animationName = "modalEffect";
-        // modal.style.animationIterationCount = "infinite";
-        // modal.style.animationTimingFunction = "ease-in-out";
-        // modal.style.animationDuration = ".2s";
-        // modal.style.transitionProperty = "all";
-        // modal.style.transitionDuration = ".10s";
-        // modal.style.transitionTimingFunction = "ease-in-out";
-        }
-    
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-    
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-        }
-    
-        setInterval(displayModal,10000);
-    
+    // Get the modal
+    var modal = document.getElementById("c_modal_container");
+
+    // Get the <span> element that closes the modal
+    var span = document.querySelector(".c_close_modal");
+
+    // When the modal automatically loads 
+    function displayModal() {
+    modal.style.display = "block";
+    // modal.style.animationName = "modalEffect";
+    // modal.style.animationIterationCount = "infinite";
+    // modal.style.animationTimingFunction = "ease-in-out";
+    // modal.style.animationDuration = ".2s";
+    // modal.style.transitionProperty = "all";
+    // modal.style.transitionDuration = ".10s";
+    // modal.style.transitionTimingFunction = "ease-in-out";
     }
-    modalAds();
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+
+    setInterval(displayModal,13000);
+
+}
+modalAds();
 
 
 
