@@ -189,7 +189,7 @@
 .c_back_to_top.active {
   opacity:1; 
   pointer-events: auto; 
-  bottom: 1cm;
+  bottom: 3cm;
 }
 
 .c_back_to_top_icon {
@@ -520,7 +520,21 @@ header {
   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) .5s;
 }
 
+.text {
+  background-color: #f2ecec;
+  padding: 1%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  opacity: 1;
+  border-radius: 1.5%;
+  line-height: 2em;
+}
 
+.text p {
+  font-size: medium;
+  line-height: 2em;
+  color: #0077b5;
+}
 
 .c_menu_accordion a p {
   border: 1px solid none;
