@@ -48,8 +48,8 @@
 
 .c_contact_container .c_contact_two p {
     border: 2px solid none;
-    color: gray;
-    font-size: 20px;
+    color: black;
+    /* font-size: 20px; */
     font-weight: 100;
     font-family: 'Trebuchet MS', sans-serif;
 }
