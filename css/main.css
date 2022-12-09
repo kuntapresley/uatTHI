@@ -2634,7 +2634,7 @@ input[type=text], input[type=submit] {
   .c_social_media_link_section{
     border: 2px solid none;
     font-size: 18px;
-    color: white;
+    color: black;
     margin-bottom: 7%;
     width: fit-content;
     display: flex;
