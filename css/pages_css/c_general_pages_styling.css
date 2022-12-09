@@ -253,13 +253,13 @@
 
 .c_medical_specialists_body_sections p {
     border: 2px solid none;
-    font-size: large;
+    font-size: small;
     line-height: 1.5em;
     font-weight: 400;
 }
 
 .c_medical_specialists_body_sections .c_medical_specialists_body_paragraph ul li {
-    font-size: large;
+    font-size: small;
 }
 
 .c_medical_specialists {
