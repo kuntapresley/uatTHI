@@ -1825,9 +1825,19 @@ input[type=text], input[type=submit] {
  }
 
 
+.c_contact_form_submitted_info {
+  border: 2px solid none;
+  margin-top: 0%;
+}
 
 
-
+.c_contact_form_submitted_info p {
+  border: 2px solid none;
+  padding: 10%;
+  font-size: large;
+  font-style: italic;
+  font-weight: 600;
+}
 
 
 

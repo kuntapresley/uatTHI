@@ -1,4 +1,264 @@
-<!DOCTYPE HTML>
+<!-- <?php
+
+//Email Configuration
+
+// $toEmail = '';
+// $fromName = '';
+// $formEmail = '';
+
+// $postData = $statusMsg = $valErr = '';
+// $status = 'error';
+
+
+//if the form is submitted
+// if(isset($_POST['submit'])) 
+// {
+//     //get the submitted form
+//     $postData = $_POST;
+//     $name = trim($_POST['c_contact_form_name']);
+//     $telephone = trim($_POST['c_contact_form_tel']);
+//     $emailAddress = trim($_POST['c_contact_form_email']);
+//     $message = trim($_POST['c_contact_form_message']);
+
+
+    //validate form fields
+    // if(empty($name)) {
+    //     $valErr .= 'Please enter your name.<br/>';
+    // }
+
+    // if(empty($telephone)) {
+    //     $valErr .= 'Plese enter telephone number.<br/>';
+    // }
+
+    // if(empty($emailAddress) || filter_var($emailAddress, FILTER_VALIDATE_EMAIL) === false) {
+    //     $valErr .= 'Please enter a valid email address.<br/>';
+    // }
+
+    // if(empty($message)) {
+    //     $valErr .= 'Please enetr your message.<br/>';
+    // }
+
+
+    // if(empty($valErr)) {
+    //     //send email notification to the site admin
+
+        // $subject = 'New Message Notification';
+        // $htmlContent = '
+        
+        //     <h2>Contact Request Details</h2>
+        //     <p><b>Name: </b> ".$name." </p>
+        //     <p><b>Telephone: </b> ".$telephone." </p>
+        //     <p><b>Email Address: </b> ".$emailAddress." </p>
+        //     <p><b>Message: </b> ".$message." </p>
+
+
+        
+        // ';
+
+
+
+
+
+        //Always send content type when sending email
+        // $headers = "MIME-Version 1.0" . "r/n";
+        // $headers .= "Content-type:text/html;charset=UTF-8" . "r\n";
+
+        //header from sender info
+
+        
+        // $headers .= 'From:' .$fromName.' <'.$formemail.'>' . "r\n";
+
+
+        //Send Email
+//         mail($toEmail, $subject, $htmlContent, $headers);
+
+//         $status = 'success';
+//         $statusMsg = 'Thank you! Your contact request was sent successfully, We will get back to you soon.';
+//         $postData = '';
+//     }
+
+//     else {
+//         $statusMsg = '<p>Please fill out all the mandatory fields:</p>' .trim($valErr, '<br/>');
+//     }
+// }
+
+
+?> -->
+
+
+
+<?php
+
+
+include 'database_connection.php';
+
+if(isset($_POST['c_contact_form_name']) && isset($_POST['c_contact_form_tel']) && isset($_POST['c_contact_form_email']) && isset($_POST['c_contact_form_message'])) {
+
+
+    $name = $_POST['c_contact_form_name'];
+    $telephone = $_POST['c_contact_form_tel'];
+    $emailaddress = $_POST['c_contact_form_email'];
+    $contactmessage = $_POST['c_contact_form_message'];
+
+    $to = "akpotororodje@gmail.com";
+    $subject = "Lets take care of you because we care!";
+    $text = "Name = ".$name. "\r\n Email = ".$emailaddress. "\r\n Message = ". $contactmessage. "\r\n Telephone = ". $telephone;
+    $headers = "From: noreply@timobhealthinternational.org" . "\r\n" . "CC : somebody@example.com";
+
+    if($emailaddress!=NULL) {
+        mail($to, $subject, $text, $headers);
+    }
+
+
+    $sql = "INSERT INTO contact_us_db(name, telephone, emailaddress, contactmessage) VALUES(?, ?, ?, ?)";
+    $newJoin = $conn->prepare($sql);
+    $newJoin->execute([$name, $telephone, $emailaddress, $contactmessage]);
+
+        
+    // header("<Location:/php/c_thi_user_contact_us_form_submit.php");
+}
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
 
 <html>
 
@@ -12,7 +272,7 @@
        <title>Contact us | Timob Health International | Hepatitis Corner | Outreach </title>
        <meta charset="UTF-8">
        <meta name="author" content="Timob Health International | Hepatitis Corner | Outreach"/>
-       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+       <meta http-equiv="Content-Type" content="text/php; charset=UTF-8" >
        <meta name="keywords" content="Timob Health International | Hepatitis Corner | Outreach">
        <meta name="description" content="Check out Timob Health International | Hepatitis Corner | Outreach here, health tips and healthy living. Infection prevention.">
        <meta name="robots" content="noindex, nofollow">
@@ -134,7 +394,7 @@
 
                 <div class="c_menu_header">
 
-                    <a class="c_menu_header_image_link" href="../index.html">
+                    <a class="c_menu_header_image_link" href="../index.php">
                         <img class="c_menu_header_image_logo" src="../pictures/testing picture/THI Jpeg 1.jpg"/>
                     </a>
                     
@@ -167,7 +427,7 @@
     
                         <div class="c_menu_header c_menu_header_shortcut_menu">
     
-                            <a class="c_menu_header_image_link" href="../index.html">
+                            <a class="c_menu_header_image_link" href="../index.php">
                                 <img class="c_menu_header_image_logo" src="../pictures/testing picture/THI Jpeg 1.jpg"/>
                             </a>
                             
@@ -180,10 +440,10 @@
 
 
                         <div class="c_dropdown">
-                            <li class="c_menu_list c_menu_accordion active"><a class="c_menu_options_items c_menu_options_home" href="../index.html"><p>Home <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
+                            <li class="c_menu_list c_menu_accordion active"><a class="c_menu_options_items c_menu_options_home" href="../index.php"><p>Home <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
                             <div class="c_menu_acordion_panel">
                                     <ul class="c_menu_acordion_panel_list">
-                                        <li class="c_menu_acordion_panel_list_details"><a href="../index.html"> <i class="	fa fa-home"></i> Home</a></li>
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../index.php"> <i class="	fa fa-home"></i> Home</a></li>
                                     </ul>
                             </div>
                         </div>
@@ -205,13 +465,13 @@
 
                         <div class="c_dropdown">
 
-                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_whoweare" href="../pages/thi_contact.html"><p>Contact Us <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
+                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_whoweare" href="../pages/thi_contact.php"><p>Contact Us <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
                             <div class="c_menu_acordion_panel">
     
                                         <ul class="c_menu_acordion_panel_list">
                                             <li class="c_menu_acordion_panel_list_details"><a href="../#c_footer_five"> <i class="fa fa-info-circle"></i> Quick Contacts</a></li>
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_contact.html"> <i class="fa fa-address-book-o"></i> Contact us</a></li>
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_about.html"> <i class="fa fa-group"></i> About us</a></li>
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_contact.php"> <i class="fa fa-address-book-o"></i> Contact us</a></li>
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_about.php"> <i class="fa fa-group"></i> About us</a></li>
                                         </ul>
                             </div>
 
@@ -221,46 +481,46 @@
 
                         <div class="c_dropdown">
 
-                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_contact" href="../pages/thi_medical_specialty.html"><p>Medical Specialties <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p></a></li>
+                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_contact" href="../pages/thi_medical_specialty.php"><p>Medical Specialties <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p></a></li>
                             <div class="c_menu_acordion_panel">
                                         <ul class="c_menu_acordion_panel_list">
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Gastroenterologist_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Gastroenterologist_content"> <span class="c_footer_five_container_paragraph_one">
                                                 <i class="fa fa-hospital-o"></i>  Gastroenterology</span></a></li>
 
                                                 
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Geriatric_medicine_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Geriatric_medicine_content"> <span class="c_footer_five_container_paragraph_one">
                                                 <i class="fa fa-hospital-o"></i>  Geriatric medicine</span></a></li>
 
                                                 
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Hematology_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Hematology_content"> <span class="c_footer_five_container_paragraph_one">
                                                 <i class="fa fa-hospital-o"></i>  Hematology</span></a></li>
 
                                                     
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Infectious_disease_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Infectious_disease_content"> <span class="c_footer_five_container_paragraph_one">
                                                 <i class="fa fa-hospital-o"></i>  Infectious</span></a></li>
 
                                                     
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Nephrology_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Nephrology_content"> <span class="c_footer_five_container_paragraph_one">
                                                 <i class="fa fa-hospital-o"></i>  Nephrology</span></a></li>
 
-                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Neurology_content"> <span class="c_footer_five_container_paragraph_one">
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Neurology_content"> <span class="c_footer_five_container_paragraph_one">
                                                     <i class="fa fa-hospital-o"></i>  Neurology</span></a></li>
 
                                                     
-                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pediatrics_content"> <span class="c_footer_five_container_paragraph_one">
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Pediatrics_content"> <span class="c_footer_five_container_paragraph_one">
                                                     <i class="fa fa-hospital-o"></i>  Pediatrics</span></a></li>
 
 
-                                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Palliative_care_content"> <span class="c_footer_five_container_paragraph_one">
+                                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Palliative_care_content"> <span class="c_footer_five_container_paragraph_one">
                                                         <i class="fa fa-hospital-o"></i>  Palliative</span></a></li>
 
 
-                                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pulmonology_content"> <span class="c_footer_five_container_paragraph_one">
+                                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Pulmonology_content"> <span class="c_footer_five_container_paragraph_one">
                                                             <i class="fa fa-hospital-o"></i>  Pulmonology</span></a></li>
 
                                                     
                                                             <li class="c_menu_acordion_panel_list_details">
-                                                                <a href="../pages/thi_medical_specialty.html#Different_Medical_Specialists_Do"> <i class="fa fa-files-o"></i> More </a>
+                                                                <a href="../pages/thi_medical_specialty.php#Different_Medical_Specialists_Do"> <i class="fa fa-files-o"></i> More </a>
 
                                                             </li>
                                                     
@@ -288,7 +548,7 @@
                             </div>
 
                             <p class="c_menu_options_shortcut_signature">
-                                &copy 2013 - 2022 <a href="../index.html">Timob Health International</a> All right reserved <a href="">Terms of use</a>. See additional information. You can <a href="">contact us</a> and also see more information <a href="">about us</a> and our <a href="">medical specialies</a>.
+                                &copy 2013 - 2022 <a href="../index.php">Timob Health International</a> All right reserved <a href="">Terms of use</a>. See additional information. You can <a href="">contact us</a> and also see more information <a href="">about us</a> and our <a href="">medical specialies</a>.
                             </p>
                         </div>
 
@@ -302,7 +562,7 @@
                         <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_blog" href="javascript:void(0)"><p>Home <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
                         <div class="c_menu_acordion_panel">
                             <ul class="c_menu_acordion_panel_list">
-                                <li class="c_menu_acordion_panel_list_details"><a href="../index.html"> <i class="	fa fa-home"></i> Home</a></li>
+                                <li class="c_menu_acordion_panel_list_details"><a href="../index.php"> <i class="	fa fa-home"></i> Home</a></li>
                             </ul>
                         </div>
 
@@ -328,8 +588,8 @@
     
                                 <ul class="c_menu_acordion_panel_list">
                                     <li class="c_menu_acordion_panel_list_details"><a href="#c_footer_five"> <i class="fa fa-info-circle"></i> Quick Contacts</a></li>
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_contact.html"> <i class="fa fa-address-book-o"></i> Contact us</a></li>
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_about.html"> <i class="fa fa-group"></i> About us</a></li>
+                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_contact.php"> <i class="fa fa-address-book-o"></i> Contact us</a></li>
+                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_about.php"> <i class="fa fa-group"></i> About us</a></li>
                                 </ul>
                             </div>
 
@@ -340,43 +600,43 @@
                             <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_contact" href="javascript:void(0)"><p>Medical Specialties <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p></a></li>
                             <div class="c_menu_acordion_panel">
                                 <ul class="c_menu_acordion_panel_list">
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Gastroenterologist_content"> <span class="c_footer_five_container_paragraph_one">
+                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Gastroenterologist_content"> <span class="c_footer_five_container_paragraph_one">
                                         <i class="fa fa-hospital-o"></i>  Gastroenterology</span></a></li>
 
                                         
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Geriatric_medicine_content"> <span class="c_footer_five_container_paragraph_one">
+                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Geriatric_medicine_content"> <span class="c_footer_five_container_paragraph_one">
                                         <i class="fa fa-hospital-o"></i>  Geriatric medicine</span></a></li>
 
                                         
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Hematology_content"> <span class="c_footer_five_container_paragraph_one">
+                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Hematology_content"> <span class="c_footer_five_container_paragraph_one">
                                         <i class="fa fa-hospital-o"></i>  Hematology</span></a></li>
 
                                             
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Infectious_disease_content"> <span class="c_footer_five_container_paragraph_one">
+                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Infectious_disease_content"> <span class="c_footer_five_container_paragraph_one">
                                         <i class="fa fa-hospital-o"></i>  Infectious</span></a></li>
 
                                             
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Nephrology_content"> <span class="c_footer_five_container_paragraph_one">
+                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Nephrology_content"> <span class="c_footer_five_container_paragraph_one">
                                         <i class="fa fa-hospital-o"></i>  Nephrology</span></a></li>
 
-                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Neurology_content"> <span class="c_footer_five_container_paragraph_one">
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Neurology_content"> <span class="c_footer_five_container_paragraph_one">
                                             <i class="fa fa-hospital-o"></i>  Neurology</span></a></li>
 
                                             
-                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pediatrics_content"> <span class="c_footer_five_container_paragraph_one">
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Pediatrics_content"> <span class="c_footer_five_container_paragraph_one">
                                             <i class="fa fa-hospital-o"></i>  Pediatrics</span></a></li>
 
 
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Palliative_care_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Palliative_care_content"> <span class="c_footer_five_container_paragraph_one">
                                                 <i class="fa fa-hospital-o"></i>  Palliative</span></a></li>
 
 
-                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pulmonology_content"> <span class="c_footer_five_container_paragraph_one">
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.php#Pulmonology_content"> <span class="c_footer_five_container_paragraph_one">
                                                     <i class="fa fa-hospital-o"></i>  Pulmonology</span></a></li>
 
                                             
                                                     <li class="c_menu_acordion_panel_list_details">
-                                                        <a href="../pages/thi_medical_specialty.html#Different_Medical_Specialists_Do"> <i class="fa fa-files-o"></i> More </a>
+                                                        <a href="../pages/thi_medical_specialty.php#Different_Medical_Specialists_Do"> <i class="fa fa-files-o"></i> More </a>
 
                                                     </li>
                                             
@@ -403,7 +663,7 @@
                             </div>
 
                             <p class="c_menu_options_shortcut_signature">
-                                &copy 2013 - 2022 <a href="index.html">Timob Health International</a> All right reserved <a href="../pages/thi_Personal_data_protection_policy.html">Terms of use</a>. See additional information. You can <a href="../pages/thi_contact.html">contact us</a> and also see more information <a href="../pages/thi_about.html">about us</a> and our <a href="../pages/thi_medical_specialty.html">medical specialies</a>.
+                                &copy 2013 - 2022 <a href="index.php">Timob Health International</a> All right reserved <a href="../pages/thi_Personal_data_protection_policy.php">Terms of use</a>. See additional information. You can <a href="../pages/thi_contact.php">contact us</a> and also see more information <a href="../pages/thi_about.php">about us</a> and our <a href="../pages/thi_medical_specialty.php">medical specialies</a>.
                             </p>
                         </div>
 
@@ -456,244 +716,21 @@
 
 
 
-            <!-- <div class="c_contact_image"></div> -->
-
-            <div class="c_content">
-
-                <div class="c_content_title_header_container c_contact_div">
-
-                    <div class="c_c_t_h_c c_content_title_container c_contact_container">
-
-                        <div class="c_contact_one">
-                            <h1 class="c_content_title c_contact">
-                                contact us
-                            </h1>
-                        </div>
-
-                        <div class="c_contact_two">
-                            <p>
-                                For a better, quality good health, please provide us with as many details as possible.
-                            </p>                           
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
-
-                <!-- <div class="c_contact_details_container"> -->
-
-                    <div class="c_contact_details_one c_contact_details">
-
-                        <div class="c_contact_us_form">
-
-                            <div class="c_form_title">
-                                <h2>
-                                We would like to hear from you!
-                                </h2>
-                            </div>
-
-
-                            <form id="c_contact_form" action="" method="">
-
-
-                                <div class="c_form_item_row">
-                                <label for="c_contact_form_name" id="c_contact_name" class="c_contact_form_heading">Name</label>
-                                <input type="text" name="c_contact_form_name" class="c_contact_form_details" id="c_contact_form_name" required placeholder="Enter Full Name"/>
-                                </div>
-                                
-                                <br>
-
-                                <div class="c_form_item_row">
-                                <label for="c_contact_form_tel" id="c_contact_form_tel" class="c_contact_form_heading">Telephone</label>
-                                <input type="tel" name="c_contact_form_tel" class="c_contact_form_details" id="c_contact_form_tel" required placeholder="Enter Telephone Number"/>
-                                </div>
-
-                                <br>
-                                
-                                <div class="c_form_item_row">
-                                <label for="c_contact_form_email" id="c_contact_form_email" class="c_contact_form_heading">Email</label>
-                                <input type="email" name="c_contact_form_email" class="c_contact_form_details" id="c_contact_form_email" required placeholder="Enter Email Address"/>
-                                </div>
-
-                                <br>
-                                
-                                <div class="c_form_item_row">
-                                <label for="c_contact_form_message" id="c_contact_form_message" class="c_contact_form_heading">Message</label>
-                                <textarea name="c_contact_form_message" class="c_contact_form_details" id="c_contact_form_message" required placeholder="Enter Message"></textarea>
-                                </div>
-
-                                <br>
-                                
-                                <div class="c_form_item_row">
-                                <input type="submit" value="Send Enquires" class="c_contact_form_submit" id="c_contact_form_submit"/>
-                                </div>
-
-                            </form>
-
-                        </div>
-
-                        
-                    </div>
-
-
-                    <div class="c_contact_details_two c_contact_details">
-                       
-                        <div class="c_contact_details_two_details c_contact_details_two_details_one">
-                            <p>General Information and Inquiries</p>
-                        </div>
-
-                        <div class="c_contact_details_two_details c_contact_details_two_details_two">
-                            <p>Call :</p> <p><a href="tel:+234 1 448 0815">+234 1 448 0815</a></p> <p><a href="tel:+234 1 448 0816">+234 1 448 0816</a></p>
-                        </div>
-
-                        <div class="c_contact_details_two_details c_contact_details_two_details_three">
-                            <p>Fax :</p> <p><a href="tel:+234 1 448 0815">+234 1 448 0815</a></p> <p><a href="tel:+234 1 448 0816">+234 1 448 0816</a></p>
-                        </div>
-                        
-                        <div class="c_contact_details_two_details c_contact_details_two_details_four">
-                            <p>Email :</p> <p><a href="mailto:communications@timobhealth.com">communications@timobhealth.com</a></p>
-                        </div> 
-
-                        <div class="c_contact_details_two_details c_contact_details_two_details_five">
-                            <p><a href=""><i class="fa fa-facebook-official"></i>Facebook</a></p> &nbsp&nbsp <p><a href=""><i class="fa fa-twitter"></i>Twitter</p> &nbsp&nbsp   <p><a href=""><i class="fa fa-linkedin"></i>Linkedin</p>  &nbsp&nbsp  <p><a href=""><i class="fa fa-instagram"></i>Instagram</p>  &nbsp&nbsp  <p><a href=""><i class="fa fa-youtube"></i>Youtube</p>
-                        </div> 
- 
-                        <div class="c_contact_details_two_details c_contact_details_two_details_six">
-                            <p>Address :</p> <p>10, ODELOLA STREET KILO , SURULERE ,LAGOS</p>
-                        </div> 
-
-                        <div class="c_contact_details_two_details c_contact_details_two_details_seven">
-                            <p>Registration Number:</p> <p>RC 2253148</p>
-                            
-                        </div> 
+            <div class="c_contact_form_submitted_info">
                 
-                        <div class="c_contact_details_two_details c_contact_details_two_details_eight">
-                            <p>Registration Date:</p> <p>2 Apr 2013</p>
-                            
-                        </div> 
+                <p>
+                    Thank you for contacting us, we will respond to you immediatly we see your message<br>Best Wishes,<br>Timob Health International.
+                </p>
 
-                         <div class="c_contact_details_two_details c_contact_details_two_details_nine">
-                            <p>Nature of business:</p> <p>Gen. Consultants and Health Education</p>
-                            
-                        </div> 
-<!--
-                        <div class="c_contact_details_two_details c_contact_details_two_details_ten">
-                            <p>Register Documents:</p> <p>Original documents submitted to the commercial register on TIMOB HEALTH INTERNATIONAL</p>
-                            
-                        </div>  -->
-
-                    </div>
-
-
-                    <div class="c_contact_details_three c_contact_details">
-                        <div class="c_contact_map">            
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63427.97620267909!2d3.3087804184700915!3d6.490184080418627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c0f7bc8de87%3A0x62650fcb3d2c8fb1!2sSurulere%2C%20101241%2C%20Ikeja!5e0!3m2!1sen!2sng!4v1663881357757!5m2!1sen!2sng" >
-            
-                            </iframe>
                 
-                        </div>
-                    </div>
-
-
-
-                <!-- </div> -->
-
-
-                <div class="c_our_team_container">
-                    
-                    <div class="c_our_team_title_container">
-                        <h2 class="c_our_team_title">Our Team</h2>
-                    </div>
-
-                    <div class="c_our_team_details_container">
-
-                        <div class="c_our_team_details c_our_team_details_A">
-                            <div class="c_our_team_details_img">
-                                <img src="../pictures/testing picture/background_images/thi-default-person.png"/>
-                            </div>
-                            <div>
-                                <div class="c_our_team_details_names">
-                                    <p>Olutoyin Asaolu</p>
-                                    <p>Director & Gastroenterology</p>
-                                    <p><a href="#">Request appoinment</a></p>
-                                </div>
-                                <div class="c_our_team_details_social_networks">
-                                    <p><a href="#"><i class="fa fa-facebook-official"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-linkedin"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-twitter"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-instagram"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="c_our_team_details c_our_team_details_B">
-                            <div class="c_our_team_details_img">
-                                <img src="../pictures/testing picture/background_images/thi-default-person.png"/>
-                            </div>
-                            <div>
-                                <div class="c_our_team_details_names">
-                                    <p>Ristopher mogren</p>
-                                    <p>Consultant General Surgeon</p>
-                                    <p><a href="#">Request appoinment</a></p>
-                                </div>
-                                <div class="c_our_team_details_social_networks">
-                                    <p><a href="#"><i class="fa fa-facebook-official"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-linkedin"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-twitter"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-instagram"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
-                      
-                        <div class="c_our_team_details c_our_team_details_C">
-                            <div class="c_our_team_details_img">
-                                <img src="../pictures/testing picture/background_images/thi-default-person.png"/>
-                            </div>
-                            <div>
-                                <div class="c_our_team_details_names">
-                                    <p>Stephen Holland</p>
-                                    <p>Consultant Dietician</p>
-                                    <p><a href="#">Request appoinment</a></p>
-                                </div>
-                                <div class="c_our_team_details_social_networks">
-                                    <p><a href="#"><i class="fa fa-facebook-official"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-linkedin"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-twitter"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-instagram"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="c_our_team_details c_our_team_details_D">
-                            <div class="c_our_team_details_img">
-                                <img src="../pictures/testing picture/background_images/thi-default-person.png""/>
-                            </div>
-                            <div>
-                                <div class="c_our_team_details_names">
-                                    <p>Ping Zhang</p>
-                                    <p>Certified Nurse Practitioner</p>
-                                    <p><a href="#">Request appoinment</a></p>
-                                </div>
-                                <div class="c_our_team_details_social_networks">
-                                    <p><a href="#"><i class="fa fa-facebook-official"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-linkedin"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-twitter"></i></a></p>
-                                    <p><a href="#"><i class="fa fa-instagram"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
+                <a href="../index.php" style="color: blue;">Go back to home page</a>
+                <br>
+                <a href="../pages/thi_contact.php"  style="color: blue;">Go back to contact us page</a>
             </div>
+    
+                <a id="c_back_to_top" class="c_back_to_top" href="#"><i class="fa fa-arrow-up c_back_to_top_icon"></i></a>
 
-            <a id="c_back_to_top" class="c_back_to_top" href="#"><i class="fa fa-arrow-up c_back_to_top_icon"></i></a>
+            
   
             
 
@@ -732,45 +769,45 @@
                             <h5 class="c_more_content c_more_content_A">
                                 <i class="fa fa-newspaper-o c_icon_general_styling c_icon_footer_five_general_styling c_icon_related_articles"></i>POPULAR ARTICLES</h5>
 
-                                <a class="c_footer_two_content_hyperlink" href="../post/related_articles/c_popular_articles.html#c_popular_articles_one">
+                                <a class="c_footer_two_content_hyperlink" href="../post/related_articles/c_popular_articles.php#c_popular_articles_one">
                                     <li class="c_footer_two_content_list_items c_footer_RELATED_ARTICLES">
                                         <img src="../pictures/testing picture/background_images/Woman-performing-yoga-square-medium.jpg" class="c_related_articles">
                                             <p class="c_related_articles_paragraph">
                                                 Woman performing yoga square medium 
-                                                <span>...</span> <br> <a href="../post/related_articles/c_popular_articles.html#c_popular_articles_one">Read more</a>
+                                                <span>...</span> <br> <a href="../post/related_articles/c_popular_articles.php#c_popular_articles_one">Read more</a>
                                             </p>
                                     </li>
                                 </a>
 
 
-                                <a class="c_footer_two_content_hyperlink" href="../post/related_articles/c_popular_articles.html#c_popular_articles_two">
+                                <a class="c_footer_two_content_hyperlink" href="../post/related_articles/c_popular_articles.php#c_popular_articles_two">
                                     <li class="c_footer_two_content_list_items c_footer_RELATED_ARTICLES">
                                         <img src="../pictures/testing picture/background_images/Happy-family-going-for-picnic-947036638_3869x2579-1-1024x683.jpg" class="c_related_articles">
                                             <p class="c_related_articles_paragraph">
                                                 Happy family going for picnic  Happy family going for picnic 
-                                                <span>...</span> <br> <a href="../post/related_articles/c_popular_articles.html#c_popular_articles_one">Read more</a>
+                                                <span>...</span> <br> <a href="../post/related_articles/c_popular_articles.php#c_popular_articles_one">Read more</a>
                                             </p>
                                     </li>
                                 </a>
 
 
-                                <a class="c_footer_two_content_hyperlink" href="../post/related_articles/c_popular_articles.html#c_popular_articles_three">
+                                <a class="c_footer_two_content_hyperlink" href="../post/related_articles/c_popular_articles.php#c_popular_articles_three">
                                     <li class="c_footer_two_content_list_items c_footer_RELATED_ARTICLES">
                                         <img src="../pictures/testing picture/background_images/Woman-performing-yoga-square-medium.jpg" class="c_related_articles">
                                             <p class="c_related_articles_paragraph">
                                                 Woman performing yoga square medium 
-                                                <span>...</span> <br> <a href="../post/related_articles/c_popular_articles.html#c_popular_articles_one">Read more</a>
+                                                <span>...</span> <br> <a href="../post/related_articles/c_popular_articles.php#c_popular_articles_one">Read more</a>
                                             </p>
                                     </li>
                                 </a>
 
 
-                                <a class="c_footer_two_content_hyperlink" href="../post/related_articles/c_popular_articles.html#c_popular_articles_four">
+                                <a class="c_footer_two_content_hyperlink" href="../post/related_articles/c_popular_articles.php#c_popular_articles_four">
                                     <li class="c_footer_two_content_list_items c_footer_RELATED_ARTICLES">
                                         <img src="../pictures/testing picture/background_images/Happy-family-going-for-picnic-947036638_3869x2579-1-1024x683.jpg" class="c_related_articles">
                                             <p class="c_related_articles_paragraph">
                                                 Happy family going for picnic  Happy family going for picnic  Happy family going for picnic 
-                                                <span>...</span> <br> <a href="../post/related_articles/c_popular_articles.html#c_popular_articles_one">Read more</a>
+                                                <span>...</span> <br> <a href="../post/related_articles/c_popular_articles.php#c_popular_articles_one">Read more</a>
                                             </p>
                                     </li>
                                 </a>
@@ -784,13 +821,13 @@
 
                         <ul class="c_footer_two_content_list">
                         <h5 class="c_more_content c_more_content_B"><i class="fa fa-chain c_icon_general_styling c_icon_footer_five_general_styling c_icon_quick_link"></i>QUICK LINKS</h5>
-                        <a href="../pages/thi_our_story.html#health_plans_page"><li class="c_footer_two_content_list_items">Health Plans Page</li></a>
-                        <a href="../pages/thi_our_story.html#outreach"><li class="c_footer_two_content_list_items">Outreach</li></a>
-                        <a href="../pages/thi_our_story.html#self_and_family_health_planing"><li class="c_footer_two_content_list_items">Self and Family Health Planing</li></a>
-                        <a href="../pages/thi_our_story.html#health_consultant_in_nigeria"><li class="c_footer_two_content_list_items">Health consultant in Nigeria</li></a>
-                        <a href="../pages/thi_our_story.html#health_references"><li class="c_footer_two_content_list_items">Health references</li></a>
-                        <a href="../pages/thi_our_story.html#health_wellness"><li class="c_footer_two_content_list_items">Health Wellness</li></a>
-                        <a href="../pages/thi_our_story.html#hepatitis"><li class="c_footer_two_content_list_items">Hepatitis</li></a>
+                        <a href="../pages/thi_our_story.php#health_plans_page"><li class="c_footer_two_content_list_items">Health Plans Page</li></a>
+                        <a href="../pages/thi_our_story.php#outreach"><li class="c_footer_two_content_list_items">Outreach</li></a>
+                        <a href="../pages/thi_our_story.php#self_and_family_health_planing"><li class="c_footer_two_content_list_items">Self and Family Health Planing</li></a>
+                        <a href="../pages/thi_our_story.php#health_consultant_in_nigeria"><li class="c_footer_two_content_list_items">Health consultant in Nigeria</li></a>
+                        <a href="../pages/thi_our_story.php#health_references"><li class="c_footer_two_content_list_items">Health references</li></a>
+                        <a href="../pages/thi_our_story.php#health_wellness"><li class="c_footer_two_content_list_items">Health Wellness</li></a>
+                        <a href="../pages/thi_our_story.php#hepatitis"><li class="c_footer_two_content_list_items">Hepatitis</li></a>
                         </ul>
 
                     </div>
@@ -800,11 +837,11 @@
                         <ul class="c_footer_two_content_list">
                             <h5 class="c_more_content c_more_content_C">
                                 <i class="fa fa-address-card-o c_icon_general_styling c_icon_footer_five_general_styling c_icon_about_us"></i>ABOUT US</h5>
-                        <a href="../pages/thi_contact.html"><li class="c_footer_two_content_list_items">Contact Us</li></a>
-                        <a href="../pages/thi_Privacy_preferences.html"><li class="c_footer_two_content_list_items">Privacy Policy</li></a>
-                        <a href="../pages/thi_Personal_data_protection_policy.html"><li class="c_footer_two_content_list_items">Terms of Use</li></a>
-                        <a href="../pages/thi_create_an_account.html"><li class="c_footer_two_content_list_items">Create an account</li></a>
-                        <a href="../pages/thi_our_story.html"><li class="c_footer_two_content_list_items">Our Health Care story</li></a>
+                        <a href="../pages/thi_contact.php"><li class="c_footer_two_content_list_items">Contact Us</li></a>
+                        <a href="../pages/thi_Privacy_preferences.php"><li class="c_footer_two_content_list_items">Privacy Policy</li></a>
+                        <a href="../pages/thi_Personal_data_protection_policy.php"><li class="c_footer_two_content_list_items">Terms of Use</li></a>
+                        <a href="../pages/thi_create_an_account.php"><li class="c_footer_two_content_list_items">Create an account</li></a>
+                        <a href="../pages/thi_our_story.php"><li class="c_footer_two_content_list_items">Our Health Care story</li></a>
                         </ul>
 
                     </div>
@@ -814,16 +851,16 @@
                         <ul class="c_footer_two_content_list">
                             
                         <h5 class="c_more_content c_more_content_D"><i class="fas fa-hand-holding-medical c_icon_general_styling c_icon_footer_five_general_styling c_icon_related_articles"></i>MEDICAL SPECIALTY</h5>
-                        <a href="../pages/thi_medical_specialty.html#Gastroenterologist_content"><li class="c_footer_two_content_list_items">Gastroenterology</li></a>
-                        <a href="../pages/thi_medical_specialty.html#Geriatric_medicine_content"><li class="c_footer_two_content_list_items">Geriatric medicine</li></a>
-                        <a href="../pages/thi_medical_specialty.html#Hematology_content"><li class="c_footer_two_content_list_items">Hematology</li></a>
-                        <a href="../pages/thi_medical_specialty.html#Infectious_disease_content"><li class="c_footer_two_content_list_items">Infectious disease</li></a>
-                        <a href="../pages/thi_medical_specialty.html#Nephrology_content"><li class="c_footer_two_content_list_items">Nephrology</li></a>
-                        <a href="../pages/thi_medical_specialty.html#Neurology_content"><li class="c_footer_two_content_list_items">Neurology</li></a>
-                        <a href="../pages/thi_medical_specialty.html#Pediatrics_content"><li class="c_footer_two_content_list_items">Pediatrics</li></a>
-                        <a href="../pages/thi_medical_specialty.html#Palliative_care_content"><li class="c_footer_two_content_list_items">Palliative care</li></a>
-                        <a href="../pages/thi_medical_specialty.html#Pulmonology_content"><li class="c_footer_two_content_list_items">Pulmonology</li></a>
-                        <a href="../pages/thi_medical_specialty.html#Different_Medical_Specialists_Do"><li class="c_footer_two_content_list_items">More</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Gastroenterologist_content"><li class="c_footer_two_content_list_items">Gastroenterology</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Geriatric_medicine_content"><li class="c_footer_two_content_list_items">Geriatric medicine</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Hematology_content"><li class="c_footer_two_content_list_items">Hematology</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Infectious_disease_content"><li class="c_footer_two_content_list_items">Infectious disease</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Nephrology_content"><li class="c_footer_two_content_list_items">Nephrology</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Neurology_content"><li class="c_footer_two_content_list_items">Neurology</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Pediatrics_content"><li class="c_footer_two_content_list_items">Pediatrics</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Palliative_care_content"><li class="c_footer_two_content_list_items">Palliative care</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Pulmonology_content"><li class="c_footer_two_content_list_items">Pulmonology</li></a>
+                        <a href="../pages/thi_medical_specialty.php#Different_Medical_Specialists_Do"><li class="c_footer_two_content_list_items">More</li></a>
                         
                         </ul>
 
@@ -973,10 +1010,10 @@
             
                                 <div class="c_footer_five_container_one_B_content_B c_footer_five_container_one_B_content">
                                     <p class="c_footer_navbar_text c_website_signature">
-                                        <span><a class="c_footer_navbar_text" href="../index.html">  Timob Health International</a></span>&nbsp| <br>
-                                        <span><a class="c_footer_navbar_text" href="../pages/thi_our_story.html#hepatitis">Hepatitis Corner</a></span>&nbsp| <br>
-                                        <span><a class="c_footer_navbar_text" href="../pages/thi_our_story.html#outreach">Outreach</a></span>&nbsp| <br>
-                                        <span><a class="c_footer_navbar_text" href="#"><i class="fa fa-copyright"></i> 2013 - <span class="date c_footer_navbar_text" id="date"> </span> All right reserved</a></span>&nbsp| <br><a class="c_footer_navbar_text" target="_blank" href="../pages/thi_Personal_data_protection_policy.html">Terms & conditions</a> | <a class="c_footer_navbar_text" target="_blank" href="../pages/thi_Privacy_preferences.html">Privacy policy</a> | <a class="c_footer_navbar_text" target="_blank" href="#">community development</a> |  <a class="c_footer_navbar_text" target="_blank" href="#">donation</a>| <a class="c_footer_navbar_text" target="_blank" href="../pages/thi_contact.html">contact us</a> | <a class="c_footer_navbar_text" target="_blank" href="#">about us</a> | 
+                                        <span><a class="c_footer_navbar_text" href="../index.php">  Timob Health International</a></span>&nbsp| <br>
+                                        <span><a class="c_footer_navbar_text" href="../pages/thi_our_story.php#hepatitis">Hepatitis Corner</a></span>&nbsp| <br>
+                                        <span><a class="c_footer_navbar_text" href="../pages/thi_our_story.php#outreach">Outreach</a></span>&nbsp| <br>
+                                        <span><a class="c_footer_navbar_text" href="#"><i class="fa fa-copyright"></i> 2013 - <span class="date c_footer_navbar_text" id="date"> </span> All right reserved</a></span>&nbsp| <br><a class="c_footer_navbar_text" target="_blank" href="../pages/thi_Personal_data_protection_policy.php">Terms & conditions</a> | <a class="c_footer_navbar_text" target="_blank" href="../pages/thi_Privacy_preferences.php">Privacy policy</a> | <a class="c_footer_navbar_text" target="_blank" href="#">community development</a> |  <a class="c_footer_navbar_text" target="_blank" href="#">donation</a>| <a class="c_footer_navbar_text" target="_blank" href="../pages/thi_contact.php">contact us</a> | <a class="c_footer_navbar_text" target="_blank" href="#">about us</a> | 
                                         Website Developed and Designed by <span><a class="c_footer_navbar_text" target="_blank" href="#">Brain&Geniuses</a></span>
                                     </p>
                                 </div>

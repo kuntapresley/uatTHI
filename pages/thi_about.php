@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
 
@@ -9,7 +9,7 @@
 
 
         <!---meta names and contents-->
-       <title>Contact us | Timob Health International | Hepatitis Corner | Outreach </title>
+       <title>About us | Timob Health International | Hepatitis Corner | Outreach </title>
        <meta charset="UTF-8">
        <meta name="author" content="Timob Health International | Hepatitis Corner | Outreach"/>
        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
@@ -25,7 +25,7 @@
         <link rel="stylesheet" href="../css/pages_css/pages_main.css"/>
         <link rel="stylesheet" href="../css/pages_css/c_contact.css"/>
         <link rel="stylesheet" href="../css/main.css"/>
-        <!-- <link rel="stylesheet" href="../css/font_css/fontawesome.css"/> -->
+        <link rel="stylesheet" href="../css/font_css/fontawesome.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,6 +48,7 @@
 
 
     <body>
+
 
         <div class="overlay">
 
@@ -82,355 +83,356 @@
     
     
     
-        <header>
-
-
-            <div class="c_header_contact">
-
-                <div class="c_header_contact_alignment">
-                
-                    <div class="c_header_paragraphcontact_alignment">
-
-                        <p class="c_browser_verification"></p>
-                        
-                        <div class="c_header_contact_container c_header_contact_container_A">
-                            <div class="c_header_contact_items c_header_contact_container_A_items c_header_contact_A_item">
-                                <i class="fa fa-map-marker c_icon_general_styling c_icon_header_content_general_styling c_icon_header_content_A"></i>
-                            </div>
-                            
-                            <div class="c_header_contact_items c_header_contact_container_A_items c_header_contact_B_item">
-                                <p>Timob Health International , NO_10, Odelola Street Kilo G82X+4QP, Surulere 101241, Lagos</p>
-                            </div>   
-                        </div>
-
-                        <div class="c_header_contact_container c_header_contact_container_B">
-                            <div class="c_header_contact_items c_header_contact_container_B_items c_header_contact_C_item">
-                                <i class="fa fa-phone c_icon_general_styling c_icon_header_content_general_styling c_icon_header_content_B"></i>
-                            </div>
-                            
-                            <div class="c_header_contact_items c_header_contact_container_B_items c_header_contact_D_item">
-                                <p>Any question: <a class="c_contact_href_header" href="tel:+234 803 576 8694">+234 803 576 8694</a></p>
-                            </div>   
-                        </div>
-
-                        <div class="c_header_contact_container c_header_contact_container_C">
-                            <div class="c_header_contact_items c_header_contact_container_C_items c_header_contact_E_item">
-                                <i class="fa fa-clock-o c_icon_general_styling c_icon_header_content_general_styling c_icon_header_content_C"></i>
-                            </div>
-                            
-                            <div class="c_header_contact_items c_header_contact_container_C_items c_header_contact_F_item">
-                                <p>Mon - Sun:   24 Hours</p>
-                            </div>   
-                        </div>
-
-                    </div> 
-                
-                </div>
-
-            </div>
-
-            <div class="c_header_navbar">
-
-
-                <div class="c_menu_header">
-
-                    <a class="c_menu_header_image_link" href="../index.html">
-                        <img class="c_menu_header_image_logo" src="../pictures/testing picture/THI Jpeg 1.jpg"/>
-                    </a>
+            <header>
+    
+    
+                <div class="c_header_contact">
+    
+                    <div class="c_header_contact_alignment">
                     
-                </div>
-
-                
-                
-                <input type="checkbox" id="checkbox"/>
-                <label for="checkbox" class="c_checkbox">Menu
-                    <!-- <i class="fa fa-bars checkbotton"></i> -->
-                        <div class="c_menu_shortcut_icon_container">
-                            <div class="c_bar1"></div>
-                            <div class="c_bar2"></div>
-                            <div class="c_bar3"></div>
-                        </div>
-                </label> 
-        
-                <ul class="c_menu_options">
-        
-                    <div class="c_shortcut_menu_header_container">
-
-                        <input type="checkbox" id="checkbox"/>
-                        <label for="checkbox" class="c_checkbox c_checkbox_close">Close
-                                <div class="c_menu_shortcut_icon_container c_menu_shortcut_icon_container_close">
-                                    <div class="c_bar1"></div>
-                                    <div class="c_bar2"></div>
-                                    <div class="c_bar3"></div>
-                                </div>
-                        </label>
+                        <div class="c_header_paragraphcontact_alignment">
     
-                        <div class="c_menu_header c_menu_header_shortcut_menu">
-    
-                            <a class="c_menu_header_image_link" href="../index.html">
-                                <img class="c_menu_header_image_logo" src="../pictures/testing picture/THI Jpeg 1.jpg"/>
-                            </a>
+                            <p class="c_browser_verification"></p>
                             
-                        </div>
-
-                    </div>
-
-
-                    <div class="c_menu_options_container" id="c_desktop_options_container">
-
-
-                        <div class="c_dropdown">
-                            <li class="c_menu_list c_menu_accordion active"><a class="c_menu_options_items c_menu_options_home" href="../index.html"><p>Home <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
-                            <div class="c_menu_acordion_panel">
-                                    <ul class="c_menu_acordion_panel_list">
-                                        <li class="c_menu_acordion_panel_list_details"><a href="../index.html"> <i class="	fa fa-home"></i> Home</a></li>
-                                    </ul>
+                            <div class="c_header_contact_container c_header_contact_container_A">
+                                <div class="c_header_contact_items c_header_contact_container_A_items c_header_contact_A_item">
+                                    <i class="fa fa-map-marker c_icon_general_styling c_icon_header_content_general_styling c_icon_header_content_A"></i>
+                                </div>
+                                
+                                <div class="c_header_contact_items c_header_contact_container_A_items c_header_contact_B_item">
+                                    <p>Timob Health International , NO_10, Odelola Street Kilo G82X+4QP, Surulere 101241, Lagos</p>
+                                </div>   
                             </div>
+    
+                            <div class="c_header_contact_container c_header_contact_container_B">
+                                <div class="c_header_contact_items c_header_contact_container_B_items c_header_contact_C_item">
+                                    <i class="fa fa-phone c_icon_general_styling c_icon_header_content_general_styling c_icon_header_content_B"></i>
+                                </div>
+                                
+                                <div class="c_header_contact_items c_header_contact_container_B_items c_header_contact_D_item">
+                                    <p>Any question: <a class="c_contact_href_header" href="tel:+234 803 576 8694">+234 803 576 8694</a></p>
+                                </div>   
+                            </div>
+    
+                            <div class="c_header_contact_container c_header_contact_container_C">
+                                <div class="c_header_contact_items c_header_contact_container_C_items c_header_contact_E_item">
+                                    <i class="fa fa-clock-o c_icon_general_styling c_icon_header_content_general_styling c_icon_header_content_C"></i>
+                                </div>
+                                
+                                <div class="c_header_contact_items c_header_contact_container_C_items c_header_contact_F_item">
+                                    <p>Mon - Sun:   24 Hours</p>
+                                </div>   
+                            </div>
+    
+                        </div> 
+                    
+                    </div>
+    
+                </div>
+    
+                <div class="c_header_navbar">
+    
+    
+                    <div class="c_menu_header">
+    
+                        <a class="c_menu_header_image_link" href="../index.html">
+                            <img class="c_menu_header_image_logo" src="../pictures/testing picture/THI Jpeg 1.jpg"/>
+                        </a>
+                        
+                    </div>
+    
+                    
+                  
+                    <input type="checkbox" id="checkbox"/>
+                    <label for="checkbox" class="c_checkbox">Menu
+                        <!-- <i class="fa fa-bars checkbotton"></i> -->
+                            <div class="c_menu_shortcut_icon_container">
+                                <div class="c_bar1"></div>
+                                <div class="c_bar2"></div>
+                                <div class="c_bar3"></div>
+                            </div>
+                    </label> 
+            
+                    <ul class="c_menu_options">
+            
+                        <div class="c_shortcut_menu_header_container">
+    
+                            <input type="checkbox" id="checkbox"/>
+                            <label for="checkbox" class="c_checkbox c_checkbox_close">Close
+                                    <div class="c_menu_shortcut_icon_container c_menu_shortcut_icon_container_close">
+                                        <div class="c_bar1"></div>
+                                        <div class="c_bar2"></div>
+                                        <div class="c_bar3"></div>
+                                    </div>
+                            </label>
+        
+                            <div class="c_menu_header c_menu_header_shortcut_menu">
+        
+                                <a class="c_menu_header_image_link" href="../index.html">
+                                    <img class="c_menu_header_image_logo" src="../pictures/testing picture/THI Jpeg 1.jpg"/>
+                                </a>
+                                
+                            </div>
+    
                         </div>
-
-                        <div class="c_dropdown">
-
-                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_blog" href="../#c_blog"><p>Medical News Center <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
+    
+    
+                        <div class="c_menu_options_container" id="c_desktop_options_container">
+    
+    
+                            <div class="c_dropdown">
+                                <li class="c_menu_list c_menu_accordion active"><a class="c_menu_options_items c_menu_options_home" href="../index.html"><p>Home <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
+                                <div class="c_menu_acordion_panel">
+                                        <ul class="c_menu_acordion_panel_list">
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../index.html"> <i class="	fa fa-home"></i> Home</a></li>
+                                        </ul>
+                                </div>
+                            </div>
+    
+                            <div class="c_dropdown">
+    
+                                <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_blog" href="../#c_blog"><p>Medical News Center <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
+                                <div class="c_menu_acordion_panel">
+                                        <ul class="c_menu_acordion_panel_list">
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../#c_Medical_Articles"> <i class="fa fa-newspaper-o"></i> Medical Articles</a></li>
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../#c_blog"> <i class="fa fa-newspaper-o"></i> Medical Blogs</a></li>
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../#c_main_0_A_A"> <i class="fa fa-newspaper-o"></i> Medical Health Show</a></li>
+                                        </ul>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="c_dropdown">
+    
+                                <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_whoweare" href="../pages/thi_contact.html"><p>Contact Us <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
+                                <div class="c_menu_acordion_panel">
+        
+                                            <ul class="c_menu_acordion_panel_list">
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../#c_footer_five"> <i class="fa fa-info-circle"></i> Quick Contacts</a></li>
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_contact.html"> <i class="fa fa-address-book-o"></i> Contact us</a></li>
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_about.html"> <i class="fa fa-group"></i> About us</a></li>
+                                            </ul>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="c_dropdown">
+    
+                                <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_contact" href="../pages/thi_medical_specialty.html"><p>Medical Specialties <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p></a></li>
+                                <div class="c_menu_acordion_panel">
+                                            <ul class="c_menu_acordion_panel_list">
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Gastroenterologist_content"> <span class="c_footer_five_container_paragraph_one">
+                                                    <i class="fa fa-hospital-o"></i>  Gastroenterology</span></a></li>
+    
+                                                    
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Geriatric_medicine_content"> <span class="c_footer_five_container_paragraph_one">
+                                                    <i class="fa fa-hospital-o"></i>  Geriatric medicine</span></a></li>
+    
+                                                    
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Hematology_content"> <span class="c_footer_five_container_paragraph_one">
+                                                    <i class="fa fa-hospital-o"></i>  Hematology</span></a></li>
+    
+                                                        
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Infectious_disease_content"> <span class="c_footer_five_container_paragraph_one">
+                                                    <i class="fa fa-hospital-o"></i>  Infectious</span></a></li>
+    
+                                                        
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Nephrology_content"> <span class="c_footer_five_container_paragraph_one">
+                                                    <i class="fa fa-hospital-o"></i>  Nephrology</span></a></li>
+    
+                                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Neurology_content"> <span class="c_footer_five_container_paragraph_one">
+                                                        <i class="fa fa-hospital-o"></i>  Neurology</span></a></li>
+    
+                                                        
+                                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pediatrics_content"> <span class="c_footer_five_container_paragraph_one">
+                                                        <i class="fa fa-hospital-o"></i>  Pediatrics</span></a></li>
+    
+    
+                                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Palliative_care_content"> <span class="c_footer_five_container_paragraph_one">
+                                                            <i class="fa fa-hospital-o"></i>  Palliative</span></a></li>
+    
+    
+                                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pulmonology_content"> <span class="c_footer_five_container_paragraph_one">
+                                                                <i class="fa fa-hospital-o"></i>  Pulmonology</span></a></li>
+    
+                                                        
+                                                                <li class="c_menu_acordion_panel_list_details">
+                                                                    <a href="../pages/thi_medical_specialty.html#Different_Medical_Specialists_Do"> <i class="fa fa-files-o"></i> More </a>
+    
+                                                                </li>
+                                                        
+                                            </ul>
+                                </div>
+    
+                            </div>
+    
+    
+                            <div class="c_search_container">
+    
+                                <form action="/action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><p>Search</p><i class="fa fa-search"></i></button>
+                                </form>
+    
+                            </div>
+    
+                            <div class="c_shortcut_menu_footer_container">
+    
+                                <div class="c_header_footer_image_logo_container">
+                                    <p class="c_header_footer_image_logo">
+                                        <img src="../pictures/testing picture/THI Jpeg 1.jpg"/>
+                                    </p>
+                                </div>
+    
+                                <p class="c_menu_options_shortcut_signature">
+                                    &copy 2013 - 2022 <a href="../index.html">Timob Health International</a> All right reserved <a href="">Terms of use</a>. See additional information. You can <a href="">contact us</a> and also see more information <a href="">about us</a> and our <a href="">medical specialies</a>.
+                                </p>
+                            </div>
+    
+                        </div>
+    
+                        <div class="c_menu_options_container" id="c_mobile_options_container">
+    
+    
+    
+    
+                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_blog" href="javascript:void(0)"><p>Home <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
                             <div class="c_menu_acordion_panel">
+                                <ul class="c_menu_acordion_panel_list">
+                                    <li class="c_menu_acordion_panel_list_details"><a href="../index.html"> <i class="	fa fa-home"></i> Home</a></li>
+                                </ul>
+                            </div>
+    
+    
+                                <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_blog" href="javascript:void(0)"><p>Medical News Center <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
+                                <div class="c_menu_acordion_panel">
                                     <ul class="c_menu_acordion_panel_list">
                                         <li class="c_menu_acordion_panel_list_details"><a href="../#c_Medical_Articles"> <i class="fa fa-newspaper-o"></i> Medical Articles</a></li>
                                         <li class="c_menu_acordion_panel_list_details"><a href="../#c_blog"> <i class="fa fa-newspaper-o"></i> Medical Blogs</a></li>
                                         <li class="c_menu_acordion_panel_list_details"><a href="../#c_main_0_A_A"> <i class="fa fa-newspaper-o"></i> Medical Health Show</a></li>
                                     </ul>
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="c_dropdown">
-
-                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_whoweare" href="../pages/thi_contact.html"><p>Contact Us <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
-                            <div class="c_menu_acordion_panel">
+                                </div>
     
-                                        <ul class="c_menu_acordion_panel_list">
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../#c_footer_five"> <i class="fa fa-info-circle"></i> Quick Contacts</a></li>
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_contact.html"> <i class="fa fa-address-book-o"></i> Contact us</a></li>
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_about.html"> <i class="fa fa-group"></i> About us</a></li>
-                                        </ul>
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="c_dropdown">
-
-                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_contact" href="../pages/thi_medical_specialty.html"><p>Medical Specialties <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p></a></li>
-                            <div class="c_menu_acordion_panel">
-                                        <ul class="c_menu_acordion_panel_list">
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Gastroenterologist_content"> <span class="c_footer_five_container_paragraph_one">
-                                                <i class="fa fa-hospital-o"></i>  Gastroenterology</span></a></li>
-
-                                                
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Geriatric_medicine_content"> <span class="c_footer_five_container_paragraph_one">
-                                                <i class="fa fa-hospital-o"></i>  Geriatric medicine</span></a></li>
-
-                                                
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Hematology_content"> <span class="c_footer_five_container_paragraph_one">
-                                                <i class="fa fa-hospital-o"></i>  Hematology</span></a></li>
-
-                                                    
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Infectious_disease_content"> <span class="c_footer_five_container_paragraph_one">
-                                                <i class="fa fa-hospital-o"></i>  Infectious</span></a></li>
-
-                                                    
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Nephrology_content"> <span class="c_footer_five_container_paragraph_one">
-                                                <i class="fa fa-hospital-o"></i>  Nephrology</span></a></li>
-
-                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Neurology_content"> <span class="c_footer_five_container_paragraph_one">
-                                                    <i class="fa fa-hospital-o"></i>  Neurology</span></a></li>
-
-                                                    
-                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pediatrics_content"> <span class="c_footer_five_container_paragraph_one">
-                                                    <i class="fa fa-hospital-o"></i>  Pediatrics</span></a></li>
-
-
-                                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Palliative_care_content"> <span class="c_footer_five_container_paragraph_one">
-                                                        <i class="fa fa-hospital-o"></i>  Palliative</span></a></li>
-
-
-                                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pulmonology_content"> <span class="c_footer_five_container_paragraph_one">
-                                                            <i class="fa fa-hospital-o"></i>  Pulmonology</span></a></li>
-
-                                                    
-                                                            <li class="c_menu_acordion_panel_list_details">
-                                                                <a href="../pages/thi_medical_specialty.html#Different_Medical_Specialists_Do"> <i class="fa fa-files-o"></i> More </a>
-
-                                                            </li>
-                                                    
-                                        </ul>
-                            </div>
-
-                        </div>
-
-
-                        <div class="c_search_container">
-
-                            <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><p>Search</p><i class="fa fa-search"></i></button>
-                            </form>
-
-                        </div>
-
-                        <div class="c_shortcut_menu_footer_container">
-
-                            <div class="c_header_footer_image_logo_container">
-                                <p class="c_header_footer_image_logo">
-                                    <img src="../pictures/testing picture/THI Jpeg 1.jpg"/>
-                                </p>
-                            </div>
-
-                            <p class="c_menu_options_shortcut_signature">
-                                &copy 2013 - 2022 <a href="../index.html">Timob Health International</a> All right reserved <a href="">Terms of use</a>. See additional information. You can <a href="">contact us</a> and also see more information <a href="">about us</a> and our <a href="">medical specialies</a>.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="c_menu_options_container" id="c_mobile_options_container">
-
-
-
-
-                        <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_blog" href="javascript:void(0)"><p>Home <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
-                        <div class="c_menu_acordion_panel">
-                            <ul class="c_menu_acordion_panel_list">
-                                <li class="c_menu_acordion_panel_list_details"><a href="../index.html"> <i class="	fa fa-home"></i> Home</a></li>
-                            </ul>
-                        </div>
-
-
-                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_blog" href="javascript:void(0)"><p>Medical News Center <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
-                            <div class="c_menu_acordion_panel">
-                                <ul class="c_menu_acordion_panel_list">
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../#c_Medical_Articles"> <i class="fa fa-newspaper-o"></i> Medical Articles</a></li>
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../#c_blog"> <i class="fa fa-newspaper-o"></i> Medical Blogs</a></li>
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../#c_main_0_A_A"> <i class="fa fa-newspaper-o"></i> Medical Health Show</a></li>
-                                </ul>
-                            </div>
-
-                    
-
-
-
-
-
-                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_whoweare" href="javascript:void(0)"><p>Contact Us <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
-
-                            <div class="c_menu_acordion_panel">
+                        
     
-                                <ul class="c_menu_acordion_panel_list">
-                                    <li class="c_menu_acordion_panel_list_details"><a href="#c_footer_five"> <i class="fa fa-info-circle"></i> Quick Contacts</a></li>
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_contact.html"> <i class="fa fa-address-book-o"></i> Contact us</a></li>
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_about.html"> <i class="fa fa-group"></i> About us</a></li>
-                                </ul>
-                            </div>
-
-
-
-
-
-                            <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_contact" href="javascript:void(0)"><p>Medical Specialties <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p></a></li>
-                            <div class="c_menu_acordion_panel">
-                                <ul class="c_menu_acordion_panel_list">
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Gastroenterologist_content"> <span class="c_footer_five_container_paragraph_one">
-                                        <i class="fa fa-hospital-o"></i>  Gastroenterology</span></a></li>
-
-                                        
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Geriatric_medicine_content"> <span class="c_footer_five_container_paragraph_one">
-                                        <i class="fa fa-hospital-o"></i>  Geriatric medicine</span></a></li>
-
-                                        
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Hematology_content"> <span class="c_footer_five_container_paragraph_one">
-                                        <i class="fa fa-hospital-o"></i>  Hematology</span></a></li>
-
-                                            
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Infectious_disease_content"> <span class="c_footer_five_container_paragraph_one">
-                                        <i class="fa fa-hospital-o"></i>  Infectious</span></a></li>
-
-                                            
-                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Nephrology_content"> <span class="c_footer_five_container_paragraph_one">
-                                        <i class="fa fa-hospital-o"></i>  Nephrology</span></a></li>
-
-                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Neurology_content"> <span class="c_footer_five_container_paragraph_one">
-                                            <i class="fa fa-hospital-o"></i>  Neurology</span></a></li>
-
-                                            
-                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pediatrics_content"> <span class="c_footer_five_container_paragraph_one">
-                                            <i class="fa fa-hospital-o"></i>  Pediatrics</span></a></li>
-
-
-                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Palliative_care_content"> <span class="c_footer_five_container_paragraph_one">
-                                                <i class="fa fa-hospital-o"></i>  Palliative</span></a></li>
-
-
-                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pulmonology_content"> <span class="c_footer_five_container_paragraph_one">
-                                                    <i class="fa fa-hospital-o"></i>  Pulmonology</span></a></li>
-
-                                            
-                                                    <li class="c_menu_acordion_panel_list_details">
-                                                        <a href="../pages/thi_medical_specialty.html#Different_Medical_Specialists_Do"> <i class="fa fa-files-o"></i> More </a>
-
-                                                    </li>
-                                            
-                                </ul>
-                            </div>
-
-                
-
-                        <div class="c_search_container">
-
-                            <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><p>Search</p><i class="fa fa-search"></i></button>
-                            </form>
-
-                        </div>
-
-                        <div class="c_shortcut_menu_footer_container">
-
-                            <div class="c_header_footer_image_logo_container">
-                                <p class="c_header_footer_image_logo">
-                                    <img src="../pictures/testing picture/THI Jpeg 1.jpg"/>
-                                </p>
-                            </div>
-
-                            <p class="c_menu_options_shortcut_signature">
-                                &copy 2013 - 2022 <a href="index.html">Timob Health International</a> All right reserved <a href="../pages/thi_Personal_data_protection_policy.html">Terms of use</a>. See additional information. You can <a href="../pages/thi_contact.html">contact us</a> and also see more information <a href="../pages/thi_about.html">about us</a> and our <a href="../pages/thi_medical_specialty.html">medical specialies</a>.
-                            </p>
-                        </div>
-
-                    </div>
-                    
-                </ul>
-
+    
+    
+    
+    
+                                <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_whoweare" href="javascript:void(0)"><p>Contact Us <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p>  </a></li>
+    
+                                <div class="c_menu_acordion_panel">
         
-            </div>
-                
-
-        </header>
+                                    <ul class="c_menu_acordion_panel_list">
+                                        <li class="c_menu_acordion_panel_list_details"><a href="#c_footer_five"> <i class="fa fa-info-circle"></i> Quick Contacts</a></li>
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_contact.html"> <i class="fa fa-address-book-o"></i> Contact us</a></li>
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_about.html"> <i class="fa fa-group"></i> About us</a></li>
+                                    </ul>
+                                </div>
+    
+    
+    
+    
+    
+                                <li class="c_menu_list c_menu_accordion"><a class="c_menu_options_items c_menu_options_contact" href="javascript:void(0)"><p>Medical Specialties <i class="fa fa-chevron-down c_menu_icons c_menu_icons_short"></i></p></a></li>
+                                <div class="c_menu_acordion_panel">
+                                    <ul class="c_menu_acordion_panel_list">
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Gastroenterologist_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <i class="fa fa-hospital-o"></i>  Gastroenterology</span></a></li>
+    
+                                            
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Geriatric_medicine_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <i class="fa fa-hospital-o"></i>  Geriatric medicine</span></a></li>
+    
+                                            
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Hematology_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <i class="fa fa-hospital-o"></i>  Hematology</span></a></li>
+    
+                                                
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Infectious_disease_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <i class="fa fa-hospital-o"></i>  Infectious</span></a></li>
+    
+                                                
+                                        <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Nephrology_content"> <span class="c_footer_five_container_paragraph_one">
+                                            <i class="fa fa-hospital-o"></i>  Nephrology</span></a></li>
+    
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Neurology_content"> <span class="c_footer_five_container_paragraph_one">
+                                                <i class="fa fa-hospital-o"></i>  Neurology</span></a></li>
+    
+                                                
+                                            <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pediatrics_content"> <span class="c_footer_five_container_paragraph_one">
+                                                <i class="fa fa-hospital-o"></i>  Pediatrics</span></a></li>
+    
+    
+                                                <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Palliative_care_content"> <span class="c_footer_five_container_paragraph_one">
+                                                    <i class="fa fa-hospital-o"></i>  Palliative</span></a></li>
+    
+    
+                                                    <li class="c_menu_acordion_panel_list_details"><a href="../pages/thi_medical_specialty.html#Pulmonology_content"> <span class="c_footer_five_container_paragraph_one">
+                                                        <i class="fa fa-hospital-o"></i>  Pulmonology</span></a></li>
+    
+                                                
+                                                        <li class="c_menu_acordion_panel_list_details">
+                                                            <a href="../pages/thi_medical_specialty.html#Different_Medical_Specialists_Do"> <i class="fa fa-files-o"></i> More </a>
+    
+                                                        </li>
+                                                
+                                    </ul>
+                                </div>
+    
+                    
+    
+                            <div class="c_search_container">
+    
+                                <form action="/action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><p>Search</p><i class="fa fa-search"></i></button>
+                                </form>
+    
+                            </div>
+    
+                            <div class="c_shortcut_menu_footer_container">
+    
+                                <div class="c_header_footer_image_logo_container">
+                                    <p class="c_header_footer_image_logo">
+                                        <img src="../pictures/testing picture/THI Jpeg 1.jpg"/>
+                                    </p>
+                                </div>
+    
+                                <p class="c_menu_options_shortcut_signature">
+                                    &copy 2013 - 2022 <a href="index.html">Timob Health International</a> All right reserved <a href="../pages/thi_Personal_data_protection_policy.html">Terms of use</a>. See additional information. You can <a href="../pages/thi_contact.html">contact us</a> and also see more information <a href="../pages/thi_about.html">about us</a> and our <a href="../pages/thi_medical_specialty.html">medical specialies</a>.
+                                </p>
+                            </div>
+    
+                        </div>
+                        
+                    </ul>
+    
+            
+                </div>
+                  
+    
+            </header>
 
 
         <main>
-            
+
             <div id="c_modal_container" class="c_modal_container">
 
                 <div class="c_modal_content">
 
                     <span class="c_close_modal"> &times;</span>
+                    <!-- <p class="c_modal_content"></p> -->
 
                 </div>
 
     
             </div>
-
+            
             <div class="c_share_button_container">
 
                 <div class="c_follow_button_list_container">
@@ -460,7 +462,7 @@
 
             <div class="c_content">
 
-                <div class="c_content_title_header_container c_contact_div">
+                <!-- <div class="c_content_title_header_container c_contact_div">
 
                     <div class="c_c_t_h_c c_content_title_container c_contact_container">
 
@@ -479,11 +481,11 @@
                     </div>
 
 
-                </div>
+                </div> -->
 
 
 
-                <!-- <div class="c_contact_details_container"> -->
+                <!-- <div class="c_contact_details_container">
 
                     <div class="c_contact_details_one c_contact_details">
 
@@ -503,7 +505,7 @@
                                 <label for="c_contact_form_name" id="c_contact_name" class="c_contact_form_heading">Name</label>
                                 <input type="text" name="c_contact_form_name" class="c_contact_form_details" id="c_contact_form_name" required placeholder="Enter Full Name"/>
                                 </div>
-                                
+
                                 <br>
 
                                 <div class="c_form_item_row">
@@ -535,7 +537,6 @@
 
                         </div>
 
-                        
                     </div>
 
 
@@ -579,11 +580,11 @@
                             <p>Nature of business:</p> <p>Gen. Consultants and Health Education</p>
                             
                         </div> 
-<!--
+
                         <div class="c_contact_details_two_details c_contact_details_two_details_ten">
                             <p>Register Documents:</p> <p>Original documents submitted to the commercial register on TIMOB HEALTH INTERNATIONAL</p>
                             
-                        </div>  -->
+                        </div> 
 
                     </div>
 
@@ -599,7 +600,7 @@
 
 
 
-                <!-- </div> -->
+                </div> -->
 
 
                 <div class="c_our_team_container">
@@ -695,7 +696,6 @@
 
             <a id="c_back_to_top" class="c_back_to_top" href="#"><i class="fa fa-arrow-up c_back_to_top_icon"></i></a>
   
-            
 
         </main>
 
@@ -935,7 +935,6 @@
                             <div class="c_footer_five_container_one_C">
             
                                 <div class="c_footer_five_container_one_B_content_A c_footer_five_container_one_B_content">
-
                                     <p class="c_footer_navbar_text c_website_signature c_website_signature_socialMedia">
         
                                         <a class="c_footer_navbar_text" onclick="javascriptVoid()" >Follow us </a>
@@ -963,7 +962,6 @@
                                         </section>
                                         
                                     </p>
-                                    
                                 </div>
             
         
@@ -1000,7 +998,7 @@
 
         <!---javascript links-->
         <script src="../js/main.js"></script>
-        <!-- <script src="../js/pages_js/pages_main.js"></script> -->
+        <script src="../js/pages_js/pages_main.js"></script>
 
 
     </body>
